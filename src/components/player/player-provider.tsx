@@ -35,6 +35,8 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
     let cancelled = false;
     let blockedTimer: ReturnType<typeof setTimeout> | null = null;
     let adapter: ReturnType<typeof createAdapter> | null = null;
+    // この曲で一度でも再生が始まったか（読み込み直後の paused と、ユーザーの一時停止を区別する）
+    let hasPlayed = false;
     const threshold = appConfig.queue.completeThreshold;
     const userStarted = st.startedByUser;
 
@@ -56,6 +58,7 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
             if (cur.status !== "awaiting_user") cur.setStatus("loading");
             break;
           case "playing":
+            hasPlayed = true;
             if (blockedTimer) clearTimeout(blockedTimer);
             cur.setStatus("playing");
             if (!cur.loggedPlay) {
@@ -64,7 +67,7 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
             }
             break;
           case "paused":
-            if (cur.status === "awaiting_user" || cur.status === "blocked") break;
+            if (!hasPlayed || cur.status === "awaiting_user" || cur.status === "blocked") break;
             if (cur.status === "playing" || cur.status === "loading") cur.setStatus("paused");
             break;
           case "ended":
@@ -100,8 +103,7 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
         // 自動送りに失敗したら「タップして続きを再生」を出して停止する
         blockedTimer = setTimeout(() => {
           if (cancelled) return;
-          const cur = store.getState();
-          if (cur.status !== "playing" && cur.status !== "paused") cur.setStatus("blocked");
+          if (!hasPlayed) store.getState().setStatus("blocked");
         }, 4000);
       } catch {
         if (!cancelled) store.getState().skipOnError();

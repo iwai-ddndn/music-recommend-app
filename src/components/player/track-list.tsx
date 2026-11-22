@@ -97,7 +97,9 @@ export function TrackList({
               </div>
             </div>
             <div className="min-w-0 flex-1">
-              <div className={cn("truncate font-medium", isCurrent && "text-brand")}>{item.title}</div>
+              <div className={cn("truncate font-medium", isCurrent && "text-brand")} data-testid="track-title">
+                {item.title}
+              </div>
               <div className="text-muted-foreground truncate text-sm">{item.artist_name}</div>
               {showReason && (
                 <div className="mt-1 flex flex-wrap items-center gap-1.5">
