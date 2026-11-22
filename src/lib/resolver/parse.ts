@@ -106,6 +106,9 @@ export function isShortenerUrl(input: string, shorteners: string[]): boolean {
   return shorteners.includes(u.hostname.toLowerCase());
 }
 
+/** ストアフロントの無いAppleのURLに使う既定値 */
+export const DEFAULT_APPLE_STOREFRONT = "jp";
+
 const NUMERIC = /^\d+$/;
 const STOREFRONT = /^[a-z]{2}$/i;
 
@@ -127,7 +130,7 @@ function parseApple(u: URL): ParsedMusicUrl {
         storefront,
         songId,
         albumId,
-        canonicalUrl: `https://music.apple.com/${storefront ?? "us"}/song/${songId}`,
+        canonicalUrl: `https://music.apple.com/${storefront ?? DEFAULT_APPLE_STOREFRONT}/song/${songId}`,
       };
     }
     if (!albumId) return { ok: false, service: "apple", reason: "apple_album_id_missing" };
@@ -138,7 +141,7 @@ function parseApple(u: URL): ParsedMusicUrl {
       storefront,
       songId: null,
       albumId,
-      canonicalUrl: `https://music.apple.com/${storefront ?? "us"}/album/${albumId}`,
+      canonicalUrl: `https://music.apple.com/${storefront ?? DEFAULT_APPLE_STOREFRONT}/album/${albumId}`,
     };
   }
   if (type === "song") {
@@ -150,7 +153,7 @@ function parseApple(u: URL): ParsedMusicUrl {
       storefront,
       songId: lastNumeric,
       albumId: null,
-      canonicalUrl: `https://music.apple.com/${storefront ?? "us"}/song/${lastNumeric}`,
+      canonicalUrl: `https://music.apple.com/${storefront ?? DEFAULT_APPLE_STOREFRONT}/song/${lastNumeric}`,
     };
   }
   return {

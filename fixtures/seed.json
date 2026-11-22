@@ -1,0 +1,238 @@
+{
+  "users": [
+    {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "role": "listener",
+      "display_name": "デモ リスナー",
+      "email": "listener@example.com",
+      "depth": 0.5,
+      "preferred_service": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "role": "curator",
+      "display_name": "凪",
+      "email": "curator@example.com",
+      "depth": 0.5,
+      "preferred_service": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000003",
+      "role": "artist",
+      "display_name": "Late Bus Home",
+      "email": "artist@example.com",
+      "depth": 0.5,
+      "preferred_service": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000004",
+      "role": "admin",
+      "display_name": "管理者",
+      "email": "admin@example.com",
+      "depth": 0.5,
+      "preferred_service": null
+    }
+  ],
+  "curators": [
+    {
+      "x_user_id": "1500000000000000001",
+      "x_handle": "lighthouse_rec",
+      "display_name": "Lighthouse Records",
+      "status": "active",
+      "base_weight": 1.2,
+      "claimed_by_user_id": null,
+      "bio": "下北沢の小さなレコード店。週3で新入荷を紹介。"
+    },
+    {
+      "x_user_id": "1500000000000000002",
+      "x_handle": "tidepool_label",
+      "display_name": "Tidepool Label",
+      "status": "active",
+      "base_weight": 1,
+      "claimed_by_user_id": null,
+      "bio": "宅録とアンビエントのインディーレーベル。"
+    },
+    {
+      "x_user_id": "1500000000000000003",
+      "x_handle": "nagi_writes",
+      "display_name": "凪 / 音楽ライター",
+      "status": "active",
+      "base_weight": 1,
+      "claimed_by_user_id": "00000000-0000-4000-8000-000000000002",
+      "bio": "ローファイとシティポップの隙間を書いています。"
+    },
+    {
+      "x_user_id": "1500000000000000004",
+      "x_handle": "kamome_digs",
+      "display_name": "かもめディグ",
+      "status": "active",
+      "base_weight": 1,
+      "claimed_by_user_id": null,
+      "bio": "SoundCloudの深いところを毎日掘る人。"
+    },
+    {
+      "x_user_id": "1500000000000000005",
+      "x_handle": "midnight_crate",
+      "display_name": "Midnight Crate",
+      "status": "active",
+      "base_weight": 1,
+      "claimed_by_user_id": null,
+      "bio": "深夜のBandcamp巡回録。"
+    },
+    {
+      "x_user_id": "1500000000000000006",
+      "x_handle": "bunkyo_tapes",
+      "display_name": "文京テープス",
+      "status": "active",
+      "base_weight": 1,
+      "claimed_by_user_id": null,
+      "bio": "カセットとZINEの店。"
+    },
+    {
+      "x_user_id": "1500000000000000007",
+      "x_handle": "hoshino_listens",
+      "display_name": "星野",
+      "status": "active",
+      "base_weight": 0.8,
+      "claimed_by_user_id": null,
+      "bio": "会社員。通勤で聴いたものを記録。"
+    },
+    {
+      "x_user_id": "1500000000000000008",
+      "x_handle": "shibuya_hifi",
+      "display_name": "Shibuya Hi-Fi Store",
+      "status": "active",
+      "base_weight": 1,
+      "claimed_by_user_id": null,
+      "bio": "中古オーディオと新譜。"
+    },
+    {
+      "x_user_id": null,
+      "x_handle": "underpass_fm",
+      "display_name": "Underpass FM",
+      "status": "pending",
+      "base_weight": 1,
+      "claimed_by_user_id": null,
+      "bio": null
+    },
+    {
+      "x_user_id": null,
+      "x_handle": "sora_no_oto",
+      "display_name": "空の音",
+      "status": "pending",
+      "base_weight": 1,
+      "claimed_by_user_id": null,
+      "bio": null
+    }
+  ],
+  "curator_suggestions": [
+    {
+      "handle": "underpass_fm",
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "comment": "深夜ラジオ系の選曲がいい"
+    },
+    {
+      "handle": "underpass_fm",
+      "user_id": "00000000-0000-4000-8000-000000000003",
+      "comment": "毎週の新譜まとめが信頼できる"
+    },
+    {
+      "handle": "sora_no_oto",
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "comment": "アンビエントに強い"
+    }
+  ],
+  "follows": [
+    {
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "handle": "nagi_writes"
+    },
+    {
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "handle": "midnight_crate"
+    }
+  ],
+  "favorite_artists": [
+    {
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "artist": "Mizuiro Tape"
+    },
+    {
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "artist": "Neon Koi"
+    },
+    {
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "artist": "Big Sky Anthem"
+    }
+  ],
+  "campaigns": [
+    {
+      "key": "winter",
+      "title": "冬の夜に、まだ知られていない1曲を",
+      "description": "「このアーティストが好きな人に聴いてほしい」を添えて、冬の夜に合う曲を推薦してください。目利き・アーティスト本人のどちらからでも投稿できます。",
+      "starts_at": "2026-11-15T00:00:00Z",
+      "ends_at": "2026-12-15T00:00:00Z",
+      "max_pitches_per_user": 3,
+      "status": "open"
+    },
+    {
+      "key": "autumn",
+      "title": "秋の散歩BGM",
+      "description": "前回のキャンペーン。",
+      "starts_at": "2026-09-01T00:00:00Z",
+      "ends_at": "2026-10-01T00:00:00Z",
+      "max_pitches_per_user": 3,
+      "status": "closed"
+    }
+  ],
+  "pitches": [
+    {
+      "campaign": "winter",
+      "user_id": "00000000-0000-4000-8000-000000000003",
+      "submitter_type": "artist",
+      "url": "https://rustandmoss.bandcamp.com/track/last-stop-lights",
+      "comment": "終電後の帰り道を描いた曲です。宅録で作りました。",
+      "status": "approved",
+      "refs": [
+        "Mizuiro Tape",
+        "Hollow Parade"
+      ]
+    },
+    {
+      "campaign": "winter",
+      "user_id": "00000000-0000-4000-8000-000000000002",
+      "submitter_type": "curator",
+      "url": "https://soundcloud.com/blue-kettle/glasshouse",
+      "comment": "冬の澄んだ空気みたいなシンセ。",
+      "status": "approved",
+      "refs": [
+        "Neon Koi"
+      ]
+    },
+    {
+      "campaign": "winter",
+      "user_id": "00000000-0000-4000-8000-000000000002",
+      "submitter_type": "curator",
+      "url": "https://soundcloud.com/the-lowtide/track-31",
+      "comment": "静かな揺らぎ。",
+      "status": "pending",
+      "refs": [
+        "Kiri no Machi",
+        "Asagao"
+      ]
+    },
+    {
+      "campaign": "winter",
+      "user_id": "00000000-0000-4000-8000-000000000003",
+      "submitter_type": "artist",
+      "url": "https://music.apple.com/jp/album/fog-lights/1600000015?i=1700000105",
+      "comment": "別名義の曲です。",
+      "status": "rejected",
+      "reject_reason": "本人確認が取れないため",
+      "refs": [
+        "Sunday Static"
+      ]
+    }
+  ]
+}
