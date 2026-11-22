@@ -1,4 +1,4 @@
-import { useFixtures } from "../env";
+import { isFixtureMode } from "../env";
 import { loadFixture } from "./fixtures";
 
 export const USER_AGENT = "MinorTrackPlayer/0.1 (+batch)";
@@ -24,7 +24,7 @@ export async function fetchJson<T>(url: string, init: RequestInit = {}): Promise
 
 /** 短縮URL（on.soundcloud.com, t.co など）のリダイレクト先を解決する */
 export async function resolveRedirect(url: string): Promise<string> {
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     const map = loadFixture<Record<string, string>>("redirects.json");
     const to = map[url];
     if (!to) throw new Error("redirect_not_found");

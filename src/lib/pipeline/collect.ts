@@ -1,7 +1,7 @@
 // 収集バッチ（仕様書 5章）。目利きの「曲リンク付きポストだけ」を検索で取得する。
 import { appConfig } from "../config";
 import type { Db } from "../db/types";
-import { env, useFixtures } from "../env";
+import { env, isFixtureMode } from "../env";
 import { postUrls, searchRecent } from "../external/x";
 import { extractCandidateUrls } from "../resolver/parse";
 import { resolveAndStore } from "../resolver/resolve";
@@ -30,7 +30,7 @@ export async function runCollect(
   const log = opts.log ?? (() => {});
   const cfg = appConfig.collect;
   const budget = env.xMonthlyBudgetUsd;
-  if (!budget && !useFixtures()) {
+  if (!budget && !isFixtureMode()) {
     throw new Error("X_MONTHLY_BUDGET_USD is not set; refusing to call the paid X API without a budget");
   }
 

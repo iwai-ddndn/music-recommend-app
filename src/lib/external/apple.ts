@@ -4,7 +4,7 @@
 // - GET /v1/catalog/{storefront}/songs/{id} の attributes.isrc は「任意」項目（無い場合がある）。
 // - relationships.artists は既定で識別子のみ含まれる。
 import { importPKCS8, SignJWT } from "jose";
-import { env, useFixtures } from "../env";
+import { env, isFixtureMode } from "../env";
 import { fetchJson } from "./http";
 import { loadFixture } from "./fixtures";
 
@@ -73,7 +73,7 @@ type AppleFixtures = {
 };
 
 export async function getSong(storefront: string, id: string): Promise<AppleSong | null> {
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     const r = loadFixture<AppleFixtures>("apple/catalog.json").songs[id];
     return r ? toSong(r) : null;
   }
@@ -92,7 +92,7 @@ export async function getSong(storefront: string, id: string): Promise<AppleSong
 
 /** 曲指定の無いアルバムURLはMVPでは先頭曲を採用する */
 export async function getAlbumFirstSongId(storefront: string, albumId: string): Promise<string | null> {
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     return loadFixture<AppleFixtures>("apple/catalog.json").albums[albumId]?.trackIds[0] ?? null;
   }
   const token = await developerToken();

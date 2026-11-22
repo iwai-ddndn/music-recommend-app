@@ -1,5 +1,5 @@
 import path from "node:path";
-import { env, useFixtures } from "../env";
+import { env, isFixtureMode } from "../env";
 import { emptyData, LocalDb } from "./local";
 import { SupabaseDb } from "./supabase";
 import type { Db } from "./types";
@@ -8,7 +8,7 @@ const g = globalThis as unknown as { __db?: Db; __seeding?: Promise<void> };
 
 export function getDb(): Db {
   if (g.__db) return g.__db;
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     g.__db = new LocalDb(path.resolve(process.cwd(), env.localDbFile), emptyData);
   } else {
     if (!env.supabaseUrl || !env.supabaseServiceRoleKey) {

@@ -1,7 +1,7 @@
 // 環境変数の読み出し。USE_FIXTURES=true のときは外部APIを呼ばず fixtures/ を使う。
 // Supabase の設定が無い場合も自動的に fixtures モードになる（ローカル開発用）。
 
-export function useFixtures(): boolean {
+export function isFixtureMode(): boolean {
   const v = process.env.USE_FIXTURES;
   if (v === "true" || v === "1") return true;
   if (v === "false" || v === "0") return false;

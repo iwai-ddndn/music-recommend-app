@@ -3,7 +3,7 @@ import { z } from "zod";
 import { body, handler, json } from "@/lib/api";
 import { DEMO_COOKIE, HttpError } from "@/lib/auth/session";
 import { getReadyDb } from "@/lib/db";
-import { useFixtures } from "@/lib/env";
+import { isFixtureMode } from "@/lib/env";
 
 const Demo = z.union([
   z.object({ user_id: z.string().min(1) }),
@@ -15,7 +15,7 @@ const Demo = z.union([
  * 本番（Supabase）ではメールリンク認証を使うため 404 を返す。
  */
 export const POST = handler(async (req: Request) => {
-  if (!useFixtures()) throw new HttpError(404, "Not found");
+  if (!isFixtureMode()) throw new HttpError(404, "Not found");
   const input = await body(req, Demo);
   const db = await getReadyDb();
   let userId: string;
@@ -45,7 +45,7 @@ export const POST = handler(async (req: Request) => {
 
 /** デモ用アカウント一覧（ログイン画面のクイック切り替え用） */
 export const GET = handler(async () => {
-  if (!useFixtures()) throw new HttpError(404, "Not found");
+  if (!isFixtureMode()) throw new HttpError(404, "Not found");
   const db = await getReadyDb();
   const users = await db.list("users");
   const demo = users.filter((u) => u.email?.endsWith("@example.com"));

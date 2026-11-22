@@ -2,7 +2,7 @@ import { z } from "zod";
 import { handler, json } from "@/lib/api";
 import { currentXIdentity, HttpError, requireUser } from "@/lib/auth/session";
 import { getReadyDb } from "@/lib/db";
-import { useFixtures } from "@/lib/env";
+import { isFixtureMode } from "@/lib/env";
 import { claimCurator } from "@/lib/repo/curators";
 
 const DemoClaim = z.object({ handle: z.string().trim().min(1) });
@@ -14,7 +14,7 @@ const DemoClaim = z.object({ handle: z.string().trim().min(1) });
 export const POST = handler(async (req: Request) => {
   const user = await requireUser();
   const db = await getReadyDb();
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     const { handle } = DemoClaim.parse(await req.json().catch(() => ({})));
     const c = await claimCurator(db, user.id, { xUserId: null, handle: handle.replace(/^@/, "") });
     return json({ curator_id: c.id, handle: c.x_handle });

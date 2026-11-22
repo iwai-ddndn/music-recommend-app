@@ -2,7 +2,7 @@
 // 公式の開発者向けドキュメントは無い。bc-page-properties（item_id / item_type）と
 // og:title / og:image を使う（非公式で変わりうるため、取れない場合は失敗理由つきで返す）。
 // 1URLにつき1回だけ取得してキャッシュする（DBに track_sources があれば呼ばない＋プロセス内メモ）。
-import { useFixtures } from "../env";
+import { isFixtureMode } from "../env";
 import { HttpError, USER_AGENT } from "./http";
 import { loadFixture } from "./fixtures";
 
@@ -79,7 +79,7 @@ export function embedUrl(itemType: "track" | "album", itemId: string): string {
 const memo = new Map<string, Promise<string | null>>();
 
 export function fetchPage(url: string): Promise<string | null> {
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     return Promise.resolve(loadFixture<Record<string, string>>("bandcamp/pages.json")[url] ?? null);
   }
   if (!memo.has(url)) {

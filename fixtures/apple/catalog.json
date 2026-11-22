@@ -9,11 +9,6 @@
         "url": "https://music.apple.com/jp/album/quiet-harbor/1600000000?i=1700000000",
         "isrc": "JPX02600000",
         "durationInMillis": 180000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp0/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000000.m4a"
@@ -39,11 +34,6 @@
         "artistName": "Sunday Static",
         "url": "https://music.apple.com/jp/album/paper-moon/1600000003?i=1700000021",
         "durationInMillis": 183000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp3/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000021.m4a"
@@ -70,11 +60,6 @@
         "url": "https://music.apple.com/jp/album/static-bloom/1600000004?i=1700000028",
         "isrc": "JPX02600004",
         "durationInMillis": 184000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp4/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000028.m4a"
@@ -100,11 +85,6 @@
         "artistName": "Asagao",
         "url": "https://music.apple.com/jp/album/slow-ferry/1600000006?i=1700000042",
         "durationInMillis": 186000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp6/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000042.m4a"
@@ -130,11 +110,6 @@
         "artistName": "Glass Orchard",
         "url": "https://music.apple.com/jp/album/tidal-room/1600000009?i=1700000063",
         "durationInMillis": 189000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp9/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000063.m4a"
@@ -161,11 +136,6 @@
         "url": "https://music.apple.com/jp/album/soft-machine-days/1600000012?i=1700000084",
         "isrc": "JPX02600012",
         "durationInMillis": 192000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp12/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000084.m4a"
@@ -191,11 +161,6 @@
         "artistName": "Late Bus Home",
         "url": "https://music.apple.com/jp/album/fog-lights/1600000015?i=1700000105",
         "durationInMillis": 195000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp15/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000105.m4a"
@@ -221,11 +186,6 @@
         "artistName": "Pale Harbor",
         "url": "https://music.apple.com/jp/album/neon-rain/1600000018?i=1700000126",
         "durationInMillis": 198000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp18/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000126.m4a"
@@ -251,11 +211,6 @@
         "artistName": "Yuragi",
         "url": "https://music.apple.com/jp/album/small-hours/1600000021?i=1700000147",
         "durationInMillis": 201000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp21/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000147.m4a"
@@ -282,11 +237,6 @@
         "url": "https://music.apple.com/jp/album/track-24/1600000024?i=1700000168",
         "isrc": "JPX02600024",
         "durationInMillis": 204000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp24/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000168.m4a"
@@ -312,11 +262,6 @@
         "artistName": "Sunday Static",
         "url": "https://music.apple.com/jp/album/orbit/1600000027?i=1700000189",
         "durationInMillis": 207000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp27/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000189.m4a"
@@ -342,11 +287,6 @@
         "artistName": "Asagao",
         "url": "https://music.apple.com/jp/album/minato-line/1600000030?i=1700000210",
         "durationInMillis": 210000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp30/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000210.m4a"
@@ -372,11 +312,6 @@
         "artistName": "Glass Orchard",
         "url": "https://music.apple.com/jp/album/velvet-hour/1600000033?i=1700000231",
         "durationInMillis": 213000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp33/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000231.m4a"
@@ -403,11 +338,6 @@
         "url": "https://music.apple.com/jp/album/pale-light/1600000036?i=1700000252",
         "isrc": "JPX02600036",
         "durationInMillis": 216000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp36/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000252.m4a"
@@ -433,11 +363,6 @@
         "artistName": "Big Sky Anthem",
         "url": "https://music.apple.com/jp/album/big-sky/1600000038?i=1700000266",
         "durationInMillis": 218000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp38/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000266.m4a"
@@ -463,11 +388,6 @@
         "artistName": "Late Bus Home",
         "url": "https://music.apple.com/jp/album/undertow/1600000039?i=1700000273",
         "durationInMillis": 219000,
-        "artwork": {
-          "url": "https://picsum.photos/seed/mtp39/{w}/{h}",
-          "width": 1400,
-          "height": 1400
-        },
         "previews": [
           {
             "url": "https://audio-ssl.itunes.apple.com/preview/1700000273.m4a"

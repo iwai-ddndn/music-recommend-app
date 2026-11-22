@@ -1,11 +1,11 @@
 // fixtures モードのローカルDBを作り直す
 import fs from "node:fs";
 import path from "node:path";
-import { env, useFixtures } from "../src/lib/env";
+import { env, isFixtureMode } from "../src/lib/env";
 import { getDb } from "../src/lib/db";
 import { bootstrapLocal } from "../src/lib/pipeline/bootstrap";
 
-if (!useFixtures()) {
+if (!isFixtureMode()) {
   console.error("db:reset is only available with USE_FIXTURES=true");
   process.exit(1);
 }

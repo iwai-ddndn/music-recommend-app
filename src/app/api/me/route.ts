@@ -2,11 +2,20 @@ import { z } from "zod";
 import { body, handler, json } from "@/lib/api";
 import { getSessionUser, requireUser } from "@/lib/auth/session";
 import { getReadyDb } from "@/lib/db";
-import { useFixtures } from "@/lib/env";
+import { isFixtureMode } from "@/lib/env";
 
 export const GET = handler(async () => {
   const user = await getSessionUser();
-  return json({ user, mode: useFixtures() ? "fixtures" : "live" });
+  let stats = null;
+  if (user) {
+    const db = await getReadyDb();
+    const [follows, favorites] = await Promise.all([
+      db.list("curator_follows", { eq: { user_id: user.id } }),
+      db.list("user_favorite_artists", { eq: { user_id: user.id } }),
+    ]);
+    stats = { follows: follows.length, favorites: favorites.length };
+  }
+  return json({ user, stats, mode: isFixtureMode() ? "fixtures" : "live" });
 });
 
 const Patch = z.object({

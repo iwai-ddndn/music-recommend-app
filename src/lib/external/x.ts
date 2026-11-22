@@ -4,7 +4,7 @@
 // - URLは entities.urls[] の unwound_url（最終URL、無いこともある）→ expanded_url の順で使う。
 // - 料金は pay-per-use。Posts: Read が1件 $0.005、User: Read が1件 $0.010。
 //   同じリソースはUTC日内なら再課金されない。
-import { env, useFixtures } from "../env";
+import { env, isFixtureMode } from "../env";
 import { fetchJson } from "./http";
 import { loadFixture } from "./fixtures";
 
@@ -62,7 +62,7 @@ export async function searchRecent(args: {
   nextToken?: string | null;
   maxResults: number;
 }): Promise<SearchResult> {
-  if (useFixtures()) return searchFixture(args.query, args.sinceId);
+  if (isFixtureMode()) return searchFixture(args.query, args.sinceId);
   if (!env.xBearerToken) throw new Error("X_BEARER_TOKEN is not set");
   const params = new URLSearchParams({
     query: args.query,
@@ -91,7 +91,7 @@ export type XUser = { id: string; username: string; name: string };
 /** ハンドルから x_user_id を取得（承認時に呼ぶ。User: Read 課金） */
 export async function getUserByUsername(handle: string): Promise<XUser | null> {
   const username = handle.replace(/^@/, "");
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     const users = loadFixture<SearchResponse>("x/search.json").includes?.users ?? [];
     const extra = loadFixture<XUser[]>("x/users.json");
     return (

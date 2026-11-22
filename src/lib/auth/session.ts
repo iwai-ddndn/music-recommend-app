@@ -2,7 +2,7 @@ import "server-only";
 import { cookies } from "next/headers";
 import { getReadyDb } from "../db";
 import type { Db } from "../db/types";
-import { useFixtures } from "../env";
+import { isFixtureMode } from "../env";
 import type { Role, SessionUser, User } from "../types";
 import { supabaseServer } from "./supabase-server";
 
@@ -32,7 +32,7 @@ async function toSessionUser(db: Db, u: User): Promise<SessionUser> {
 
 /** Supabase の Auth ユーザーから X アカウントのIDを取り出す（目利き本人確認用） */
 export async function currentXIdentity(): Promise<{ id: string; username: string | null } | null> {
-  if (useFixtures()) return null;
+  if (isFixtureMode()) return null;
   const sb = await supabaseServer();
   const { data } = await sb.auth.getUser();
   const identity = data.user?.identities?.find((i) => i.provider === "x" || i.provider === "twitter");
@@ -46,7 +46,7 @@ export async function currentXIdentity(): Promise<{ id: string; username: string
 
 export async function getSessionUser(): Promise<SessionUser | null> {
   const db = await getReadyDb();
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     const id = (await cookies()).get(DEMO_COOKIE)?.value;
     if (!id) return null;
     const u = await db.get("users", id);

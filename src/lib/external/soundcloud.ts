@@ -3,7 +3,7 @@
 // - /resolve は OAuth 2.1 のアクセストークンが必要（client_id クエリだけでは不可）。
 //   公開リソースは client credentials フローで取得: POST https://secure.soundcloud.com/oauth/token
 // - oEmbed は https://soundcloud.com/oembed?format=json&url=...
-import { env, useFixtures } from "../env";
+import { env, isFixtureMode } from "../env";
 import { fetchJson, HttpError } from "./http";
 import { loadFixture } from "./fixtures";
 
@@ -16,7 +16,7 @@ export type OEmbed = {
 };
 
 export async function oembed(url: string): Promise<OEmbed | null> {
-  if (useFixtures()) {
+  if (isFixtureMode()) {
     return loadFixture<Record<string, OEmbed>>("soundcloud/oembed.json")[url] ?? null;
   }
   try {
@@ -85,7 +85,7 @@ export type ScResolved = {
 
 /** APIキー（任意）がある場合だけ詳細を補完する */
 export async function resolveTrack(url: string): Promise<ScResolved | null> {
-  if (useFixtures()) return null;
+  if (isFixtureMode()) return null;
   const t = await accessToken();
   if (!t) return null;
   try {
