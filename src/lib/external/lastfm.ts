@@ -42,3 +42,19 @@ export async function artistListeners(name: string): Promise<{ listeners: number
   });
   return { listeners: toInt(res?.artist?.stats?.listeners), mbid: res?.artist?.mbid || null };
 }
+
+/**
+ * アーティストのタグ（artist.getTopTags）。シーンタグへの正規化は taste/vocabulary.ts。
+ * artist.getSimilar は人気度に引っ張られるため使わない。
+ */
+export async function artistTopTags(name: string): Promise<{ name: string; weight: number }[]> {
+  if (isFixtureMode()) {
+    const tags = loadFixture<Record<string, Record<string, number>>>("lastfm/tags.json")[key(name)] ?? {};
+    return Object.entries(tags).map(([n, weight]) => ({ name: n, weight }));
+  }
+  const res = await call<{ toptags?: { tag?: { name: string; count: number }[] } }>({
+    method: "artist.getTopTags",
+    artist: name,
+  });
+  return (res?.toptags?.tag ?? []).map((t) => ({ name: t.name, weight: Number(t.count) || 0 }));
+}

@@ -46,6 +46,7 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
       adapter = createAdapter(source.service, {
         container,
         simulate,
+        appleAuthorized: st.appleAuthorized,
         isUserInitiated: () => userStarted || isUserGesture(),
       });
       const a = adapter;
@@ -143,7 +144,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     void isAppleAuthorized().then((v) => store.getState().setAppleAuthorized(v));
   }, [mode]);
 
-  const simulate = mode === "fixtures" && process.env.NEXT_PUBLIC_PLAYER_MODE !== "real";
+  // 模擬再生は E2E 専用。通常は実際の音源（Apple のプレビュー / 各サービスの埋め込み）を鳴らす
+  const simulate = process.env.NEXT_PUBLIC_PLAYER_MODE === "simulated";
   return (
     <>
       {children}

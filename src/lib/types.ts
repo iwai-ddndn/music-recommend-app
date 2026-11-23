@@ -29,6 +29,8 @@ export type Curator = Row & {
   base_weight: number;
   claimed_by_user_id: string | null;
   bio: string | null;
+  /** 推した曲から作るシーンタグのプロフィール（バッチが更新） */
+  profile_tags: Record<string, number>;
 };
 
 /** 目利き推薦（8章「同じハンドルが既にあれば票として数える」） */
@@ -46,6 +48,9 @@ export type Artist = Row & {
   mbid: string | null;
   lastfm_listeners: number | null;
   listeners_updated_at: string | null;
+  /** シーンタグ（Last.fm のタグ / Apple のジャンルを語彙に正規化したもの） */
+  tags: Record<string, number>;
+  tags_updated_at: string | null;
 };
 
 export type Track = Row & {
@@ -89,13 +94,15 @@ export type TrackScore = Row & {
   /** リクエスト時にフォロー倍率を適用するための目利き別寄与 */
   contributions: CuratorContribution[];
   mention_count: number;
+  /** 曲のシーンタグ（アーティストのタグ、無ければ推した目利きのプロフィール） */
+  tags: Record<string, number>;
   computed_at: string;
 };
 
 export type UserFavoriteArtist = Row & {
   user_id: string;
   artist_id: string;
-  source: "manual" | "apple_library";
+  source: "manual" | "apple_library" | "onboarding";
 };
 
 export type Campaign = Row & {
@@ -125,6 +132,15 @@ export type ListenEvent = Row & {
   event: ListenEventType;
   context: ListenContext;
   pitch_id: string | null;
+  /** イベント時点の再生位置（秒）。早いスキップの判定用 */
+  position_sec: number | null;
+};
+
+/** ログイン済みユーザーの好み（端末の好みとログイン時に統合する） */
+export type UserTaste = Row & {
+  user_id: string;
+  taste: import("./scoring/taste").Taste;
+  updated_at: string;
 };
 
 export type ApiUsage = Row & {
@@ -159,6 +175,11 @@ export type QueueItem = {
   context: ListenContext;
   pitch_id: string | null;
   score?: number;
+  /** 好みの学習用: 曲のシーンタグと、推した目利きの寄与割合 */
+  tags?: Record<string, number>;
+  curators?: { id: string; handle: string; name: string; share: number; count: number }[];
+  /** 言及が1件だけの「埋もれた曲」枠 */
+  buried?: boolean;
 };
 
 export type SessionUser = Pick<

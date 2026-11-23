@@ -15,6 +15,7 @@ import type {
   TrackSource,
   User,
   UserFavoriteArtist,
+  UserTaste,
 } from "../types";
 
 export type AppStateRow = { id: string; created_at: string; key: string; value: unknown };
@@ -37,6 +38,7 @@ export type Tables = {
   api_usage: ApiUsage;
   resolve_failures: ResolveFailure;
   app_state: AppStateRow;
+  user_taste: UserTaste;
 };
 
 export type TableName = keyof Tables;
@@ -58,6 +60,7 @@ export const TABLE_NAMES: TableName[] = [
   "api_usage",
   "resolve_failures",
   "app_state",
+  "user_taste",
 ];
 
 export type Filter<T> = {

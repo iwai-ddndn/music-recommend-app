@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { Db } from "../db/types";
+import { fixturesDir } from "../external/fixtures";
 import { resolveAndStore } from "../resolver/resolve";
 import type { Campaign, PitchStatus, Role } from "../types";
 import { runCollect } from "./collect";
@@ -42,19 +43,30 @@ export async function findOrCreateArtist(db: Db, name: string): Promise<string> 
   const hit = (await db.list("artists")).find((a) => norm(a.name) === norm(name));
   if (hit) return hit.id;
   const [a] = await db.insert("artists", [
-    { name: name.trim(), apple_artist_id: null, mbid: null, lastfm_listeners: null, listeners_updated_at: null },
+    {
+      name: name.trim(),
+      apple_artist_id: null,
+      mbid: null,
+      lastfm_listeners: null,
+      listeners_updated_at: null,
+      tags: {},
+      tags_updated_at: null,
+    },
   ]);
   return a.id;
 }
 
 export async function bootstrapLocal(db: Db, log: (m: string) => void = () => {}): Promise<void> {
   const seed = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), "fixtures", "seed.json"), "utf8"),
+    fs.readFileSync(path.join(fixturesDir(), "seed.json"), "utf8"),
   ) as Seed;
   const now = new Date();
 
   await db.insert("users", seed.users.map((u) => ({ ...u })));
-  const curators = await db.insert("curators", seed.curators);
+  const curators = await db.insert(
+    "curators",
+    seed.curators.map((c) => ({ ...c, profile_tags: {} })),
+  );
   const cid = (h: string) => curators.find((c) => c.x_handle === h)!.id;
   await db.insert(
     "curator_suggestions",

@@ -1,0 +1,1738 @@
+{
+ "data": [
+  {
+   "id": "1863000000000001848",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-10-15T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000001848",
+      "expanded_url": "https://music.apple.com/jp/song/1560824766"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000003483",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-10-15T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000003483",
+      "expanded_url": "https://music.apple.com/jp/song/969892032"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000005286",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-10-15T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000005286",
+      "expanded_url": "https://music.apple.com/jp/song/1437755794"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000006319",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-10-16T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000006319",
+      "expanded_url": "https://music.apple.com/jp/song/1761735912"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000007508",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-10-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000007508",
+      "expanded_url": "https://music.apple.com/jp/song/1877877556"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000008574",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-10-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000008574",
+      "expanded_url": "https://music.apple.com/jp/song/1823191833"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000009677",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-10-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000009677",
+      "expanded_url": "https://music.apple.com/jp/song/1525189821"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000011140",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-10-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000011140",
+      "expanded_url": "https://music.apple.com/jp/song/1461104015"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000012778",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-10-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000012778",
+      "expanded_url": "https://music.apple.com/jp/song/1329831671"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000014567",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-10-18T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000014567",
+      "expanded_url": "https://music.apple.com/jp/song/1661768998"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000016351",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-10-18T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000016351",
+      "expanded_url": "https://music.apple.com/jp/song/1463575000"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000017726",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-10-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000017726",
+      "expanded_url": "https://music.apple.com/jp/song/1597222596"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000019229",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-10-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000019229",
+      "expanded_url": "https://music.apple.com/jp/song/1445544120"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000020719",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-10-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000020719",
+      "expanded_url": "https://music.apple.com/jp/song/1456091172"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000022330",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-10-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000022330",
+      "expanded_url": "https://music.apple.com/jp/song/1813383026"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000023384",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-10-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000023384",
+      "expanded_url": "https://music.apple.com/jp/song/1507013987"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000024579",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-10-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000024579",
+      "expanded_url": "https://music.apple.com/jp/song/1661768998"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000025633",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-10-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000025633",
+      "expanded_url": "https://music.apple.com/jp/song/1530925065"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000026784",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-10-21T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000026784",
+      "expanded_url": "https://music.apple.com/jp/song/1428408525"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000028538",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-10-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000028538",
+      "expanded_url": "https://music.apple.com/jp/song/1823191833"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000030018",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-10-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000030018",
+      "expanded_url": "https://music.apple.com/jp/song/1434108701"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000031818",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-10-23T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000031818",
+      "expanded_url": "https://music.apple.com/jp/song/1428408525"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000033495",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-10-23T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000033495",
+      "expanded_url": "https://music.apple.com/jp/song/6819117932"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000035011",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-10-23T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000035011",
+      "expanded_url": "https://music.apple.com/jp/song/1706281727"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000036258",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-10-24T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000036258",
+      "expanded_url": "https://music.apple.com/jp/song/1727584358"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000037308",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-10-24T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000037308",
+      "expanded_url": "https://music.apple.com/jp/song/1224830976"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000039073",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-10-24T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000039073",
+      "expanded_url": "https://music.apple.com/jp/song/1006373314"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000040345",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-10-25T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000040345",
+      "expanded_url": "https://music.apple.com/jp/song/1006373314"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000041695",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-10-25T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000041695",
+      "expanded_url": "https://music.apple.com/jp/song/1414802980"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000042901",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-10-25T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000042901",
+      "expanded_url": "https://music.apple.com/jp/song/1761280095"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000044376",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-10-26T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000044376",
+      "expanded_url": "https://music.apple.com/jp/song/1863314376"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000045763",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-10-27T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000045763",
+      "expanded_url": "https://music.apple.com/jp/song/1579829841"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000047424",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-10-27T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000047424",
+      "expanded_url": "https://music.apple.com/jp/song/1515056536"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000048784",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-10-28T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000048784",
+      "expanded_url": "https://music.apple.com/jp/song/1728810663"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000050191",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-10-28T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000050191",
+      "expanded_url": "https://music.apple.com/jp/song/1891351496"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000051211",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-10-28T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000051211",
+      "expanded_url": "https://music.apple.com/jp/song/1771827599"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000052220",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-10-28T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000052220",
+      "expanded_url": "https://music.apple.com/jp/song/1544878880"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000053674",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-10-28T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000053674",
+      "expanded_url": "https://music.apple.com/jp/song/1529828787"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000054863",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-10-28T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000054863",
+      "expanded_url": "https://music.apple.com/jp/song/1413093257"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000056408",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-10-29T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000056408",
+      "expanded_url": "https://music.apple.com/jp/song/1752836263"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000057930",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-10-29T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000057930",
+      "expanded_url": "https://music.apple.com/jp/song/1529828787"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000059333",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-10-30T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000059333",
+      "expanded_url": "https://music.apple.com/jp/song/1073495288"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000061038",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-10-30T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000061038",
+      "expanded_url": "https://music.apple.com/jp/song/1887446555"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000062678",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-10-30T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000062678",
+      "expanded_url": "https://music.apple.com/jp/song/1774113852"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000064073",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-10-31T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000064073",
+      "expanded_url": "https://music.apple.com/jp/song/1604580818"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000065892",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-10-31T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000065892",
+      "expanded_url": "https://music.apple.com/jp/song/1458981361"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000067394",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-01T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000067394",
+      "expanded_url": "https://music.apple.com/jp/song/1540269729"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000068541",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-02T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000068541",
+      "expanded_url": "https://music.apple.com/jp/song/1608828015"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000070132",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-02T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000070132",
+      "expanded_url": "https://music.apple.com/jp/song/1468073031"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000071381",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-03T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000071381",
+      "expanded_url": "https://music.apple.com/jp/song/1706281727"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000072947",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-04T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000072947",
+      "expanded_url": "https://music.apple.com/jp/song/1526437442"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000074859",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-04T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000074859",
+      "expanded_url": "https://music.apple.com/jp/song/1551428896"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000076392",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-04T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000076392",
+      "expanded_url": "https://music.apple.com/jp/song/1221329195"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000077757",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-04T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000077757",
+      "expanded_url": "https://music.apple.com/jp/song/1621014865"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000079387",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-04T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000079387",
+      "expanded_url": "https://music.apple.com/jp/song/1812297818"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000080993",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-06T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000080993",
+      "expanded_url": "https://music.apple.com/jp/song/1560824766"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000082397",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-06T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000082397",
+      "expanded_url": "https://music.apple.com/jp/song/6817525557"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000083906",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-07T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000083906",
+      "expanded_url": "https://music.apple.com/jp/song/1403222836"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000085517",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-07T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000085517",
+      "expanded_url": "https://music.apple.com/jp/song/1515056952"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000086656",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-07T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000086656",
+      "expanded_url": "https://music.apple.com/jp/song/1525189821"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000088509",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-09T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000088509",
+      "expanded_url": "https://music.apple.com/jp/song/1468073031"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000089550",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-09T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000089550",
+      "expanded_url": "https://music.apple.com/jp/song/1813383026"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000091418",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-09T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000091418",
+      "expanded_url": "https://music.apple.com/jp/song/1761735912"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000093279",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-11T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000093279",
+      "expanded_url": "https://music.apple.com/jp/song/1515056536"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000094672",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-11T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000094672",
+      "expanded_url": "https://music.apple.com/jp/song/1706281727"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000096387",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-11T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000096387",
+      "expanded_url": "https://music.apple.com/jp/song/6791895283"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000098301",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-11-11T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000098301",
+      "expanded_url": "https://music.apple.com/jp/song/1516232513"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000099781",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-11T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000099781",
+      "expanded_url": "https://music.apple.com/jp/song/1445544120"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000101154",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-11T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000101154",
+      "expanded_url": "https://music.apple.com/jp/song/1533859688"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000102156",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-12T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000102156",
+      "expanded_url": "https://music.apple.com/jp/song/1872721059"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000103234",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-13T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000103234",
+      "expanded_url": "https://music.apple.com/jp/song/1461104015"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000104667",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-14T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000104667",
+      "expanded_url": "https://music.apple.com/jp/song/1661768998"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000106504",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-14T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000106504",
+      "expanded_url": "https://music.apple.com/jp/song/1594868124"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000108143",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-14T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000108143",
+      "expanded_url": "https://music.apple.com/jp/song/1560824766"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000110045",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-14T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000110045",
+      "expanded_url": "https://music.apple.com/jp/song/1812297818"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000111969",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-11-14T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000111969",
+      "expanded_url": "https://music.apple.com/jp/song/1414802980"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000113889",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-14T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000113889",
+      "expanded_url": "https://music.apple.com/jp/song/1224830976"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000115485",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-14T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000115485",
+      "expanded_url": "https://music.apple.com/jp/song/1877877556"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000117441",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-15T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000117441",
+      "expanded_url": "https://music.apple.com/jp/song/1880396350"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000118647",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-15T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000118647",
+      "expanded_url": "https://music.apple.com/jp/song/1654209754"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000120595",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-15T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000120595",
+      "expanded_url": "https://music.apple.com/jp/album/missing/1?i=2"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000121720",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-16T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000121720",
+      "expanded_url": "https://music.apple.com/jp/song/1863314376"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000123532",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-16T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000123532",
+      "expanded_url": "https://music.apple.com/jp/song/1492309638"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000125342",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-16T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000125342",
+      "expanded_url": "https://music.apple.com/jp/song/1525189821"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000126909",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000126909",
+      "expanded_url": "https://music.apple.com/jp/song/1728810663"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000128761",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000128761",
+      "expanded_url": "https://music.apple.com/jp/song/1706281727"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000130497",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000130497",
+      "expanded_url": "https://music.apple.com/jp/song/1863314376"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000131711",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000131711",
+      "expanded_url": "https://music.apple.com/jp/song/1771827599"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000133091",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000133091",
+      "expanded_url": "https://music.apple.com/jp/song/1540269729"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000134917",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000134917",
+      "expanded_url": "https://music.apple.com/jp/song/1576882002"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000136570",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000136570",
+      "expanded_url": "https://music.apple.com/jp/song/1403222836"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000137957",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-17T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000137957",
+      "expanded_url": "https://music.apple.com/jp/song/6791895283"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000139898",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-18T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000139898",
+      "expanded_url": "https://music.apple.com/jp/song/1485350149"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000141527",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-18T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000141527",
+      "expanded_url": "https://music.apple.com/jp/song/1437755794"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000142666",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-18T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000142666",
+      "expanded_url": "https://music.apple.com/jp/song/1491419387"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000143840",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-11-18T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000143840",
+      "expanded_url": "https://music.apple.com/jp/song/1828409251"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000145504",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-18T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000145504",
+      "expanded_url": "https://music.apple.com/jp/song/1437755794"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000146960",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000146960",
+      "expanded_url": "https://music.apple.com/jp/song/1597222596"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000148146",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000148146",
+      "expanded_url": "https://music.apple.com/jp/song/1472306586"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000149942",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000149942",
+      "expanded_url": "https://music.apple.com/jp/song/1760210320"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000151242",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000151242",
+      "expanded_url": "https://music.apple.com/jp/song/1793338783"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000152351",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000152351",
+      "expanded_url": "https://music.apple.com/jp/song/1540269729"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000154155",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-19T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000154155",
+      "expanded_url": "https://music.apple.com/jp/song/1727584358"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000155858",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000155858",
+      "expanded_url": "https://music.apple.com/jp/song/6819117932"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000156959",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000156959",
+      "expanded_url": "https://music.apple.com/jp/song/1476658043"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000158294",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000158294",
+      "expanded_url": "https://music.apple.com/jp/song/1760210320"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000159599",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000159599",
+      "expanded_url": "https://music.apple.com/jp/song/1823191833"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000161493",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000161493",
+      "expanded_url": "https://music.apple.com/jp/song/1773089494"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000162744",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000162744",
+      "expanded_url": "https://music.apple.com/jp/song/1437755794"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000164050",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000164050",
+      "expanded_url": "https://music.apple.com/jp/song/1812297818"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000165141",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-20T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000165141",
+      "expanded_url": "https://soundcloud.com/tidepool/sets/winter-compilation"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000166238",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-21T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000166238",
+      "expanded_url": "https://music.apple.com/jp/song/1515056536"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000167396",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-21T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000167396",
+      "expanded_url": "https://music.apple.com/jp/song/1465126178"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000169068",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-21T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000169068",
+      "expanded_url": "https://music.apple.com/jp/song/1456091172"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000170795",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-21T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000170795",
+      "expanded_url": "https://music.apple.com/jp/song/1491419387"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000172179",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-21T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000172179",
+      "expanded_url": "https://music.apple.com/jp/song/1551428896"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000173791",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000173791",
+      "expanded_url": "https://music.apple.com/jp/song/1887446555"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000175654",
+   "author_id": "1500000000000000003",
+   "created_at": "2026-11-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000175654",
+      "expanded_url": "https://music.apple.com/jp/song/1461104015"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000177143",
+   "author_id": "1500000000000000004",
+   "created_at": "2026-11-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000177143",
+      "expanded_url": "https://music.apple.com/jp/song/1773089494"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000178940",
+   "author_id": "1500000000000000005",
+   "created_at": "2026-11-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000178940",
+      "expanded_url": "https://music.apple.com/jp/song/1812297818"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000180088",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-11-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000180088",
+      "expanded_url": "https://music.apple.com/jp/song/1006373314"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000181142",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-11-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000181142",
+      "expanded_url": "https://music.apple.com/jp/song/1456091172"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000182201",
+   "author_id": "1500000000000000008",
+   "created_at": "2026-11-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000182201",
+      "expanded_url": "https://music.apple.com/jp/song/6817525557"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000183523",
+   "author_id": "1500000000000000009",
+   "created_at": "2026-11-22T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000183523",
+      "expanded_url": "https://music.apple.com/jp/song/1486281117"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000184566",
+   "author_id": "1500000000000000001",
+   "created_at": "2026-11-23T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000184566",
+      "expanded_url": "https://music.apple.com/jp/song/1887446555"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000186494",
+   "author_id": "1500000000000000002",
+   "created_at": "2026-11-23T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000186494",
+      "expanded_url": "https://music.apple.com/jp/song/1616125102"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000188400",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-11-23T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000188400",
+      "expanded_url": "https://music.apple.com/jp/song/1101053941"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000189604",
+   "author_id": "1500000000000000006",
+   "created_at": "2026-11-23T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000189604",
+      "expanded_url": "https://music.apple.com/jp/song/1456091172"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1863000000000190856",
+   "author_id": "1500000000000000007",
+   "created_at": "2026-11-23T06:08:33.314Z",
+   "entities": {
+    "urls": [
+     {
+      "url": "https://t.co/x1863000000000190856",
+      "expanded_url": "https://music.apple.com/jp/song/6791895283"
+     }
+    ]
+   }
+  }
+ ],
+ "includes": {
+  "users": [
+   {
+    "id": "1500000000000000001",
+    "username": "lighthouse_rec",
+    "name": "Lighthouse Records"
+   },
+   {
+    "id": "1500000000000000002",
+    "username": "tidepool_label",
+    "name": "Tidepool Label"
+   },
+   {
+    "id": "1500000000000000003",
+    "username": "nagi_writes",
+    "name": "凪"
+   },
+   {
+    "id": "1500000000000000004",
+    "username": "kamome_digs",
+    "name": "かもめディグ"
+   },
+   {
+    "id": "1500000000000000005",
+    "username": "midnight_crate",
+    "name": "Midnight Crate"
+   },
+   {
+    "id": "1500000000000000006",
+    "username": "bunkyo_tapes",
+    "name": "文京テープス"
+   },
+   {
+    "id": "1500000000000000007",
+    "username": "hoshino_listens",
+    "name": "星野"
+   },
+   {
+    "id": "1500000000000000008",
+    "username": "shibuya_hifi",
+    "name": "Shibuya Hi-Fi Store"
+   },
+   {
+    "id": "1500000000000000009",
+    "username": "underpass_fm",
+    "name": "Underpass FM"
+   },
+   {
+    "id": "1500000000000000010",
+    "username": "sora_no_oto",
+    "name": "空の音"
+   }
+  ]
+ },
+ "meta": {
+  "result_count": 129
+ }
+}

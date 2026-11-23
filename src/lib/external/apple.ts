@@ -38,6 +38,7 @@ type SongResource = {
     artistName: string;
     url: string;
     isrc?: string;
+    genreNames?: string[];
     durationInMillis?: number;
     artwork?: { url: string; width: number; height: number };
     previews?: { url: string }[];
@@ -53,6 +54,7 @@ export type AppleSong = {
   isrc: string | null;
   artworkUrl: string | null;
   url: string;
+  genres: string[];
 };
 
 function toSong(r: SongResource): AppleSong {
@@ -64,6 +66,7 @@ function toSong(r: SongResource): AppleSong {
     isrc: r.attributes.isrc ?? null,
     artworkUrl: r.attributes.artwork?.url.replace("{w}", "400").replace("{h}", "400") ?? null,
     url: r.attributes.url,
+    genres: r.attributes.genreNames ?? [],
   };
 }
 

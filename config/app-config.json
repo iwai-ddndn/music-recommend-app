@@ -18,15 +18,25 @@
     "maxPerArtist": 2,
     "serendipitySlots": 3,
     "excludeWindowDays": 30,
-    "completeThreshold": 0.8
+    "completeThreshold": 0.8,
+    "maxPerLeadCurator": 4,
+    "rerankKeepNext": 2
   },
   "collect": {
     "maxQueryLength": 512,
     "maxResultsPerPage": 100,
     "maxPagesPerGroup": 10,
     "costPerPostReadUsd": 0.005,
-    "targetDomains": ["music.apple.com", "soundcloud.com", "bandcamp.com"],
-    "shortenerDomains": ["on.soundcloud.com", "snd.sc", "t.co"]
+    "targetDomains": [
+      "music.apple.com",
+      "soundcloud.com",
+      "bandcamp.com"
+    ],
+    "shortenerDomains": [
+      "on.soundcloud.com",
+      "snd.sc",
+      "t.co"
+    ]
   },
   "popularity": {
     "refreshDays": 30
@@ -41,6 +51,48 @@
     "commentMaxLength": 280
   },
   "player": {
-    "servicePriority": ["apple", "soundcloud", "bandcamp"]
+    "servicePriority": [
+      "apple",
+      "soundcloud",
+      "bandcamp"
+    ]
+  },
+  "taste": {
+    "$comment": "コールドスタート対策。曲・目利き・ユーザーを同じシーンタグ空間に置き、上限つきの好み倍率を掛ける。",
+    "boostMax": 1.5,
+    "confidenceSignals": 5,
+    "softFollowMultiplier": 1.8,
+    "softFollowCount": 3,
+    "curatorMultiplierMin": 0.5,
+    "curatorMultiplierMax": 2.0,
+    "seedWeight": 1.0,
+    "anchorWeight": 0.7,
+    "seedFloor": 0.3,
+    "tagMin": -1,
+    "tagMax": 2,
+    "events": {
+      "save": {
+        "tag": 0.5,
+        "curator": 0.3
+      },
+      "complete": {
+        "tag": 0.3,
+        "curator": 0.2
+      },
+      "fastSkip": {
+        "tag": -0.3,
+        "curator": -0.2
+      },
+      "skip": {
+        "tag": -0.1,
+        "curator": 0
+      }
+    },
+    "fastSkipSec": 10,
+    "eventDecay": 0.97,
+    "halfLifeDays": 30,
+    "trackTagsMax": 8,
+    "profileShrinkMentions": 10,
+    "recentExcludeMax": 200
   }
 }

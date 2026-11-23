@@ -6,6 +6,7 @@ import * as apple from "../external/apple";
 import * as bandcamp from "../external/bandcamp";
 import { resolveRedirect } from "../external/http";
 import * as soundcloud from "../external/soundcloud";
+import { normalizeTags } from "../taste/vocabulary";
 import type { Service } from "../types";
 import { DEFAULT_APPLE_STOREFRONT, isShortenerUrl, isTargetDomain, parseMusicUrl } from "./parse";
 
@@ -15,6 +16,8 @@ export type ResolvedTrack = {
   appleArtistId: string | null;
   isrc: string | null;
   artworkUrl: string | null;
+  /** サービスが返すジャンル名（シーンタグの初期値に使う） */
+  genres: string[];
   source: {
     service: Service;
     external_id: string;
@@ -64,6 +67,7 @@ export async function resolveUrl(input: string, depth = 0): Promise<ResolveResul
             appleArtistId: song.appleArtistId,
             isrc: song.isrc,
             artworkUrl: song.artworkUrl,
+            genres: song.genres,
             source: {
               service: "apple",
               external_id: song.id,
@@ -96,6 +100,7 @@ export async function resolveUrl(input: string, depth = 0): Promise<ResolveResul
             appleArtistId: null,
             isrc: detail?.publisher_metadata?.isrc || detail?.isrc || null,
             artworkUrl: detail?.artwork_url ?? oe.thumbnail_url ?? null,
+            genres: detail?.genre ? [detail.genre] : [],
             source: {
               service: "soundcloud",
               external_id: trackId ?? `${parsed.user}/${parsed.slug}`,
@@ -120,6 +125,7 @@ export async function resolveUrl(input: string, depth = 0): Promise<ResolveResul
             appleArtistId: null,
             isrc: null,
             artworkUrl: page.artworkUrl,
+            genres: [],
             source: {
               service: "bandcamp",
               external_id: `${page.itemType}:${page.itemId}`,
@@ -179,6 +185,8 @@ export async function upsertResolved(db: Db, r: ResolvedTrack): Promise<string> 
           mbid: null,
           lastfm_listeners: null,
           listeners_updated_at: null,
+          tags: normalizeTags(r.genres.map((name) => ({ name, weight: 1 }))),
+          tags_updated_at: null,
         },
       ]);
     }

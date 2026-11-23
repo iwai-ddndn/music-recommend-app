@@ -1,0 +1,1707 @@
+{
+ "fetchedAt": "2026-11-23T06:08:33.314Z",
+ "tracks": [
+  {
+   "trackId": "1486281117",
+   "artistId": "121939461",
+   "collectionId": "1486281113",
+   "title": "最終列車は25時",
+   "artist": "Lamp",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/96/34/bd/9634bd06-4484-3792-ce1b-a64a96710d22/4521640105079_cover.jpg/100x100bb.jpg",
+   "durationMs": 263840,
+   "releaseDate": "2004-02-11T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1320713878",
+   "artistId": "770509925",
+   "collectionId": "1320713868",
+   "title": "エスパー",
+   "artist": "ミツメ",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/77/39/9c/77399c9a-ef55-de57-eada-58a007bb8055/4538182731598_cov.jpg/100x100bb.jpg",
+   "durationMs": 258245,
+   "releaseDate": "2017-12-20T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1101053941",
+   "artistId": "770509925",
+   "collectionId": "1101053878",
+   "title": "あこがれ",
+   "artist": "ミツメ",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/60/8c/5f/608c5fe4-443f-7205-379d-d4a017416282/4538182624258_cov.jpg/100x100bb.jpg",
+   "durationMs": 219987,
+   "releaseDate": "2016-06-08T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1099672413",
+   "artistId": "770509925",
+   "collectionId": "1099672403",
+   "title": "Disco",
+   "artist": "ミツメ",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b9/5c/8a/b95c8ae3-59ff-066b-c377-25b303a0396b/4538182623107_cov.jpg/100x100bb.jpg",
+   "durationMs": 181027,
+   "releaseDate": "2014-02-05T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "6795828834",
+   "artistId": "1303389435",
+   "collectionId": "6795828829",
+   "title": "素敵すぎる",
+   "artist": "Laura day romance",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/fc/71/61fc71a1-3f48-d8b1-35a3-3c14da3b329b/28304.jpg/100x100bb.jpg",
+   "durationMs": 208107,
+   "releaseDate": "2026-08-19T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1467156710",
+   "artistId": "1303389435",
+   "collectionId": "1467156709",
+   "title": "Sad number",
+   "artist": "Laura day romance",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/38/7a/3b/387a3bcb-255e-16fc-1c24-4fd1c555c9e8/Ldr_jkt.jpg/100x100bb.jpg",
+   "durationMs": 191626,
+   "releaseDate": "2019-06-15T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1661768998",
+   "artistId": "1303389435",
+   "collectionId": "1661768680",
+   "title": "sweet vertigo",
+   "artist": "Laura day romance",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/50/04/5b/50045b02-1a14-e142-5752-a6e9afca8e3b/4580529534607.jpg/100x100bb.jpg",
+   "durationMs": 271756,
+   "releaseDate": "2023-01-25T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1880396350",
+   "artistId": "1486719874",
+   "collectionId": "1880396344",
+   "title": "家主のテーマ",
+   "artist": "家主",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1d/86/a5/1d86a5d3-d6df-82f5-a52c-c035d0dec937/4550753876354_cover.png/100x100bb.jpg",
+   "durationMs": 180413,
+   "releaseDate": "2019-12-18T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1594868124",
+   "artistId": "1486719874",
+   "collectionId": "1594868112",
+   "title": "NFP",
+   "artist": "家主",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/50/22/5b/50225b75-dbd2-73a8-e7ac-ba31f1573599/196292893281.jpg/100x100bb.jpg",
+   "durationMs": 254680,
+   "releaseDate": "2021-12-08T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "6773197395",
+   "artistId": "1486719874",
+   "collectionId": "6773197392",
+   "title": "らせんだよ、人生は",
+   "artist": "家主",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/55/39/e4553997-02f2-b5b3-01ab-4b5a66b89a4e/820233428460.jpg/100x100bb.jpg",
+   "durationMs": 224824,
+   "releaseDate": "2026-06-10T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1133065657",
+   "artistId": "1133065649",
+   "collectionId": "1133065639",
+   "title": "ame",
+   "artist": "South Penguin",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music18/v4/37/72/c3/3772c329-0895-a2d8-3fa2-114c1e269c84/RYECD246_SOUTH_PENGUIN.jpg/100x100bb.jpg",
+   "durationMs": 285973,
+   "releaseDate": "2016-07-20T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1515056536",
+   "artistId": "1133065649",
+   "collectionId": "1515056535",
+   "title": "bubbles feat.NTsKi",
+   "artist": "South Penguin",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/61/9a/c2/619ac21b-30ca-a06b-53d8-4826fc3d25e5/4538182890011_cov.jpg/100x100bb.jpg",
+   "durationMs": 231020,
+   "releaseDate": "2020-06-17T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1472306586",
+   "artistId": "1133065649",
+   "collectionId": "1472306488",
+   "title": "idol",
+   "artist": "South Penguin",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/18/57/43/18574306-f371-fff7-d1a1-35e119129b3a/4538182831175_cov.jpg/100x100bb.jpg",
+   "durationMs": 228373,
+   "releaseDate": "2019-08-02T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "6819117932",
+   "artistId": "1280766718",
+   "collectionId": "6819117931",
+   "title": "Beneath the skin",
+   "artist": "Luby Sparks",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3b/f9/8d/3bf98d1e-febe-85a8-8bb2-e43543301c6c/4580789791284.png/100x100bb.jpg",
+   "durationMs": 253103,
+   "releaseDate": "2026-10-16T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1329831671",
+   "artistId": "1280766718",
+   "collectionId": "1329831656",
+   "title": "Thursday",
+   "artist": "Luby Sparks",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/b3/a7/dcb3a703-6fe2-3e74-6f67-8d3ca52810e6/4538182713884.png/100x100bb.jpg",
+   "durationMs": 236542,
+   "releaseDate": "2018-01-24T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1479417447",
+   "artistId": "1280766718",
+   "collectionId": "1479417323",
+   "title": "Somewhere",
+   "artist": "Luby Sparks",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/77/89/c9/7789c93f-f438-d8d0-0dca-d51cd24d9efb/4538182841129.png/100x100bb.jpg",
+   "durationMs": 275917,
+   "releaseDate": "2019-09-25T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1456091172",
+   "artistId": "1456091166",
+   "collectionId": "1456091165",
+   "title": "サブマリン",
+   "artist": "ゆうらん船",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/c2/18/c6c21898-9aef-3901-233f-4cecf3d19942/4525853103891.jpg/100x100bb.jpg",
+   "durationMs": 275240,
+   "releaseDate": "2017-04-29T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1812616683",
+   "artistId": "1456091166",
+   "collectionId": "1812616678",
+   "title": "Departure",
+   "artist": "ゆうらん船",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a1/55/03/a1550327-3ef7-2a51-bc30-647b9e5a0a22/4525853685298.jpg/100x100bb.jpg",
+   "durationMs": 242062,
+   "releaseDate": "2025-05-21T07:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1480020909",
+   "artistId": "1456091166",
+   "collectionId": "1480020763",
+   "title": "青い鳥",
+   "artist": "ゆうらん船",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b6/e5/6b/b6e56bc8-28c5-edb5-fc0d-3ba8f90bce71/4538182842294_cov.jpg/100x100bb.jpg",
+   "durationMs": 212440,
+   "releaseDate": "2019-10-02T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1303383299",
+   "artistId": "1303382718",
+   "collectionId": "1303382586",
+   "title": "毎朝",
+   "artist": "mei ehara",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/c9/60/c8c960fc-7d9b-93e5-f079-f5142ef466e4/4538182716656.png/100x100bb.jpg",
+   "durationMs": 318053,
+   "releaseDate": "2017-11-08T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1509186273",
+   "artistId": "1303382718",
+   "collectionId": "1509186266",
+   "title": "昼間から夜",
+   "artist": "mei ehara",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/e6/c5/03e6c51e-e846-4f16-9eb3-22809361448c/4538182881248.png/100x100bb.jpg",
+   "durationMs": 247774,
+   "releaseDate": "2020-04-10T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1823191833",
+   "artistId": "1303382718",
+   "collectionId": "1823191831",
+   "title": "悲しい運転手",
+   "artist": "mei ehara",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d8/3f/b7/d83fb7db-cf27-cde4-53b7-09bcdd36ad99/4580789720932.png/100x100bb.jpg",
+   "durationMs": 281711,
+   "releaseDate": "2025-07-09T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1719975688",
+   "artistId": "886240553",
+   "collectionId": "1719975687",
+   "title": "Show Me How",
+   "artist": "Men I Trust",
+   "genre": "ポップ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/57/39/cf5739e6-332a-e64c-bed0-b763893c0517/artwork.jpg/100x100bb.jpg",
+   "durationMs": 215111,
+   "releaseDate": "2018-02-28T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1458981361",
+   "artistId": "886240553",
+   "collectionId": "1458981357",
+   "title": "Numb",
+   "artist": "Men I Trust",
+   "genre": "ポップ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5d/78/90/5d78904a-661a-8896-975c-33b506b5b4ca/artwork.jpg/100x100bb.jpg",
+   "durationMs": 219340,
+   "releaseDate": "2019-04-12T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1810920291",
+   "artistId": "886240553",
+   "collectionId": "1810920290",
+   "title": "To Ease You",
+   "artist": "Men I Trust",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/2d/f5/662df515-7dff-1012-ccf4-08822f6ac11b/artwork.jpg/100x100bb.jpg",
+   "durationMs": 192798,
+   "releaseDate": "2025-05-06T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1465126178",
+   "artistId": "1155296326",
+   "collectionId": "1465125802",
+   "title": "Locket",
+   "artist": "Crumb",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a0/b1/28/a0b128b5-4340-4f10-da1a-4d32f434557e/cover.jpg/100x100bb.jpg",
+   "durationMs": 318379,
+   "releaseDate": "2017-06-23T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1456789839",
+   "artistId": "1155296326",
+   "collectionId": "1456789832",
+   "title": "Ghostride",
+   "artist": "Crumb",
+   "genre": "インディー・ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/83/13/f1/8313f143-ba0e-ee4c-eb85-5c259b1ec5e3/656605343648.jpg/100x100bb.jpg",
+   "durationMs": 126120,
+   "releaseDate": "2019-05-08T07:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1463575000",
+   "artistId": "1155296326",
+   "collectionId": "1463574997",
+   "title": "Bones",
+   "artist": "Crumb",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/e4/86/14/e486140a-55b0-b1e9-d0b4-34b9d0f164f0/cover.jpg/100x100bb.jpg",
+   "durationMs": 193981,
+   "releaseDate": "2016-09-06T12:00:00Z",
+   "cluster": "indie-pop"
+  },
+  {
+   "trackId": "1621014865",
+   "artistId": "716504515",
+   "collectionId": "1621014863",
+   "title": "雑感",
+   "artist": "柴田聡子",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/a9/62/16/a96216f6-0c8d-5a63-31d3-6b0104d5f537/4580789469145.png/100x100bb.jpg",
+   "durationMs": 287566,
+   "releaseDate": "2022-05-25T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1224830976",
+   "artistId": "716504515",
+   "collectionId": "1224830955",
+   "title": "後悔",
+   "artist": "柴田聡子",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8c/18/ac/8c18acce-8586-a16a-01c2-938621a8a8ea/4538182690253_cov.jpg/100x100bb.jpg",
+   "durationMs": 161954,
+   "releaseDate": "2017-05-17T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1728810663",
+   "artistId": "716504515",
+   "collectionId": "1728810659",
+   "title": "Synergy",
+   "artist": "柴田聡子",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/12/3c/a5/123ca53d-58ce-2246-c97e-c5e0d9b17141/4580789617744.png/100x100bb.jpg",
+   "durationMs": 197947,
+   "releaseDate": "2023-09-27T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1604580818",
+   "artistId": "1235058654",
+   "collectionId": "1604580545",
+   "title": "灯火",
+   "artist": "優河",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5e/08/34/5e083434-e7d6-54e8-1bba-d9d857b28e7c/4525853303499.jpg/100x100bb.jpg",
+   "durationMs": 219861,
+   "releaseDate": "2022-01-26T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1461104015",
+   "artistId": "1235058654",
+   "collectionId": "1461103884",
+   "title": "めぐる",
+   "artist": "優河",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cd/57/9c/cd579c2a-023b-b938-afa1-37b0d516e67d/4538182820711_cov.jpg/100x100bb.jpg",
+   "durationMs": 265027,
+   "releaseDate": "2019-05-22T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1610337474",
+   "artistId": "1235058654",
+   "collectionId": "1610337471",
+   "title": "fifteen",
+   "artist": "優河",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a7/89/4e/a7894e67-9b01-19ce-05bd-255bcb34fedf/4525853311395.jpg/100x100bb.jpg",
+   "durationMs": 192552,
+   "releaseDate": "2022-03-23T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1489681429",
+   "artistId": "1312743717",
+   "collectionId": "1489680960",
+   "title": "寄り道",
+   "artist": "角銅真実",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f6/be/1e/f6be1e0d-647f-9262-2451-ee74c7e8e7c7/19UM1IM04101.rgb.jpg/100x100bb.jpg",
+   "durationMs": 313780,
+   "releaseDate": "2020-01-22T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1887446555",
+   "artistId": "1312743717",
+   "collectionId": "1887446554",
+   "title": "ほろろ逍遥",
+   "artist": "角銅真実",
+   "genre": "アニメ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/86/b0/1b/86b01bf1-793e-70ae-edb6-fe1ab480ee84/VEATP-45427.jpg/100x100bb.jpg",
+   "durationMs": 160997,
+   "releaseDate": "2026-04-10T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1413093257",
+   "artistId": "1312743717",
+   "collectionId": "1413093092",
+   "title": "Dance",
+   "artist": "角銅真実",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/17/2e/4a/172e4ae1-0d4c-806e-379f-9b7f12588d10/APLS1809_jkt.jpg/100x100bb.jpg",
+   "durationMs": 300907,
+   "releaseDate": "2018-08-08T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1505141496",
+   "artistId": "1441270420",
+   "collectionId": "1505141332",
+   "title": "風は流れて",
+   "artist": "浮",
+   "genre": "トラディショナル・フォーク",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/fd/1f/f6/fd1ff645-82e8-8137-aee6-1bdd65b415c2/4582538250073_cover.jpg/100x100bb.jpg",
+   "durationMs": 188080,
+   "releaseDate": "2019-12-12T08:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1535565017",
+   "artistId": "1441270420",
+   "collectionId": "1535564645",
+   "title": "つきひ",
+   "artist": "浮",
+   "genre": "フォーク",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5f/fb/06/5ffb06d9-11a8-6c20-1d40-07354f9adf4f/859756237358_cover.jpg/100x100bb.jpg",
+   "durationMs": 276823,
+   "releaseDate": "2020-11-03T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1891351496",
+   "artistId": "1441270420",
+   "collectionId": "1891351303",
+   "title": "あかるいくらい",
+   "artist": "浮",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/8f/e2/ee8fe255-7e85-8ace-d924-c167d463c63f/4582561398414_cover.png/100x100bb.jpg",
+   "durationMs": 207027,
+   "releaseDate": "2022-11-01T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1870165180",
+   "artistId": "1003162521",
+   "collectionId": "1870165176",
+   "title": "怪獣",
+   "artist": "butaji",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a7/70/7f/a7707fbe-014f-e229-076e-b102d9acf119/4580789751714.png/100x100bb.jpg",
+   "durationMs": 205877,
+   "releaseDate": "2026-03-04T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1403222836",
+   "artistId": "1003162521",
+   "collectionId": "1403222109",
+   "title": "抱きしめて",
+   "artist": "butaji",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/9e/53/79/9e53798c-258b-fe6d-4620-8be6ac4d744e/4538182767542_cov.jpg/100x100bb.jpg",
+   "durationMs": 244240,
+   "releaseDate": "2018-07-18T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1583710357",
+   "artistId": "1003162521",
+   "collectionId": "1583710145",
+   "title": "free me",
+   "artist": "butaji",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/6d/0d/c9/6d0dc978-d8f1-494a-814d-3e85020b803d/4571597250070.png/100x100bb.jpg",
+   "durationMs": 241070,
+   "releaseDate": "2021-09-15T07:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1608828015",
+   "artistId": "179599679",
+   "collectionId": "1608828012",
+   "title": "魔法みたいに",
+   "artist": "寺尾紗穂",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/eb/c0/e6/ebc0e6c1-f1f5-1731-42a4-797f3d88acc9/12959400.jpg/100x100bb.jpg",
+   "durationMs": 220160,
+   "releaseDate": "2007-06-20T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "969892032",
+   "artistId": "179599679",
+   "collectionId": "969891748",
+   "title": "リアルラブにはまだ",
+   "artist": "寺尾紗穂",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/f1/89/66/f18966fb-ed6e-7e1b-bb2d-967582929e84/4538182522431_cov.jpg/100x100bb.jpg",
+   "durationMs": 164560,
+   "releaseDate": "2015-03-18T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1497671126",
+   "artistId": "179599679",
+   "collectionId": "1497671110",
+   "title": "北へ向かう",
+   "artist": "寺尾紗穂",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/4e/5b/a5/4e5ba52b-95cf-4896-f2fd-28d9705d7187/4538182867914_cov.jpg/100x100bb.jpg",
+   "durationMs": 279143,
+   "releaseDate": "2020-03-04T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1526437442",
+   "artistId": "134748154",
+   "collectionId": "1526437437",
+   "title": "anything",
+   "artist": "Adrianne Lenker",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/70/f0/a6/70f0a6a5-cd71-9da2-174b-41927d331cdd/cover.jpg/100x100bb.jpg",
+   "durationMs": 202047,
+   "releaseDate": "2020-10-23T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1721534631",
+   "artistId": "134748154",
+   "collectionId": "1721534468",
+   "title": "Sadness As a Gift",
+   "artist": "Adrianne Lenker",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/db/d5/b5/dbd5b594-1e28-23e0-c4b2-26ddbe473dfb/191400064973.png/100x100bb.jpg",
+   "durationMs": 259016,
+   "releaseDate": "2024-01-17T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1840956807",
+   "artistId": "134748154",
+   "collectionId": "1840956605",
+   "title": "symbol",
+   "artist": "Adrianne Lenker",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/4c/86/604c86aa-8bc3-7dac-d4a1-5030203fb956/191400085558.png/100x100bb.jpg",
+   "durationMs": 229133,
+   "releaseDate": "2018-08-20T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1507013987",
+   "artistId": "1515772298",
+   "collectionId": "1507013986",
+   "title": "Places/Plans",
+   "artist": "Skullcrusher",
+   "genre": "シンガーソングライター",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3a/09/cd/3a09cddf-213c-f0cc-188b-6967679a4075/dj.imkfxaen.jpg/100x100bb.jpg",
+   "durationMs": 183116,
+   "releaseDate": "2020-01-07T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1631419818",
+   "artistId": "1515772298",
+   "collectionId": "1631419808",
+   "title": "Whatever Fits Together",
+   "artist": "Skullcrusher",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/67/d1/26/67d12652-8ede-bf80-40b2-343e2a3da4df/34537.jpg/100x100bb.jpg",
+   "durationMs": 225155,
+   "releaseDate": "2022-10-14T12:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1800019985",
+   "artistId": "1515772298",
+   "collectionId": "1800019489",
+   "title": "Exhale",
+   "artist": "Skullcrusher",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/0b/24/e50b244f-a48b-b751-4fa5-fdfea8711986/198704393426_Cover.jpg/100x100bb.jpg",
+   "durationMs": 196747,
+   "releaseDate": "2025-07-16T07:00:00Z",
+   "cluster": "folk"
+  },
+  {
+   "trackId": "1414802980",
+   "artistId": "785170916",
+   "collectionId": "1414802964",
+   "title": "Path of the Moonlit Night",
+   "artist": "揺らぎ",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5c/45/e2/5c45e2bc-a832-be3b-e98b-1af50acf420e/4571207711939.jpg/100x100bb.jpg",
+   "durationMs": 653613,
+   "releaseDate": "2018-08-08T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1221329195",
+   "artistId": "785170916",
+   "collectionId": "1221328951",
+   "title": "night is young",
+   "artist": "揺らぎ",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/89/35/68/8935684e-19bb-1b4e-04a2-149dd32ad546/859753455885_cover.jpg/100x100bb.jpg",
+   "durationMs": 344000,
+   "releaseDate": "2016-12-27T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1477054322",
+   "artistId": "908604180",
+   "collectionId": "1477054318",
+   "title": "繋ぐ日の青",
+   "artist": "For Tracy Hyde",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/19/76/d1/1976d17a-d900-5969-d37f-612127b0e302/4538182836460_cov.jpg/100x100bb.jpg",
+   "durationMs": 213587,
+   "releaseDate": "2019-09-04T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1296238705",
+   "artistId": "908604180",
+   "collectionId": "1296238360",
+   "title": "Underwater Girl",
+   "artist": "For Tracy Hyde",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b9/c4/a6/b9c4a69d-a8f4-019f-d4a5-05b2bbc30e94/4538182723500_cov.jpg/100x100bb.jpg",
+   "durationMs": 208160,
+   "releaseDate": "2017-11-02T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1551428896",
+   "artistId": "908604180",
+   "collectionId": "1551428890",
+   "title": "Just Like Fireflies",
+   "artist": "For Tracy Hyde",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/03/d4/ff/03d4ff04-d7b5-5845-86b2-9cd0d3bb8e58/4538182939918_cov.jpg/100x100bb.jpg",
+   "durationMs": 160262,
+   "releaseDate": "2021-02-10T08:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1222811812",
+   "artistId": "1006373304",
+   "collectionId": "1222811808",
+   "title": "プリズム",
+   "artist": "17歳とベルリンの壁",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f7/93/65/f793655a-c46e-ec2b-e285-f0fee95e84b5/859753542448_cover.jpg/100x100bb.jpg",
+   "durationMs": 263500,
+   "releaseDate": "2017-04-05T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1006373314",
+   "artistId": "1006373304",
+   "collectionId": "1006373303",
+   "title": "27時",
+   "artist": "17歳とベルリンの壁",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/02/43/c5/0243c584-0aa2-40c6-72c7-6b6f2b716fc1/859751982260_cover.png/100x100bb.jpg",
+   "durationMs": 251000,
+   "releaseDate": "2015-07-18T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1516232513",
+   "artistId": "1006373304",
+   "collectionId": "1516232247",
+   "title": "誰かがいた海",
+   "artist": "17歳とベルリンの壁",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/1d/fc/fc/1dfcfc4a-8a05-b903-275c-968a2c0cfb57/859755868195_cover.png/100x100bb.jpg",
+   "durationMs": 240867,
+   "releaseDate": "2020-08-05T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "6817525557",
+   "artistId": "1654507783",
+   "collectionId": "6817525555",
+   "title": "Find and Seek",
+   "artist": "Whitney's Playland",
+   "genre": "インディー・ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/be/27/c6be2701-c559-2b04-746a-760785a26303/769152441603.jpg/100x100bb.jpg",
+   "durationMs": 126880,
+   "releaseDate": "2026-11-20T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1741256247",
+   "artistId": "1654507783",
+   "collectionId": "1741256246",
+   "title": "Sunset Sea Breeze",
+   "artist": "Whitney's Playland",
+   "genre": "インディー・ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/54/33/b3543367-23de-fd0a-58b6-f7e0710f9a62/0563fc49-3265-4340-834f-21ffd448ee52.jpg/100x100bb.jpg",
+   "durationMs": 193400,
+   "releaseDate": "2023-01-26T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1813383026",
+   "artistId": "1654507783",
+   "collectionId": "1813383023",
+   "title": "Long Rehearsal",
+   "artist": "Whitney's Playland",
+   "genre": "インディー・ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/04/a2/98/04a29825-12e9-3c35-a1ca-19a3475b53fc/7316480567678.jpg/100x100bb.jpg",
+   "durationMs": 104373,
+   "releaseDate": "2025-05-23T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1829601261",
+   "artistId": "1390208987",
+   "collectionId": "1829601259",
+   "title": "キメラ",
+   "artist": "明日の叙景",
+   "genre": "メタル",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/65/c3/e8/65c3e8a2-8e92-64e1-4a90-b36ed183909f/4526180703136.jpg/100x100bb.jpg",
+   "durationMs": 343827,
+   "releaseDate": "2022-07-27T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1761735912",
+   "artistId": "1390208987",
+   "collectionId": "1761735911",
+   "title": "コバルトの降る街で",
+   "artist": "明日の叙景",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/ee/7c/47ee7ce2-75c8-7a88-e212-de381be83118/4500000029071.jpg/100x100bb.jpg",
+   "durationMs": 244508,
+   "releaseDate": "2024-08-21T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1828409251",
+   "artistId": "1390208987",
+   "collectionId": "1828409248",
+   "title": "マジックアワー",
+   "artist": "明日の叙景",
+   "genre": "ロック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/43/e1/5a43e193-b0d9-d069-d2a4-7528484d5165/4526180732679.jpg/100x100bb.jpg",
+   "durationMs": 219856,
+   "releaseDate": "2025-08-06T12:00:00Z",
+   "cluster": "shoegaze"
+  },
+  {
+   "trackId": "1863314376",
+   "artistId": "1217718693",
+   "collectionId": "1863314375",
+   "title": "tenk(e)i [feat. 長谷川白紙]",
+   "artist": "パソコン音楽クラブ",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/44/2a/ce/442ace89-89d8-6490-0605-53127fb4206f/4580789748431.png/100x100bb.jpg",
+   "durationMs": 296403,
+   "releaseDate": "2026-01-14T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1758007091",
+   "artistId": "1217718693",
+   "collectionId": "1758007087",
+   "title": "Child Replay (feat. 柴田聡子)",
+   "artist": "パソコン音楽クラブ",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/61/b6/2e/61b62e52-f140-8832-d147-4c1be153bae0/4580789654114.png/100x100bb.jpg",
+   "durationMs": 266808,
+   "releaseDate": "2024-08-07T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1476658043",
+   "artistId": "1217718693",
+   "collectionId": "1476658039",
+   "title": "reiji no machi (feat. イノウエワラビ)",
+   "artist": "パソコン音楽クラブ",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/44/3e/75/443e757f-96df-01b4-83bc-1b09a20a24ea/PSCM002_new.jpg/100x100bb.jpg",
+   "durationMs": 249940,
+   "releaseDate": "2019-09-04T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1560824766",
+   "artistId": "601087648",
+   "collectionId": "1560824692",
+   "title": "Sanbashi (feat. Cotto Center)",
+   "artist": "食品まつり a.k.a foodman",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/a0/e8/1ba0e8f0-6444-274a-283b-c44355c9d9ba/5056321637529IT.jpg/100x100bb.jpg",
+   "durationMs": 135573,
+   "releaseDate": "2021-07-09T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1428408525",
+   "artistId": "601087648",
+   "collectionId": "1428407420",
+   "title": "Kakon",
+   "artist": "食品まつり a.k.a foodman",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/65/a0/94/65a094d9-80e1-0e89-5aa0-2b3486fddcd5/781484505525.png/100x100bb.jpg",
+   "durationMs": 218000,
+   "releaseDate": "2018-09-21T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1708349995",
+   "artistId": "601087648",
+   "collectionId": "1708349993",
+   "title": "Pichi Pichi",
+   "artist": "食品まつり a.k.a foodman",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2c/4c/31/2c4c3118-6b5a-0f57-6273-de63db45d34f/5056321681669.jpg/100x100bb.jpg",
+   "durationMs": 128000,
+   "releaseDate": "2023-10-03T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1544878880",
+   "artistId": "1525184750",
+   "collectionId": "1544878877",
+   "title": "Twwen",
+   "artist": "Cwondo",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e9/9e/a6/e99ea6a7-e0e8-ceda-1d75-ea646ad997f5/4538182932025_cov.jpg/100x100bb.jpg",
+   "durationMs": 197482,
+   "releaseDate": "2021-02-05T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1533859688",
+   "artistId": "1525184750",
+   "collectionId": "1533859532",
+   "title": "Visiting Grandma",
+   "artist": "Cwondo",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e1/ae/00/e1ae001d-0245-988c-13b3-6d6e48bc26b3/859756200611_cover.jpg/100x100bb.jpg",
+   "durationMs": 211141,
+   "releaseDate": "2020-10-16T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1525189821",
+   "artistId": "1525184750",
+   "collectionId": "1525189819",
+   "title": "Neighborhood",
+   "artist": "Cwondo",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a7/b3/8a/a7b38ad0-317d-2f5f-7aee-4588c4c5e1ac/859756018766_cover.jpg/100x100bb.jpg",
+   "durationMs": 124235,
+   "releaseDate": "2020-08-14T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1445544120",
+   "artistId": "1363079915",
+   "collectionId": "1445544119",
+   "title": "草木",
+   "artist": "長谷川白紙",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e1/56/65/e1566581-2611-49b8-3c63-eac89f265648/dj.mbygbxbj.jpg/100x100bb.jpg",
+   "durationMs": 266880,
+   "releaseDate": "2018-12-18T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1485350149",
+   "artistId": "1363079915",
+   "collectionId": "1485350147",
+   "title": "あなただけ",
+   "artist": "長谷川白紙",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c2/9c/96/c29c968a-e6de-7318-8c62-e11eb9a3f2f3/JKT.jpg/100x100bb.jpg",
+   "durationMs": 250177,
+   "releaseDate": "2019-11-01T07:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1515056952",
+   "artistId": "1363079915",
+   "collectionId": "1515056947",
+   "title": "LOVEずっきゅん",
+   "artist": "長谷川白紙",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/a0/ef/75/a0ef75e6-f94f-96c2-f7eb-ff48c8652d25/dj.bdqwnyqn.jpg/100x100bb.jpg",
+   "durationMs": 123867,
+   "releaseDate": "2020-05-29T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1688991977",
+   "artistId": "1368596163",
+   "collectionId": "1688991704",
+   "title": "Let U Go (feat. keiyaA)",
+   "artist": "LORAINE JAMES",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/55/f5/be/55f5be1f-b2e8-a1e6-9b19-ecabed08e233/5056321681447.jpg/100x100bb.jpg",
+   "durationMs": 263075,
+   "releaseDate": "2023-09-22T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1877877556",
+   "artistId": "1368596163",
+   "collectionId": "1877877555",
+   "title": "A Long Distance Call",
+   "artist": "LORAINE JAMES",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a7/0a/c5/a70ac5fa-4078-93ec-75a7-eca6111f4c31/5056688854942.jpg/100x100bb.jpg",
+   "durationMs": 211200,
+   "releaseDate": "2026-05-08T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1555222212",
+   "artistId": "1368596163",
+   "collectionId": "1555222209",
+   "title": "Simple Stuff",
+   "artist": "LORAINE JAMES",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/db/46/e7/db46e752-be1e-e04d-24ff-71d53eac5d44/5056321637383.jpg/100x100bb.jpg",
+   "durationMs": 206987,
+   "releaseDate": "2021-03-10T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1760210320",
+   "artistId": "1087249836",
+   "collectionId": "1760210315",
+   "title": "booboo",
+   "artist": "Yaeji",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/85/c1/b0/85c1b0cb-4f79-dc3b-b2c0-5a186944a8e2/191404149270.png/100x100bb.jpg",
+   "durationMs": 212267,
+   "releaseDate": "2024-08-20T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1510806538",
+   "artistId": "1087249836",
+   "collectionId": "1510806523",
+   "title": "Passionfruit",
+   "artist": "Yaeji",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7a/37/6f/7a376fd3-eb46-c181-47ca-e168ee390e4c/cover.jpg/100x100bb.jpg",
+   "durationMs": 274729,
+   "releaseDate": "2017-05-22T07:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1434108701",
+   "artistId": "1087249836",
+   "collectionId": "1434108140",
+   "title": "One More",
+   "artist": "Yaeji",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/71/0f/24/710f241a-0464-a902-ba9f-996a235991a0/656605383866.png/100x100bb.jpg",
+   "durationMs": 202537,
+   "releaseDate": "2018-09-25T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1706281727",
+   "artistId": "1483149809",
+   "collectionId": "1706281663",
+   "title": "Sun Tickles",
+   "artist": "Salamanda",
+   "genre": "アンビエント",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/63/b1/28/63b128da-72df-2532-af38-267cfd67aa47/5056688810412.png/100x100bb.jpg",
+   "durationMs": 271807,
+   "releaseDate": "2023-10-13T07:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1616125102",
+   "artistId": "1483149809",
+   "collectionId": "1616125088",
+   "title": "Rumble Bumble",
+   "artist": "Salamanda",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/27/df/b827df86-3898-84e5-ba35-cda0bec01839/196626701862.jpg/100x100bb.jpg",
+   "durationMs": 180064,
+   "releaseDate": "2022-06-10T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1585037323",
+   "artistId": "1483149809",
+   "collectionId": "1585036946",
+   "title": "Puddle Underwater",
+   "artist": "Salamanda",
+   "genre": "アンビエント",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b7/18/d4/b718d44a-585d-6e2b-44aa-569de39280f1/cover.jpg/100x100bb.jpg",
+   "durationMs": 247394,
+   "releaseDate": "2021-09-29T12:00:00Z",
+   "cluster": "electronic"
+  },
+  {
+   "trackId": "1555052673",
+   "artistId": "1529067503",
+   "collectionId": "1555052652",
+   "title": "Nami",
+   "artist": "冥丁",
+   "genre": "アンビエント",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/dc/50/31/dc50312c-bdac-5008-9f1a-d9c933a610bf/cover.jpg/100x100bb.jpg",
+   "durationMs": 236041,
+   "releaseDate": "2018-03-02T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1530925065",
+   "artistId": "1529067503",
+   "collectionId": "1530925057",
+   "title": "花魁 II",
+   "artist": "冥丁",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/2e/1c/3b2e1c3b-9e89-7662-e5c9-e8f0b9c5762b/AMIP-0221_KOFU_MEITEI_COVER_V2.jpg/100x100bb.jpg",
+   "durationMs": 247478,
+   "releaseDate": "2020-09-04T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1597222596",
+   "artistId": "1529067503",
+   "collectionId": "1597222412",
+   "title": "八百八町",
+   "artist": "冥丁",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/a3/33/46a3333d-682e-444c-d6d8-19015384bf0e/PA00093378_0_144010_jacket.jpg/100x100bb.jpg",
+   "durationMs": 187457,
+   "releaseDate": "2021-10-15T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1468073031",
+   "artistId": "434942744",
+   "collectionId": "1468073019",
+   "title": "Blue",
+   "artist": "H.Takahashi",
+   "genre": "ニューエイジ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cb/e9/60/cbe96052-912e-ba45-b79e-4c12b1f0736d/4582237840612_cover.jpg/100x100bb.jpg",
+   "durationMs": 239744,
+   "releaseDate": "2018-08-08T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1109837227",
+   "artistId": "434942744",
+   "collectionId": "1109837208",
+   "title": "Tera",
+   "artist": "H.Takahashi",
+   "genre": "IDM / エクスペリメンタル",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ae/46/27/ae462743-5275-8cd6-1150-516c484bb7d3/889326642671_Cover.jpg/100x100bb.jpg",
+   "durationMs": 225884,
+   "releaseDate": "2016-05-23T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1872721059",
+   "artistId": "434942744",
+   "collectionId": "1872721056",
+   "title": "Hotwater",
+   "artist": "H.Takahashi",
+   "genre": "インストゥルメンタル",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9c/d8/38/9cd838c8-06b9-52ef-6072-62edd1ebae1f/4550752916952_cover.png/100x100bb.jpg",
+   "durationMs": 215481,
+   "releaseDate": "2026-01-29T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1073495288",
+   "artistId": "183282377",
+   "collectionId": "1073495263",
+   "title": "アコースティックス",
+   "artist": "蓮沼執太",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/15/f3/85/15f3855f-e2a9-dd32-54c9-a9a164ef132a/4538182599587.png/100x100bb.jpg",
+   "durationMs": 168427,
+   "releaseDate": "2016-02-03T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1467840864",
+   "artistId": "183282377",
+   "collectionId": "1467840863",
+   "title": "CHANCE feat. 中村佳穂",
+   "artist": "蓮沼執太",
+   "genre": "J-Pop",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/be/a3/18/bea318b3-e2ca-fd20-0ccc-7b9dd5467452/4538182825310.png/100x100bb.jpg",
+   "durationMs": 308933,
+   "releaseDate": "2019-06-26T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1534982747",
+   "artistId": "183282377",
+   "collectionId": "1534982743",
+   "title": "Hello Everything",
+   "artist": "蓮沼執太",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/72/55/0f/72550f2f-0870-de3d-76ac-ae09b5f5e4cf/4941135608975.jpg/100x100bb.jpg",
+   "durationMs": 238000,
+   "releaseDate": "2012-01-01T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1752836263",
+   "artistId": "1558952230",
+   "collectionId": "1752836259",
+   "title": "Continuum 3",
+   "artist": "Nala Sinephro",
+   "genre": "ジャズ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/98/b8/46/98b84638-476a-ea68-151f-e844017594de/5056614798067.png/100x100bb.jpg",
+   "durationMs": 247539,
+   "releaseDate": "2024-09-06T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1579829841",
+   "artistId": "1558952230",
+   "collectionId": "1579829840",
+   "title": "Space 1",
+   "artist": "Nala Sinephro",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/80/f8/f8/80f8f830-5a7e-5258-ef84-ebe9acad2f64/0801061032432.jpg/100x100bb.jpg",
+   "durationMs": 248000,
+   "releaseDate": "2021-09-03T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1576882002",
+   "artistId": "1558952230",
+   "collectionId": "1576882000",
+   "title": "Space 2",
+   "artist": "Nala Sinephro",
+   "genre": "ジャズ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/57/42/e45742d5-0ac5-a3a5-9840-a54b8648d182/0801061032432.png/100x100bb.jpg",
+   "durationMs": 294000,
+   "releaseDate": "2021-09-03T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1654209754",
+   "artistId": "1813195160",
+   "collectionId": "1654209753",
+   "title": "Song",
+   "artist": "Ulla",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4d/f2/bb/4df2bb0e-1593-d1e4-c58e-dfed1c38715b/5060165487639.jpg/100x100bb.jpg",
+   "durationMs": 122000,
+   "releaseDate": "2022-11-18T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1497133337",
+   "artistId": "1813195160",
+   "collectionId": "1497133330",
+   "title": "Smile",
+   "artist": "Ulla",
+   "genre": "アンビエント",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ba/d2/6f/bad26fa6-71dc-04fe-8c5a-1a11f277c3b0/5060165485956.jpg/100x100bb.jpg",
+   "durationMs": 291736,
+   "releaseDate": "2020-01-30T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1727584358",
+   "artistId": "272698060",
+   "collectionId": "1727583767",
+   "title": "Something Inside My Body",
+   "artist": "Ulla",
+   "genre": "アンビエント",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cd/d1/a8/cdd1a89b-1a67-57fd-842c-58b38fb981ab/198391016370.jpg/100x100bb.jpg",
+   "durationMs": 512250,
+   "releaseDate": "2021-06-22T12:00:00Z",
+   "cluster": "ambient"
+  },
+  {
+   "trackId": "1793338783",
+   "artistId": "1055288813",
+   "collectionId": "1793338780",
+   "title": "Inside",
+   "artist": "Salami Rose Joe Louis",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/d6/ed/f6d6ed69-26a4-a311-4d81-61d61fd34c2a/5054429201079.png/100x100bb.jpg",
+   "durationMs": 249723,
+   "releaseDate": "2025-02-19T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1540269729",
+   "artistId": "1055288813",
+   "collectionId": "1540269728",
+   "title": "We’re Dumb",
+   "artist": "Salami Rose Joe Louis",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7c/6f/24/7c6f24a3-46c4-0df8-306b-b5d6a40b06e3/5054429144765.png/100x100bb.jpg",
+   "durationMs": 156000,
+   "releaseDate": "2020-12-11T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1469654579",
+   "artistId": "1055288813",
+   "collectionId": "1469654121",
+   "title": "Cumulous Potion (For the Clouds to Sing)",
+   "artist": "Salami Rose Joe Louis",
+   "genre": "エレクトロニック",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/c8/79/b3/c879b355-23a3-89ee-70b1-71a1d57ff867/5054429137156.png/100x100bb.jpg",
+   "durationMs": 147500,
+   "releaseDate": "2019-08-30T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1637112382",
+   "artistId": "979425922",
+   "collectionId": "1637112377",
+   "title": "9",
+   "artist": "Duval Timothy",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d6/c8/8f/d6c88f2a-2b88-7e9c-d118-30e93777920d/artwork.jpg/100x100bb.jpg",
+   "durationMs": 180665,
+   "releaseDate": "2020-06-12T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1812297818",
+   "artistId": "979425922",
+   "collectionId": "1812297817",
+   "title": "road",
+   "artist": "Duval Timothy",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/8f/ee/be8feed7-b9f7-3c13-85d2-c101ba544488/artwork.jpg/100x100bb.jpg",
+   "durationMs": 162000,
+   "releaseDate": "2025-05-09T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "6791895283",
+   "artistId": "1300818661",
+   "collectionId": "6791895281",
+   "title": "Eternal Loop",
+   "artist": "Sam Gendel",
+   "genre": "ジャズ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/4f/dd/7f4fddf1-813c-7e28-6e06-49a502821114/669158553150_cover.jpg/100x100bb.jpg",
+   "durationMs": 284500,
+   "releaseDate": "2021-02-05T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1491419387",
+   "artistId": "1300818661",
+   "collectionId": "1491419386",
+   "title": "Afro Blue",
+   "artist": "Sam Gendel",
+   "genre": "ジャズ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/81/81/5e/81815edc-0cb2-afbc-0366-d31cb7066dca/075597922110.jpg/100x100bb.jpg",
+   "durationMs": 195634,
+   "releaseDate": "2020-03-13T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "6769314549",
+   "artistId": "1300818661",
+   "collectionId": "6769314544",
+   "title": "Toridasuki (鳥襷, interlaced circles of two birds)",
+   "artist": "Sam Gendel",
+   "genre": "ジャズ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/6a/cb/ac6acb82-e367-f520-9e8e-b1bf7f6bddc1/4988044082571.png/100x100bb.jpg",
+   "durationMs": 182380,
+   "releaseDate": "2022-08-01T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1462991738",
+   "artistId": "1397513754",
+   "collectionId": "1462991733",
+   "title": "Gum",
+   "artist": "んoon",
+   "genre": "R&B／ソウル",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/f6/22/7f/f6227ff7-88ba-064f-3d44-64a5659dac1c/4571207712189.jpg/100x100bb.jpg",
+   "durationMs": 199493,
+   "releaseDate": "2019-06-05T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1773089494",
+   "artistId": "1397513754",
+   "collectionId": "1773089490",
+   "title": "Forest (feat. ACE COOL)",
+   "artist": "んoon",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/38/c0/5038c04c-f8c9-06d4-9d4e-f6a960e78ebc/4571207712899.jpg/100x100bb.jpg",
+   "durationMs": 183398,
+   "releaseDate": "2024-10-23T07:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1870756168",
+   "artistId": "1397513754",
+   "collectionId": "1870756165",
+   "title": "SEE YA",
+   "artist": "んoon",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/d0/f8/83d0f800-3fd1-3f02-e27f-3525126d5ace/4525853789590.jpg/100x100bb.jpg",
+   "durationMs": 224467,
+   "releaseDate": "2026-04-01T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1582597346",
+   "artistId": "1245772423",
+   "collectionId": "1582597010",
+   "title": "ENDLESS (feat. SIRUP)",
+   "artist": "TENDRE",
+   "genre": "ソウル",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b1/9d/81/b19d819e-18a2-02fd-a74d-fbcf8912b292/21UMGIM78683.rgb.jpg/100x100bb.jpg",
+   "durationMs": 231439,
+   "releaseDate": "2021-09-08T07:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1437755794",
+   "artistId": "1245772423",
+   "collectionId": "1437755791",
+   "title": "DOCUMENT",
+   "artist": "TENDRE",
+   "genre": "R&B／ソウル",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7c/7f/6a/7c7f6a54-b539-40ce-07b4-bae006444df4/4538182774397_cov.jpg/100x100bb.jpg",
+   "durationMs": 280085,
+   "releaseDate": "2018-10-24T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1529828787",
+   "artistId": "1245772423",
+   "collectionId": "1529828783",
+   "title": "LIFE",
+   "artist": "TENDRE",
+   "genre": "R&B／ソウル",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/26/e6/c5/26e6c56e-43de-a392-4fc5-402fc19dd982/4538182909928_cov.jpg/100x100bb.jpg",
+   "durationMs": 242172,
+   "releaseDate": "2020-04-15T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1882613148",
+   "artistId": "1122855735",
+   "collectionId": "1882613139",
+   "title": "Are You Looking Up",
+   "artist": "Mk.gee",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1a/78/c9/1a78c9fb-667e-9f77-61b6-35c2f7eabf81/193436368681_Cover.jpg/100x100bb.jpg",
+   "durationMs": 166179,
+   "releaseDate": "2024-01-19T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1774113852",
+   "artistId": "1122855735",
+   "collectionId": "1774113849",
+   "title": "ROCKMAN",
+   "artist": "Mk.gee",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/62/c0/15/62c01558-5a2d-5338-825b-2b530160ccbd/198704203923_Cover.jpg/100x100bb.jpg",
+   "durationMs": 179371,
+   "releaseDate": "2024-10-18T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1761280095",
+   "artistId": "1122855735",
+   "collectionId": "1761280094",
+   "title": "Lonely Fight",
+   "artist": "Mk.gee",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/11/92/9111925f-b273-22e4-6e00-5be186a74306/198704086526_Cover.jpg/100x100bb.jpg",
+   "durationMs": 229170,
+   "releaseDate": "2024-08-23T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1600778531",
+   "artistId": "471624188",
+   "collectionId": "1600778530",
+   "title": "A Gente Acaba (Vento Em Rosa)",
+   "artist": "Alabaster DePlume",
+   "genre": "オルタナティブ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ba/b8/b4/bab8b42b-9b1b-367b-7132-c639e0b2a1e6/789993991655.png/100x100bb.jpg",
+   "durationMs": 164693,
+   "releaseDate": "2022-04-01T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1492309638",
+   "artistId": "471624188",
+   "collectionId": "1492309295",
+   "title": "Whisky Story Time",
+   "artist": "Alabaster DePlume",
+   "genre": "ジャズ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bc/ab/d6/bcabd62b-b0df-092a-f0ed-88e0c470503c/0603784912288.png/100x100bb.jpg",
+   "durationMs": 139587,
+   "releaseDate": "2020-02-28T12:00:00Z",
+   "cluster": "beats-soul"
+  },
+  {
+   "trackId": "1771827599",
+   "artistId": "471624188",
+   "collectionId": "1771827595",
+   "title": "Honeycomb",
+   "artist": "Alabaster DePlume",
+   "genre": "ジャズ",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/da/fe/79/dafe798b-d665-331f-53cb-105439f8da92/789993993505.png/100x100bb.jpg",
+   "durationMs": 195453,
+   "releaseDate": "2024-10-15T12:00:00Z",
+   "cluster": "beats-soul"
+  }
+ ],
+ "anchors": [
+  {
+   "name": "くるり",
+   "artistId": "105025123",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/49/9c/44/499c440a-cc9b-8155-9ff5-5436a51dc3b5/VEATP-33594.jpg/100x100bb.jpg",
+   "genre": "オルタナティブ",
+   "clusters": [
+    "indie-pop",
+    "folk"
+   ]
+  },
+  {
+   "name": "cero",
+   "artistId": "414203300",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8c/45/cd/8c45cd2f-1145-0746-4fd0-e526bf3c73a9/4538182529881.png/100x100bb.jpg",
+   "genre": "J-Pop",
+   "clusters": [
+    "indie-pop",
+    "beats-soul"
+   ]
+  },
+  {
+   "name": "坂本慎太郎",
+   "artistId": "483508554",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/28/5d/17/285d179b-a62c-b89a-bd7f-fad6a9d478ae/006384_4582237825732.jpg/100x100bb.jpg",
+   "genre": "ロック",
+   "clusters": [
+    "indie-pop"
+   ]
+  },
+  {
+   "name": "サカナクション",
+   "artistId": "252312257",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/60/9b/bb/609bbb5d-96eb-ae16-f08a-81a3223deb24/VICL-63999.jpg/100x100bb.jpg",
+   "genre": "ロック",
+   "clusters": [
+    "electronic",
+    "indie-pop"
+   ]
+  },
+  {
+   "name": "羊文学",
+   "artistId": "1281384242",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ff/6b/19/ff6b1924-6db1-3151-a724-8d00c0f4c204/4547366642537.jpg/100x100bb.jpg",
+   "genre": "ロック",
+   "clusters": [
+    "shoegaze",
+    "indie-pop"
+   ]
+  },
+  {
+   "name": "カネコアヤノ",
+   "artistId": "867397538",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e6/0c/47/e60c47d6-b023-d114-496a-a098ba3b096e/4525853227191.jpg/100x100bb.jpg",
+   "genre": "オルタナティブ・フォーク",
+   "clusters": [
+    "folk",
+    "indie-pop"
+   ]
+  },
+  {
+   "name": "折坂悠太",
+   "artistId": "1148501286",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/46/54/04/465404f2-a18d-dc09-832a-007bb19ab481/4943566171905.jpg/100x100bb.jpg",
+   "genre": "J-Pop",
+   "clusters": [
+    "folk"
+   ]
+  },
+  {
+   "name": "青葉市子",
+   "artistId": "344132486",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/12/dc/26/12dc264a-39cf-451a-3e39-fcb3a6a43cfe/dj.owiquazg.jpg/100x100bb.jpg",
+   "genre": "オルタナティブ",
+   "clusters": [
+    "folk",
+    "ambient"
+   ]
+  },
+  {
+   "name": "ハナレグミ",
+   "artistId": "74572627",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e3/66/34/e3663420-a282-bb26-a64a-a52464e2729d/VEATP-34778.jpg/100x100bb.jpg",
+   "genre": "J-Pop",
+   "clusters": [
+    "folk"
+   ]
+  },
+  {
+   "name": "きのこ帝国",
+   "artistId": "521644940",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/33/34/be/3334be0d-e6db-aee1-ba05-7ebf6d79359d/00602567931898.rgb.jpg/100x100bb.jpg",
+   "genre": "ロック",
+   "clusters": [
+    "shoegaze"
+   ]
+  },
+  {
+   "name": "my bloody valentine",
+   "artistId": "206711",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/e1/51/4ce15131-7ac5-daf5-bf62-0202f27d691d/887830015998.png/100x100bb.jpg",
+   "genre": "オルタナティブ",
+   "clusters": [
+    "shoegaze"
+   ]
+  },
+  {
+   "name": "Slowdive",
+   "artistId": "528315",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c2/a0/a4/c2a0a495-ec33-27f1-c6db-0dff1c3ba15d/dj.pzrqoswp.jpg/100x100bb.jpg",
+   "genre": "オルタナティブ",
+   "clusters": [
+    "shoegaze",
+    "ambient"
+   ]
+  },
+  {
+   "name": "tofubeats",
+   "artistId": "305391189",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/68/dd/b2/68ddb2cf-fda7-8197-c18d-4e673f89f76a/190295822774.jpg/100x100bb.jpg",
+   "genre": "J-Pop",
+   "clusters": [
+    "electronic",
+    "beats-soul"
+   ]
+  },
+  {
+   "name": "Cornelius",
+   "artistId": "323179",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/80/4e/c4/804ec473-674a-b020-4ab7-8cec75031101/1200214758790.jpg/100x100bb.jpg",
+   "genre": "オルタナティブ",
+   "clusters": [
+    "electronic",
+    "indie-pop"
+   ]
+  },
+  {
+   "name": "Aphex Twin",
+   "artistId": "39883194",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/eb/60/04/eb600461-6436-e106-679c-aa838b4ac819/4523132113449.jpg/100x100bb.jpg",
+   "genre": "エレクトロニック",
+   "clusters": [
+    "electronic",
+    "ambient"
+   ]
+  },
+  {
+   "name": "Floating Points",
+   "artistId": "311514259",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/a5/3f/9da53f24-8e91-bac8-588a-71fbc033ca45/5054429190212.png/100x100bb.jpg",
+   "genre": "エレクトロニック",
+   "clusters": [
+    "electronic",
+    "ambient"
+   ]
+  },
+  {
+   "name": "坂本龍一",
+   "artistId": "271593168",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/34/1b/e8/341be8ab-3d6f-d656-58dc-70eacd39aaa1/190295816452.jpg/100x100bb.jpg",
+   "genre": "ポップ",
+   "clusters": [
+    "ambient",
+    "electronic"
+   ]
+  },
+  {
+   "name": "細野晴臣",
+   "artistId": "213605486",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/35/2a/45/352a4587-e019-4b73-372b-4af7d0a79268/KICS-1138-1400.jpg/100x100bb.jpg",
+   "genre": "J-Pop",
+   "clusters": [
+    "ambient",
+    "indie-pop"
+   ]
+  },
+  {
+   "name": "Nujabes",
+   "artistId": "679712483",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/79/7e/a1/797ea11f-b90c-c4c5-f874-6a6ccd2c22a7/HPD5.jpg/100x100bb.jpg",
+   "genre": "ヒップホップ／ラップ",
+   "clusters": [
+    "beats-soul"
+   ]
+  },
+  {
+   "name": "Khruangbin",
+   "artistId": "478520598",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4b/82/45/4b82450e-4547-166f-aced-7d7f85b67d4b/43543.jpg/100x100bb.jpg",
+   "genre": "オルタナティブ",
+   "clusters": [
+    "beats-soul",
+    "indie-pop"
+   ]
+  },
+  {
+   "name": "Tame Impala",
+   "artistId": "290242959",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a8/2e/b4/a82eb490-f30a-a321-461a-0383c88fec95/15UMGIM23316.rgb.jpg/100x100bb.jpg",
+   "genre": "オルタナティブ",
+   "clusters": [
+    "indie-pop",
+    "electronic"
+   ]
+  },
+  {
+   "name": "Big Thief",
+   "artistId": "1083255351",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/14/c8/ea/14c8ea65-2155-8d44-f0c5-6faa8f51f95d/191400040878.png/100x100bb.jpg",
+   "genre": "オルタナティブ",
+   "clusters": [
+    "folk",
+    "indie-pop"
+   ]
+  },
+  {
+   "name": "J Dilla",
+   "artistId": "16589310",
+   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/d3/c5/63d3c537-ac30-86e7-8e69-8a03a5346209/792.jpg/100x100bb.jpg",
+   "genre": "ヒップホップ／ラップ",
+   "clusters": [
+    "beats-soul"
+   ]
+  }
+ ],
+ "missing": [
+  "Hatchie",
+  "Hiroshi Yoshimura",
+  "畠山地平",
+  "L'Rain",
+  "フィッシュマンズ",
+  "Brian Eno",
+  "Frank Ocean",
+  "Hiatus Kaiyote",
+  "Radiohead",
+  "Bon Iver",
+  "Mac DeMarco"
+ ]
+}

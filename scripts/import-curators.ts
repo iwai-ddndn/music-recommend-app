@@ -52,6 +52,7 @@ run("import-curators", async (db) => {
           base_weight: r.base_weight,
           claimed_by_user_id: null,
           bio: null,
+          profile_tags: {},
         },
       ]);
       created++;

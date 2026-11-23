@@ -32,6 +32,9 @@ export default defineConfig({
     env: {
       USE_FIXTURES: "true",
       LOCAL_DB_FILE: E2E_DB,
+      FIXTURES_DIR: "fixtures/e2e",
+      // E2E は外部に出ない: 再生は模擬、プレビュー音源の解決もしない
+      NEXT_PUBLIC_PLAYER_MODE: "simulated",
       NEXT_PUBLIC_SIM_DURATION_SEC: "2",
       NEXT_DIST_DIR: ".next-e2e",
     },

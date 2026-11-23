@@ -8,6 +8,7 @@ const Event = z.object({
   event: z.enum(["play", "complete", "skip", "save"]),
   context: z.enum(["feed", "pitch"]).default("feed"),
   pitch_id: z.string().nullable().optional(),
+  position_sec: z.number().min(0).max(86400).nullable().optional(),
 });
 
 /** 再生開始・完聴・スキップ・保存を listen_events に記録（未ログインは記録しない） */
@@ -29,6 +30,7 @@ export const POST = handler(async (req: Request) => {
       event: input.event,
       context: input.context,
       pitch_id: input.pitch_id ?? null,
+      position_sec: input.position_sec ?? null,
     },
   ]);
   return json({ recorded: true });

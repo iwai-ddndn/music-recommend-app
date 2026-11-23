@@ -21,6 +21,28 @@ export type AppConfig = {
     serendipitySlots: number;
     excludeWindowDays: number;
     completeThreshold: number;
+    maxPerLeadCurator: number;
+    rerankKeepNext: number;
+  };
+  taste: {
+    boostMax: number;
+    confidenceSignals: number;
+    softFollowMultiplier: number;
+    softFollowCount: number;
+    curatorMultiplierMin: number;
+    curatorMultiplierMax: number;
+    seedWeight: number;
+    anchorWeight: number;
+    seedFloor: number;
+    tagMin: number;
+    tagMax: number;
+    events: Record<"save" | "complete" | "fastSkip" | "skip", { tag: number; curator: number }>;
+    fastSkipSec: number;
+    eventDecay: number;
+    halfLifeDays: number;
+    trackTagsMax: number;
+    profileShrinkMentions: number;
+    recentExcludeMax: number;
   };
   collect: {
     maxQueryLength: number;

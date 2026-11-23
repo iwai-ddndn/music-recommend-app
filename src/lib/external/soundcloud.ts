@@ -79,6 +79,7 @@ export type ScResolved = {
   artwork_url?: string | null;
   embeddable_by?: "all" | "me" | "none";
   streamable?: boolean;
+  genre?: string | null;
   isrc?: string | null;
   publisher_metadata?: { isrc?: string | null; artist?: string | null } | null;
 };

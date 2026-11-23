@@ -1,0 +1,3421 @@
+{
+ "songs": {
+  "969892032": {
+   "id": "969892032",
+   "type": "songs",
+   "attributes": {
+    "name": "リアルラブにはまだ",
+    "artistName": "寺尾紗穂",
+    "url": "https://music.apple.com/jp/song/969892032",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 164560,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/f1/89/66/f18966fb-ed6e-7e1b-bb2d-967582929e84/4538182522431_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "179599679",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1006373314": {
+   "id": "1006373314",
+   "type": "songs",
+   "attributes": {
+    "name": "27時",
+    "artistName": "17歳とベルリンの壁",
+    "url": "https://music.apple.com/jp/song/1006373314",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 251000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/02/43/c5/0243c584-0aa2-40c6-72c7-6b6f2b716fc1/859751982260_cover.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1006373304",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1073495288": {
+   "id": "1073495288",
+   "type": "songs",
+   "attributes": {
+    "name": "アコースティックス",
+    "artistName": "蓮沼執太",
+    "url": "https://music.apple.com/jp/song/1073495288",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 168427,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/15/f3/85/15f3855f-e2a9-dd32-54c9-a9a164ef132a/4538182599587.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "183282377",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1099672413": {
+   "id": "1099672413",
+   "type": "songs",
+   "attributes": {
+    "name": "Disco",
+    "artistName": "ミツメ",
+    "url": "https://music.apple.com/jp/song/1099672413",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 181027,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b9/5c/8a/b95c8ae3-59ff-066b-c377-25b303a0396b/4538182623107_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "770509925",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1101053941": {
+   "id": "1101053941",
+   "type": "songs",
+   "attributes": {
+    "name": "あこがれ",
+    "artistName": "ミツメ",
+    "url": "https://music.apple.com/jp/song/1101053941",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 219987,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/60/8c/5f/608c5fe4-443f-7205-379d-d4a017416282/4538182624258_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "770509925",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1109837227": {
+   "id": "1109837227",
+   "type": "songs",
+   "attributes": {
+    "name": "Tera",
+    "artistName": "H.Takahashi",
+    "url": "https://music.apple.com/jp/song/1109837227",
+    "genreNames": [
+     "IDM / エクスペリメンタル"
+    ],
+    "durationInMillis": 225884,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ae/46/27/ae462743-5275-8cd6-1150-516c484bb7d3/889326642671_Cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "434942744",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1133065657": {
+   "id": "1133065657",
+   "type": "songs",
+   "attributes": {
+    "name": "ame",
+    "artistName": "South Penguin",
+    "url": "https://music.apple.com/jp/song/1133065657",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 285973,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music18/v4/37/72/c3/3772c329-0895-a2d8-3fa2-114c1e269c84/RYECD246_SOUTH_PENGUIN.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1133065649",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1221329195": {
+   "id": "1221329195",
+   "type": "songs",
+   "attributes": {
+    "name": "night is young",
+    "artistName": "揺らぎ",
+    "url": "https://music.apple.com/jp/song/1221329195",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 344000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/89/35/68/8935684e-19bb-1b4e-04a2-149dd32ad546/859753455885_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "785170916",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1222811812": {
+   "id": "1222811812",
+   "type": "songs",
+   "attributes": {
+    "name": "プリズム",
+    "artistName": "17歳とベルリンの壁",
+    "url": "https://music.apple.com/jp/song/1222811812",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 263500,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f7/93/65/f793655a-c46e-ec2b-e285-f0fee95e84b5/859753542448_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1006373304",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1224830976": {
+   "id": "1224830976",
+   "type": "songs",
+   "attributes": {
+    "name": "後悔",
+    "artistName": "柴田聡子",
+    "url": "https://music.apple.com/jp/song/1224830976",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 161954,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8c/18/ac/8c18acce-8586-a16a-01c2-938621a8a8ea/4538182690253_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "716504515",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1296238705": {
+   "id": "1296238705",
+   "type": "songs",
+   "attributes": {
+    "name": "Underwater Girl",
+    "artistName": "For Tracy Hyde",
+    "url": "https://music.apple.com/jp/song/1296238705",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 208160,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b9/c4/a6/b9c4a69d-a8f4-019f-d4a5-05b2bbc30e94/4538182723500_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "908604180",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1303383299": {
+   "id": "1303383299",
+   "type": "songs",
+   "attributes": {
+    "name": "毎朝",
+    "artistName": "mei ehara",
+    "url": "https://music.apple.com/jp/song/1303383299",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 318053,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/c9/60/c8c960fc-7d9b-93e5-f079-f5142ef466e4/4538182716656.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1303382718",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1320713878": {
+   "id": "1320713878",
+   "type": "songs",
+   "attributes": {
+    "name": "エスパー",
+    "artistName": "ミツメ",
+    "url": "https://music.apple.com/jp/song/1320713878",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 258245,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/77/39/9c/77399c9a-ef55-de57-eada-58a007bb8055/4538182731598_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "770509925",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1329831671": {
+   "id": "1329831671",
+   "type": "songs",
+   "attributes": {
+    "name": "Thursday",
+    "artistName": "Luby Sparks",
+    "url": "https://music.apple.com/jp/song/1329831671",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 236542,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/b3/a7/dcb3a703-6fe2-3e74-6f67-8d3ca52810e6/4538182713884.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1280766718",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1403222836": {
+   "id": "1403222836",
+   "type": "songs",
+   "attributes": {
+    "name": "抱きしめて",
+    "artistName": "butaji",
+    "url": "https://music.apple.com/jp/song/1403222836",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 244240,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/9e/53/79/9e53798c-258b-fe6d-4620-8be6ac4d744e/4538182767542_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1003162521",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1413093257": {
+   "id": "1413093257",
+   "type": "songs",
+   "attributes": {
+    "name": "Dance",
+    "artistName": "角銅真実",
+    "url": "https://music.apple.com/jp/song/1413093257",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 300907,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/17/2e/4a/172e4ae1-0d4c-806e-379f-9b7f12588d10/APLS1809_jkt.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1312743717",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1414802980": {
+   "id": "1414802980",
+   "type": "songs",
+   "attributes": {
+    "name": "Path of the Moonlit Night",
+    "artistName": "揺らぎ",
+    "url": "https://music.apple.com/jp/song/1414802980",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 653613,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5c/45/e2/5c45e2bc-a832-be3b-e98b-1af50acf420e/4571207711939.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "785170916",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1428408525": {
+   "id": "1428408525",
+   "type": "songs",
+   "attributes": {
+    "name": "Kakon",
+    "artistName": "食品まつり a.k.a foodman",
+    "url": "https://music.apple.com/jp/song/1428408525",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 218000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/65/a0/94/65a094d9-80e1-0e89-5aa0-2b3486fddcd5/781484505525.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "601087648",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1434108701": {
+   "id": "1434108701",
+   "type": "songs",
+   "attributes": {
+    "name": "One More",
+    "artistName": "Yaeji",
+    "url": "https://music.apple.com/jp/song/1434108701",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 202537,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/71/0f/24/710f241a-0464-a902-ba9f-996a235991a0/656605383866.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1087249836",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1437755794": {
+   "id": "1437755794",
+   "type": "songs",
+   "attributes": {
+    "name": "DOCUMENT",
+    "artistName": "TENDRE",
+    "url": "https://music.apple.com/jp/song/1437755794",
+    "genreNames": [
+     "R&B／ソウル"
+    ],
+    "durationInMillis": 280085,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7c/7f/6a/7c7f6a54-b539-40ce-07b4-bae006444df4/4538182774397_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1245772423",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1445544120": {
+   "id": "1445544120",
+   "type": "songs",
+   "attributes": {
+    "name": "草木",
+    "artistName": "長谷川白紙",
+    "url": "https://music.apple.com/jp/song/1445544120",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 266880,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e1/56/65/e1566581-2611-49b8-3c63-eac89f265648/dj.mbygbxbj.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1363079915",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1456091172": {
+   "id": "1456091172",
+   "type": "songs",
+   "attributes": {
+    "name": "サブマリン",
+    "artistName": "ゆうらん船",
+    "url": "https://music.apple.com/jp/song/1456091172",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 275240,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/c2/18/c6c21898-9aef-3901-233f-4cecf3d19942/4525853103891.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1456091166",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1456789839": {
+   "id": "1456789839",
+   "type": "songs",
+   "attributes": {
+    "name": "Ghostride",
+    "artistName": "Crumb",
+    "url": "https://music.apple.com/jp/song/1456789839",
+    "genreNames": [
+     "インディー・ロック"
+    ],
+    "durationInMillis": 126120,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/83/13/f1/8313f143-ba0e-ee4c-eb85-5c259b1ec5e3/656605343648.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1155296326",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1458981361": {
+   "id": "1458981361",
+   "type": "songs",
+   "attributes": {
+    "name": "Numb",
+    "artistName": "Men I Trust",
+    "url": "https://music.apple.com/jp/song/1458981361",
+    "genreNames": [
+     "ポップ"
+    ],
+    "durationInMillis": 219340,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5d/78/90/5d78904a-661a-8896-975c-33b506b5b4ca/artwork.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "886240553",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1461104015": {
+   "id": "1461104015",
+   "type": "songs",
+   "attributes": {
+    "name": "めぐる",
+    "artistName": "優河",
+    "url": "https://music.apple.com/jp/song/1461104015",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 265027,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cd/57/9c/cd579c2a-023b-b938-afa1-37b0d516e67d/4538182820711_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1235058654",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1462991738": {
+   "id": "1462991738",
+   "type": "songs",
+   "attributes": {
+    "name": "Gum",
+    "artistName": "んoon",
+    "url": "https://music.apple.com/jp/song/1462991738",
+    "genreNames": [
+     "R&B／ソウル"
+    ],
+    "durationInMillis": 199493,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/f6/22/7f/f6227ff7-88ba-064f-3d44-64a5659dac1c/4571207712189.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1397513754",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1463575000": {
+   "id": "1463575000",
+   "type": "songs",
+   "attributes": {
+    "name": "Bones",
+    "artistName": "Crumb",
+    "url": "https://music.apple.com/jp/song/1463575000",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 193981,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/e4/86/14/e486140a-55b0-b1e9-d0b4-34b9d0f164f0/cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1155296326",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1465126178": {
+   "id": "1465126178",
+   "type": "songs",
+   "attributes": {
+    "name": "Locket",
+    "artistName": "Crumb",
+    "url": "https://music.apple.com/jp/song/1465126178",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 318379,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a0/b1/28/a0b128b5-4340-4f10-da1a-4d32f434557e/cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1155296326",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1467156710": {
+   "id": "1467156710",
+   "type": "songs",
+   "attributes": {
+    "name": "Sad number",
+    "artistName": "Laura day romance",
+    "url": "https://music.apple.com/jp/song/1467156710",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 191626,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/38/7a/3b/387a3bcb-255e-16fc-1c24-4fd1c555c9e8/Ldr_jkt.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1303389435",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1467840864": {
+   "id": "1467840864",
+   "type": "songs",
+   "attributes": {
+    "name": "CHANCE feat. 中村佳穂",
+    "artistName": "蓮沼執太",
+    "url": "https://music.apple.com/jp/song/1467840864",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 308933,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/be/a3/18/bea318b3-e2ca-fd20-0ccc-7b9dd5467452/4538182825310.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "183282377",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1468073031": {
+   "id": "1468073031",
+   "type": "songs",
+   "attributes": {
+    "name": "Blue",
+    "artistName": "H.Takahashi",
+    "url": "https://music.apple.com/jp/song/1468073031",
+    "genreNames": [
+     "ニューエイジ"
+    ],
+    "durationInMillis": 239744,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cb/e9/60/cbe96052-912e-ba45-b79e-4c12b1f0736d/4582237840612_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "434942744",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1469654579": {
+   "id": "1469654579",
+   "type": "songs",
+   "attributes": {
+    "name": "Cumulous Potion (For the Clouds to Sing)",
+    "artistName": "Salami Rose Joe Louis",
+    "url": "https://music.apple.com/jp/song/1469654579",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 147500,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/c8/79/b3/c879b355-23a3-89ee-70b1-71a1d57ff867/5054429137156.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1055288813",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1472306586": {
+   "id": "1472306586",
+   "type": "songs",
+   "attributes": {
+    "name": "idol",
+    "artistName": "South Penguin",
+    "url": "https://music.apple.com/jp/song/1472306586",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 228373,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/18/57/43/18574306-f371-fff7-d1a1-35e119129b3a/4538182831175_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1133065649",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1476658043": {
+   "id": "1476658043",
+   "type": "songs",
+   "attributes": {
+    "name": "reiji no machi (feat. イノウエワラビ)",
+    "artistName": "パソコン音楽クラブ",
+    "url": "https://music.apple.com/jp/song/1476658043",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 249940,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/44/3e/75/443e757f-96df-01b4-83bc-1b09a20a24ea/PSCM002_new.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1217718693",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1477054322": {
+   "id": "1477054322",
+   "type": "songs",
+   "attributes": {
+    "name": "繋ぐ日の青",
+    "artistName": "For Tracy Hyde",
+    "url": "https://music.apple.com/jp/song/1477054322",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 213587,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/19/76/d1/1976d17a-d900-5969-d37f-612127b0e302/4538182836460_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "908604180",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1479417447": {
+   "id": "1479417447",
+   "type": "songs",
+   "attributes": {
+    "name": "Somewhere",
+    "artistName": "Luby Sparks",
+    "url": "https://music.apple.com/jp/song/1479417447",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 275917,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/77/89/c9/7789c93f-f438-d8d0-0dca-d51cd24d9efb/4538182841129.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1280766718",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1480020909": {
+   "id": "1480020909",
+   "type": "songs",
+   "attributes": {
+    "name": "青い鳥",
+    "artistName": "ゆうらん船",
+    "url": "https://music.apple.com/jp/song/1480020909",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 212440,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b6/e5/6b/b6e56bc8-28c5-edb5-fc0d-3ba8f90bce71/4538182842294_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1456091166",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1485350149": {
+   "id": "1485350149",
+   "type": "songs",
+   "attributes": {
+    "name": "あなただけ",
+    "artistName": "長谷川白紙",
+    "url": "https://music.apple.com/jp/song/1485350149",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 250177,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c2/9c/96/c29c968a-e6de-7318-8c62-e11eb9a3f2f3/JKT.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1363079915",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1486281117": {
+   "id": "1486281117",
+   "type": "songs",
+   "attributes": {
+    "name": "最終列車は25時",
+    "artistName": "Lamp",
+    "url": "https://music.apple.com/jp/song/1486281117",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 263840,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/96/34/bd/9634bd06-4484-3792-ce1b-a64a96710d22/4521640105079_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "121939461",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1489681429": {
+   "id": "1489681429",
+   "type": "songs",
+   "attributes": {
+    "name": "寄り道",
+    "artistName": "角銅真実",
+    "url": "https://music.apple.com/jp/song/1489681429",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 313780,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f6/be/1e/f6be1e0d-647f-9262-2451-ee74c7e8e7c7/19UM1IM04101.rgb.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1312743717",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1491419387": {
+   "id": "1491419387",
+   "type": "songs",
+   "attributes": {
+    "name": "Afro Blue",
+    "artistName": "Sam Gendel",
+    "url": "https://music.apple.com/jp/song/1491419387",
+    "genreNames": [
+     "ジャズ"
+    ],
+    "durationInMillis": 195634,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/81/81/5e/81815edc-0cb2-afbc-0366-d31cb7066dca/075597922110.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1300818661",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1492309638": {
+   "id": "1492309638",
+   "type": "songs",
+   "attributes": {
+    "name": "Whisky Story Time",
+    "artistName": "Alabaster DePlume",
+    "url": "https://music.apple.com/jp/song/1492309638",
+    "genreNames": [
+     "ジャズ"
+    ],
+    "durationInMillis": 139587,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bc/ab/d6/bcabd62b-b0df-092a-f0ed-88e0c470503c/0603784912288.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "471624188",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1497133337": {
+   "id": "1497133337",
+   "type": "songs",
+   "attributes": {
+    "name": "Smile",
+    "artistName": "Ulla",
+    "url": "https://music.apple.com/jp/song/1497133337",
+    "genreNames": [
+     "アンビエント"
+    ],
+    "durationInMillis": 291736,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ba/d2/6f/bad26fa6-71dc-04fe-8c5a-1a11f277c3b0/5060165485956.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1813195160",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1497671126": {
+   "id": "1497671126",
+   "type": "songs",
+   "attributes": {
+    "name": "北へ向かう",
+    "artistName": "寺尾紗穂",
+    "url": "https://music.apple.com/jp/song/1497671126",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 279143,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/4e/5b/a5/4e5ba52b-95cf-4896-f2fd-28d9705d7187/4538182867914_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "179599679",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1505141496": {
+   "id": "1505141496",
+   "type": "songs",
+   "attributes": {
+    "name": "風は流れて",
+    "artistName": "浮",
+    "url": "https://music.apple.com/jp/song/1505141496",
+    "genreNames": [
+     "トラディショナル・フォーク"
+    ],
+    "durationInMillis": 188080,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/fd/1f/f6/fd1ff645-82e8-8137-aee6-1bdd65b415c2/4582538250073_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1441270420",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1507013987": {
+   "id": "1507013987",
+   "type": "songs",
+   "attributes": {
+    "name": "Places/Plans",
+    "artistName": "Skullcrusher",
+    "url": "https://music.apple.com/jp/song/1507013987",
+    "genreNames": [
+     "シンガーソングライター"
+    ],
+    "durationInMillis": 183116,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3a/09/cd/3a09cddf-213c-f0cc-188b-6967679a4075/dj.imkfxaen.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1515772298",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1509186273": {
+   "id": "1509186273",
+   "type": "songs",
+   "attributes": {
+    "name": "昼間から夜",
+    "artistName": "mei ehara",
+    "url": "https://music.apple.com/jp/song/1509186273",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 247774,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/e6/c5/03e6c51e-e846-4f16-9eb3-22809361448c/4538182881248.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1303382718",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1510806538": {
+   "id": "1510806538",
+   "type": "songs",
+   "attributes": {
+    "name": "Passionfruit",
+    "artistName": "Yaeji",
+    "url": "https://music.apple.com/jp/song/1510806538",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 274729,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7a/37/6f/7a376fd3-eb46-c181-47ca-e168ee390e4c/cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1087249836",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1515056536": {
+   "id": "1515056536",
+   "type": "songs",
+   "attributes": {
+    "name": "bubbles feat.NTsKi",
+    "artistName": "South Penguin",
+    "url": "https://music.apple.com/jp/song/1515056536",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 231020,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/61/9a/c2/619ac21b-30ca-a06b-53d8-4826fc3d25e5/4538182890011_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1133065649",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1515056952": {
+   "id": "1515056952",
+   "type": "songs",
+   "attributes": {
+    "name": "LOVEずっきゅん",
+    "artistName": "長谷川白紙",
+    "url": "https://music.apple.com/jp/song/1515056952",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 123867,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/a0/ef/75/a0ef75e6-f94f-96c2-f7eb-ff48c8652d25/dj.bdqwnyqn.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1363079915",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1516232513": {
+   "id": "1516232513",
+   "type": "songs",
+   "attributes": {
+    "name": "誰かがいた海",
+    "artistName": "17歳とベルリンの壁",
+    "url": "https://music.apple.com/jp/song/1516232513",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 240867,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/1d/fc/fc/1dfcfc4a-8a05-b903-275c-968a2c0cfb57/859755868195_cover.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1006373304",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1525189821": {
+   "id": "1525189821",
+   "type": "songs",
+   "attributes": {
+    "name": "Neighborhood",
+    "artistName": "Cwondo",
+    "url": "https://music.apple.com/jp/song/1525189821",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 124235,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a7/b3/8a/a7b38ad0-317d-2f5f-7aee-4588c4c5e1ac/859756018766_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1525184750",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1526437442": {
+   "id": "1526437442",
+   "type": "songs",
+   "attributes": {
+    "name": "anything",
+    "artistName": "Adrianne Lenker",
+    "url": "https://music.apple.com/jp/song/1526437442",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 202047,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/70/f0/a6/70f0a6a5-cd71-9da2-174b-41927d331cdd/cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "134748154",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1529828787": {
+   "id": "1529828787",
+   "type": "songs",
+   "attributes": {
+    "name": "LIFE",
+    "artistName": "TENDRE",
+    "url": "https://music.apple.com/jp/song/1529828787",
+    "genreNames": [
+     "R&B／ソウル"
+    ],
+    "durationInMillis": 242172,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/26/e6/c5/26e6c56e-43de-a392-4fc5-402fc19dd982/4538182909928_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1245772423",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1530925065": {
+   "id": "1530925065",
+   "type": "songs",
+   "attributes": {
+    "name": "花魁 II",
+    "artistName": "冥丁",
+    "url": "https://music.apple.com/jp/song/1530925065",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 247478,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/2e/1c/3b2e1c3b-9e89-7662-e5c9-e8f0b9c5762b/AMIP-0221_KOFU_MEITEI_COVER_V2.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1529067503",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1533859688": {
+   "id": "1533859688",
+   "type": "songs",
+   "attributes": {
+    "name": "Visiting Grandma",
+    "artistName": "Cwondo",
+    "url": "https://music.apple.com/jp/song/1533859688",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 211141,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e1/ae/00/e1ae001d-0245-988c-13b3-6d6e48bc26b3/859756200611_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1525184750",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1534982747": {
+   "id": "1534982747",
+   "type": "songs",
+   "attributes": {
+    "name": "Hello Everything",
+    "artistName": "蓮沼執太",
+    "url": "https://music.apple.com/jp/song/1534982747",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 238000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/72/55/0f/72550f2f-0870-de3d-76ac-ae09b5f5e4cf/4941135608975.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "183282377",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1535565017": {
+   "id": "1535565017",
+   "type": "songs",
+   "attributes": {
+    "name": "つきひ",
+    "artistName": "浮",
+    "url": "https://music.apple.com/jp/song/1535565017",
+    "genreNames": [
+     "フォーク"
+    ],
+    "durationInMillis": 276823,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5f/fb/06/5ffb06d9-11a8-6c20-1d40-07354f9adf4f/859756237358_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1441270420",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1540269729": {
+   "id": "1540269729",
+   "type": "songs",
+   "attributes": {
+    "name": "We’re Dumb",
+    "artistName": "Salami Rose Joe Louis",
+    "url": "https://music.apple.com/jp/song/1540269729",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 156000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7c/6f/24/7c6f24a3-46c4-0df8-306b-b5d6a40b06e3/5054429144765.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1055288813",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1544878880": {
+   "id": "1544878880",
+   "type": "songs",
+   "attributes": {
+    "name": "Twwen",
+    "artistName": "Cwondo",
+    "url": "https://music.apple.com/jp/song/1544878880",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 197482,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e9/9e/a6/e99ea6a7-e0e8-ceda-1d75-ea646ad997f5/4538182932025_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1525184750",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1551428896": {
+   "id": "1551428896",
+   "type": "songs",
+   "attributes": {
+    "name": "Just Like Fireflies",
+    "artistName": "For Tracy Hyde",
+    "url": "https://music.apple.com/jp/song/1551428896",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 160262,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/03/d4/ff/03d4ff04-d7b5-5845-86b2-9cd0d3bb8e58/4538182939918_cov.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "908604180",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1555052673": {
+   "id": "1555052673",
+   "type": "songs",
+   "attributes": {
+    "name": "Nami",
+    "artistName": "冥丁",
+    "url": "https://music.apple.com/jp/song/1555052673",
+    "genreNames": [
+     "アンビエント"
+    ],
+    "durationInMillis": 236041,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/dc/50/31/dc50312c-bdac-5008-9f1a-d9c933a610bf/cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1529067503",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1555222212": {
+   "id": "1555222212",
+   "type": "songs",
+   "attributes": {
+    "name": "Simple Stuff",
+    "artistName": "LORAINE JAMES",
+    "url": "https://music.apple.com/jp/song/1555222212",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 206987,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/db/46/e7/db46e752-be1e-e04d-24ff-71d53eac5d44/5056321637383.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1368596163",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1560824766": {
+   "id": "1560824766",
+   "type": "songs",
+   "attributes": {
+    "name": "Sanbashi (feat. Cotto Center)",
+    "artistName": "食品まつり a.k.a foodman",
+    "url": "https://music.apple.com/jp/song/1560824766",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 135573,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/a0/e8/1ba0e8f0-6444-274a-283b-c44355c9d9ba/5056321637529IT.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "601087648",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1576882002": {
+   "id": "1576882002",
+   "type": "songs",
+   "attributes": {
+    "name": "Space 2",
+    "artistName": "Nala Sinephro",
+    "url": "https://music.apple.com/jp/song/1576882002",
+    "genreNames": [
+     "ジャズ"
+    ],
+    "durationInMillis": 294000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/57/42/e45742d5-0ac5-a3a5-9840-a54b8648d182/0801061032432.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1558952230",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1579829841": {
+   "id": "1579829841",
+   "type": "songs",
+   "attributes": {
+    "name": "Space 1",
+    "artistName": "Nala Sinephro",
+    "url": "https://music.apple.com/jp/song/1579829841",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 248000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/80/f8/f8/80f8f830-5a7e-5258-ef84-ebe9acad2f64/0801061032432.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1558952230",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1582597346": {
+   "id": "1582597346",
+   "type": "songs",
+   "attributes": {
+    "name": "ENDLESS (feat. SIRUP)",
+    "artistName": "TENDRE",
+    "url": "https://music.apple.com/jp/song/1582597346",
+    "genreNames": [
+     "ソウル"
+    ],
+    "durationInMillis": 231439,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b1/9d/81/b19d819e-18a2-02fd-a74d-fbcf8912b292/21UMGIM78683.rgb.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1245772423",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1583710357": {
+   "id": "1583710357",
+   "type": "songs",
+   "attributes": {
+    "name": "free me",
+    "artistName": "butaji",
+    "url": "https://music.apple.com/jp/song/1583710357",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 241070,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/6d/0d/c9/6d0dc978-d8f1-494a-814d-3e85020b803d/4571597250070.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1003162521",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1585037323": {
+   "id": "1585037323",
+   "type": "songs",
+   "attributes": {
+    "name": "Puddle Underwater",
+    "artistName": "Salamanda",
+    "url": "https://music.apple.com/jp/song/1585037323",
+    "genreNames": [
+     "アンビエント"
+    ],
+    "durationInMillis": 247394,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b7/18/d4/b718d44a-585d-6e2b-44aa-569de39280f1/cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1483149809",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1594868124": {
+   "id": "1594868124",
+   "type": "songs",
+   "attributes": {
+    "name": "NFP",
+    "artistName": "家主",
+    "url": "https://music.apple.com/jp/song/1594868124",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 254680,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/50/22/5b/50225b75-dbd2-73a8-e7ac-ba31f1573599/196292893281.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1486719874",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1597222596": {
+   "id": "1597222596",
+   "type": "songs",
+   "attributes": {
+    "name": "八百八町",
+    "artistName": "冥丁",
+    "url": "https://music.apple.com/jp/song/1597222596",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 187457,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/a3/33/46a3333d-682e-444c-d6d8-19015384bf0e/PA00093378_0_144010_jacket.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1529067503",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1600778531": {
+   "id": "1600778531",
+   "type": "songs",
+   "attributes": {
+    "name": "A Gente Acaba (Vento Em Rosa)",
+    "artistName": "Alabaster DePlume",
+    "url": "https://music.apple.com/jp/song/1600778531",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 164693,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ba/b8/b4/bab8b42b-9b1b-367b-7132-c639e0b2a1e6/789993991655.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "471624188",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1604580818": {
+   "id": "1604580818",
+   "type": "songs",
+   "attributes": {
+    "name": "灯火",
+    "artistName": "優河",
+    "url": "https://music.apple.com/jp/song/1604580818",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 219861,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5e/08/34/5e083434-e7d6-54e8-1bba-d9d857b28e7c/4525853303499.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1235058654",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1608828015": {
+   "id": "1608828015",
+   "type": "songs",
+   "attributes": {
+    "name": "魔法みたいに",
+    "artistName": "寺尾紗穂",
+    "url": "https://music.apple.com/jp/song/1608828015",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 220160,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/eb/c0/e6/ebc0e6c1-f1f5-1731-42a4-797f3d88acc9/12959400.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "179599679",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1610337474": {
+   "id": "1610337474",
+   "type": "songs",
+   "attributes": {
+    "name": "fifteen",
+    "artistName": "優河",
+    "url": "https://music.apple.com/jp/song/1610337474",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 192552,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a7/89/4e/a7894e67-9b01-19ce-05bd-255bcb34fedf/4525853311395.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1235058654",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1616125102": {
+   "id": "1616125102",
+   "type": "songs",
+   "attributes": {
+    "name": "Rumble Bumble",
+    "artistName": "Salamanda",
+    "url": "https://music.apple.com/jp/song/1616125102",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 180064,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/27/df/b827df86-3898-84e5-ba35-cda0bec01839/196626701862.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1483149809",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1621014865": {
+   "id": "1621014865",
+   "type": "songs",
+   "attributes": {
+    "name": "雑感",
+    "artistName": "柴田聡子",
+    "url": "https://music.apple.com/jp/song/1621014865",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 287566,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/a9/62/16/a96216f6-0c8d-5a63-31d3-6b0104d5f537/4580789469145.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "716504515",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1631419818": {
+   "id": "1631419818",
+   "type": "songs",
+   "attributes": {
+    "name": "Whatever Fits Together",
+    "artistName": "Skullcrusher",
+    "url": "https://music.apple.com/jp/song/1631419818",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 225155,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/67/d1/26/67d12652-8ede-bf80-40b2-343e2a3da4df/34537.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1515772298",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1637112382": {
+   "id": "1637112382",
+   "type": "songs",
+   "attributes": {
+    "name": "9",
+    "artistName": "Duval Timothy",
+    "url": "https://music.apple.com/jp/song/1637112382",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 180665,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d6/c8/8f/d6c88f2a-2b88-7e9c-d118-30e93777920d/artwork.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "979425922",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1654209754": {
+   "id": "1654209754",
+   "type": "songs",
+   "attributes": {
+    "name": "Song",
+    "artistName": "Ulla",
+    "url": "https://music.apple.com/jp/song/1654209754",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 122000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4d/f2/bb/4df2bb0e-1593-d1e4-c58e-dfed1c38715b/5060165487639.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1813195160",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1661768998": {
+   "id": "1661768998",
+   "type": "songs",
+   "attributes": {
+    "name": "sweet vertigo",
+    "artistName": "Laura day romance",
+    "url": "https://music.apple.com/jp/song/1661768998",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 271756,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/50/04/5b/50045b02-1a14-e142-5752-a6e9afca8e3b/4580529534607.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1303389435",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1688991977": {
+   "id": "1688991977",
+   "type": "songs",
+   "attributes": {
+    "name": "Let U Go (feat. keiyaA)",
+    "artistName": "LORAINE JAMES",
+    "url": "https://music.apple.com/jp/song/1688991977",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 263075,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/55/f5/be/55f5be1f-b2e8-a1e6-9b19-ecabed08e233/5056321681447.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1368596163",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1706281727": {
+   "id": "1706281727",
+   "type": "songs",
+   "attributes": {
+    "name": "Sun Tickles",
+    "artistName": "Salamanda",
+    "url": "https://music.apple.com/jp/song/1706281727",
+    "genreNames": [
+     "アンビエント"
+    ],
+    "durationInMillis": 271807,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/63/b1/28/63b128da-72df-2532-af38-267cfd67aa47/5056688810412.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1483149809",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1708349995": {
+   "id": "1708349995",
+   "type": "songs",
+   "attributes": {
+    "name": "Pichi Pichi",
+    "artistName": "食品まつり a.k.a foodman",
+    "url": "https://music.apple.com/jp/song/1708349995",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 128000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2c/4c/31/2c4c3118-6b5a-0f57-6273-de63db45d34f/5056321681669.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "601087648",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1719975688": {
+   "id": "1719975688",
+   "type": "songs",
+   "attributes": {
+    "name": "Show Me How",
+    "artistName": "Men I Trust",
+    "url": "https://music.apple.com/jp/song/1719975688",
+    "genreNames": [
+     "ポップ"
+    ],
+    "durationInMillis": 215111,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/57/39/cf5739e6-332a-e64c-bed0-b763893c0517/artwork.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "886240553",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1721534631": {
+   "id": "1721534631",
+   "type": "songs",
+   "attributes": {
+    "name": "Sadness As a Gift",
+    "artistName": "Adrianne Lenker",
+    "url": "https://music.apple.com/jp/song/1721534631",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 259016,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/db/d5/b5/dbd5b594-1e28-23e0-c4b2-26ddbe473dfb/191400064973.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "134748154",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1727584358": {
+   "id": "1727584358",
+   "type": "songs",
+   "attributes": {
+    "name": "Something Inside My Body",
+    "artistName": "Ulla",
+    "url": "https://music.apple.com/jp/song/1727584358",
+    "genreNames": [
+     "アンビエント"
+    ],
+    "durationInMillis": 512250,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cd/d1/a8/cdd1a89b-1a67-57fd-842c-58b38fb981ab/198391016370.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "272698060",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1728810663": {
+   "id": "1728810663",
+   "type": "songs",
+   "attributes": {
+    "name": "Synergy",
+    "artistName": "柴田聡子",
+    "url": "https://music.apple.com/jp/song/1728810663",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 197947,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/12/3c/a5/123ca53d-58ce-2246-c97e-c5e0d9b17141/4580789617744.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "716504515",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1741256247": {
+   "id": "1741256247",
+   "type": "songs",
+   "attributes": {
+    "name": "Sunset Sea Breeze",
+    "artistName": "Whitney's Playland",
+    "url": "https://music.apple.com/jp/song/1741256247",
+    "genreNames": [
+     "インディー・ロック"
+    ],
+    "durationInMillis": 193400,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/54/33/b3543367-23de-fd0a-58b6-f7e0710f9a62/0563fc49-3265-4340-834f-21ffd448ee52.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1654507783",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1752836263": {
+   "id": "1752836263",
+   "type": "songs",
+   "attributes": {
+    "name": "Continuum 3",
+    "artistName": "Nala Sinephro",
+    "url": "https://music.apple.com/jp/song/1752836263",
+    "genreNames": [
+     "ジャズ"
+    ],
+    "durationInMillis": 247539,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/98/b8/46/98b84638-476a-ea68-151f-e844017594de/5056614798067.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1558952230",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1758007091": {
+   "id": "1758007091",
+   "type": "songs",
+   "attributes": {
+    "name": "Child Replay (feat. 柴田聡子)",
+    "artistName": "パソコン音楽クラブ",
+    "url": "https://music.apple.com/jp/song/1758007091",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 266808,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/61/b6/2e/61b62e52-f140-8832-d147-4c1be153bae0/4580789654114.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1217718693",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1760210320": {
+   "id": "1760210320",
+   "type": "songs",
+   "attributes": {
+    "name": "booboo",
+    "artistName": "Yaeji",
+    "url": "https://music.apple.com/jp/song/1760210320",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 212267,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/85/c1/b0/85c1b0cb-4f79-dc3b-b2c0-5a186944a8e2/191404149270.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1087249836",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1761280095": {
+   "id": "1761280095",
+   "type": "songs",
+   "attributes": {
+    "name": "Lonely Fight",
+    "artistName": "Mk.gee",
+    "url": "https://music.apple.com/jp/song/1761280095",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 229170,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/11/92/9111925f-b273-22e4-6e00-5be186a74306/198704086526_Cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1122855735",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1761735912": {
+   "id": "1761735912",
+   "type": "songs",
+   "attributes": {
+    "name": "コバルトの降る街で",
+    "artistName": "明日の叙景",
+    "url": "https://music.apple.com/jp/song/1761735912",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 244508,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/ee/7c/47ee7ce2-75c8-7a88-e212-de381be83118/4500000029071.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1390208987",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1771827599": {
+   "id": "1771827599",
+   "type": "songs",
+   "attributes": {
+    "name": "Honeycomb",
+    "artistName": "Alabaster DePlume",
+    "url": "https://music.apple.com/jp/song/1771827599",
+    "genreNames": [
+     "ジャズ"
+    ],
+    "durationInMillis": 195453,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/da/fe/79/dafe798b-d665-331f-53cb-105439f8da92/789993993505.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "471624188",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1773089494": {
+   "id": "1773089494",
+   "type": "songs",
+   "attributes": {
+    "name": "Forest (feat. ACE COOL)",
+    "artistName": "んoon",
+    "url": "https://music.apple.com/jp/song/1773089494",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 183398,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/38/c0/5038c04c-f8c9-06d4-9d4e-f6a960e78ebc/4571207712899.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1397513754",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1774113852": {
+   "id": "1774113852",
+   "type": "songs",
+   "attributes": {
+    "name": "ROCKMAN",
+    "artistName": "Mk.gee",
+    "url": "https://music.apple.com/jp/song/1774113852",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 179371,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/62/c0/15/62c01558-5a2d-5338-825b-2b530160ccbd/198704203923_Cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1122855735",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1793338783": {
+   "id": "1793338783",
+   "type": "songs",
+   "attributes": {
+    "name": "Inside",
+    "artistName": "Salami Rose Joe Louis",
+    "url": "https://music.apple.com/jp/song/1793338783",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 249723,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/d6/ed/f6d6ed69-26a4-a311-4d81-61d61fd34c2a/5054429201079.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1055288813",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1800019985": {
+   "id": "1800019985",
+   "type": "songs",
+   "attributes": {
+    "name": "Exhale",
+    "artistName": "Skullcrusher",
+    "url": "https://music.apple.com/jp/song/1800019985",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 196747,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/0b/24/e50b244f-a48b-b751-4fa5-fdfea8711986/198704393426_Cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1515772298",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1810920291": {
+   "id": "1810920291",
+   "type": "songs",
+   "attributes": {
+    "name": "To Ease You",
+    "artistName": "Men I Trust",
+    "url": "https://music.apple.com/jp/song/1810920291",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 192798,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/2d/f5/662df515-7dff-1012-ccf4-08822f6ac11b/artwork.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "886240553",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1812297818": {
+   "id": "1812297818",
+   "type": "songs",
+   "attributes": {
+    "name": "road",
+    "artistName": "Duval Timothy",
+    "url": "https://music.apple.com/jp/song/1812297818",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 162000,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/8f/ee/be8feed7-b9f7-3c13-85d2-c101ba544488/artwork.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "979425922",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1812616683": {
+   "id": "1812616683",
+   "type": "songs",
+   "attributes": {
+    "name": "Departure",
+    "artistName": "ゆうらん船",
+    "url": "https://music.apple.com/jp/song/1812616683",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 242062,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a1/55/03/a1550327-3ef7-2a51-bc30-647b9e5a0a22/4525853685298.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1456091166",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1813383026": {
+   "id": "1813383026",
+   "type": "songs",
+   "attributes": {
+    "name": "Long Rehearsal",
+    "artistName": "Whitney's Playland",
+    "url": "https://music.apple.com/jp/song/1813383026",
+    "genreNames": [
+     "インディー・ロック"
+    ],
+    "durationInMillis": 104373,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/04/a2/98/04a29825-12e9-3c35-a1ca-19a3475b53fc/7316480567678.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1654507783",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1823191833": {
+   "id": "1823191833",
+   "type": "songs",
+   "attributes": {
+    "name": "悲しい運転手",
+    "artistName": "mei ehara",
+    "url": "https://music.apple.com/jp/song/1823191833",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 281711,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d8/3f/b7/d83fb7db-cf27-cde4-53b7-09bcdd36ad99/4580789720932.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1303382718",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1828409251": {
+   "id": "1828409251",
+   "type": "songs",
+   "attributes": {
+    "name": "マジックアワー",
+    "artistName": "明日の叙景",
+    "url": "https://music.apple.com/jp/song/1828409251",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 219856,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/43/e1/5a43e193-b0d9-d069-d2a4-7528484d5165/4526180732679.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1390208987",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1829601261": {
+   "id": "1829601261",
+   "type": "songs",
+   "attributes": {
+    "name": "キメラ",
+    "artistName": "明日の叙景",
+    "url": "https://music.apple.com/jp/song/1829601261",
+    "genreNames": [
+     "メタル"
+    ],
+    "durationInMillis": 343827,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/65/c3/e8/65c3e8a2-8e92-64e1-4a90-b36ed183909f/4526180703136.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1390208987",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1840956807": {
+   "id": "1840956807",
+   "type": "songs",
+   "attributes": {
+    "name": "symbol",
+    "artistName": "Adrianne Lenker",
+    "url": "https://music.apple.com/jp/song/1840956807",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 229133,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/4c/86/604c86aa-8bc3-7dac-d4a1-5030203fb956/191400085558.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "134748154",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1863314376": {
+   "id": "1863314376",
+   "type": "songs",
+   "attributes": {
+    "name": "tenk(e)i [feat. 長谷川白紙]",
+    "artistName": "パソコン音楽クラブ",
+    "url": "https://music.apple.com/jp/song/1863314376",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 296403,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/44/2a/ce/442ace89-89d8-6490-0605-53127fb4206f/4580789748431.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1217718693",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1870165180": {
+   "id": "1870165180",
+   "type": "songs",
+   "attributes": {
+    "name": "怪獣",
+    "artistName": "butaji",
+    "url": "https://music.apple.com/jp/song/1870165180",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 205877,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a7/70/7f/a7707fbe-014f-e229-076e-b102d9acf119/4580789751714.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1003162521",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1870756168": {
+   "id": "1870756168",
+   "type": "songs",
+   "attributes": {
+    "name": "SEE YA",
+    "artistName": "んoon",
+    "url": "https://music.apple.com/jp/song/1870756168",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 224467,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/d0/f8/83d0f800-3fd1-3f02-e27f-3525126d5ace/4525853789590.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1397513754",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1872721059": {
+   "id": "1872721059",
+   "type": "songs",
+   "attributes": {
+    "name": "Hotwater",
+    "artistName": "H.Takahashi",
+    "url": "https://music.apple.com/jp/song/1872721059",
+    "genreNames": [
+     "インストゥルメンタル"
+    ],
+    "durationInMillis": 215481,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9c/d8/38/9cd838c8-06b9-52ef-6072-62edd1ebae1f/4550752916952_cover.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "434942744",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1877877556": {
+   "id": "1877877556",
+   "type": "songs",
+   "attributes": {
+    "name": "A Long Distance Call",
+    "artistName": "LORAINE JAMES",
+    "url": "https://music.apple.com/jp/song/1877877556",
+    "genreNames": [
+     "エレクトロニック"
+    ],
+    "durationInMillis": 211200,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a7/0a/c5/a70ac5fa-4078-93ec-75a7-eca6111f4c31/5056688854942.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1368596163",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1880396350": {
+   "id": "1880396350",
+   "type": "songs",
+   "attributes": {
+    "name": "家主のテーマ",
+    "artistName": "家主",
+    "url": "https://music.apple.com/jp/song/1880396350",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 180413,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1d/86/a5/1d86a5d3-d6df-82f5-a52c-c035d0dec937/4550753876354_cover.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1486719874",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1882613148": {
+   "id": "1882613148",
+   "type": "songs",
+   "attributes": {
+    "name": "Are You Looking Up",
+    "artistName": "Mk.gee",
+    "url": "https://music.apple.com/jp/song/1882613148",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 166179,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1a/78/c9/1a78c9fb-667e-9f77-61b6-35c2f7eabf81/193436368681_Cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1122855735",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1887446555": {
+   "id": "1887446555",
+   "type": "songs",
+   "attributes": {
+    "name": "ほろろ逍遥",
+    "artistName": "角銅真実",
+    "url": "https://music.apple.com/jp/song/1887446555",
+    "genreNames": [
+     "アニメ"
+    ],
+    "durationInMillis": 160997,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/86/b0/1b/86b01bf1-793e-70ae-edb6-fe1ab480ee84/VEATP-45427.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1312743717",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "1891351496": {
+   "id": "1891351496",
+   "type": "songs",
+   "attributes": {
+    "name": "あかるいくらい",
+    "artistName": "浮",
+    "url": "https://music.apple.com/jp/song/1891351496",
+    "genreNames": [
+     "J-Pop"
+    ],
+    "durationInMillis": 207027,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/8f/e2/ee8fe255-7e85-8ace-d924-c167d463c63f/4582561398414_cover.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1441270420",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "6795828834": {
+   "id": "6795828834",
+   "type": "songs",
+   "attributes": {
+    "name": "素敵すぎる",
+    "artistName": "Laura day romance",
+    "url": "https://music.apple.com/jp/song/6795828834",
+    "genreNames": [
+     "ロック"
+    ],
+    "durationInMillis": 208107,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/fc/71/61fc71a1-3f48-d8b1-35a3-3c14da3b329b/28304.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1303389435",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "6773197395": {
+   "id": "6773197395",
+   "type": "songs",
+   "attributes": {
+    "name": "らせんだよ、人生は",
+    "artistName": "家主",
+    "url": "https://music.apple.com/jp/song/6773197395",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 224824,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/55/39/e4553997-02f2-b5b3-01ab-4b5a66b89a4e/820233428460.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1486719874",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "6819117932": {
+   "id": "6819117932",
+   "type": "songs",
+   "attributes": {
+    "name": "Beneath the skin",
+    "artistName": "Luby Sparks",
+    "url": "https://music.apple.com/jp/song/6819117932",
+    "genreNames": [
+     "オルタナティブ"
+    ],
+    "durationInMillis": 253103,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3b/f9/8d/3bf98d1e-febe-85a8-8bb2-e43543301c6c/4580789791284.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1280766718",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "6817525557": {
+   "id": "6817525557",
+   "type": "songs",
+   "attributes": {
+    "name": "Find and Seek",
+    "artistName": "Whitney's Playland",
+    "url": "https://music.apple.com/jp/song/6817525557",
+    "genreNames": [
+     "インディー・ロック"
+    ],
+    "durationInMillis": 126880,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/be/27/c6be2701-c559-2b04-746a-760785a26303/769152441603.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1654507783",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "6791895283": {
+   "id": "6791895283",
+   "type": "songs",
+   "attributes": {
+    "name": "Eternal Loop",
+    "artistName": "Sam Gendel",
+    "url": "https://music.apple.com/jp/song/6791895283",
+    "genreNames": [
+     "ジャズ"
+    ],
+    "durationInMillis": 284500,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/4f/dd/7f4fddf1-813c-7e28-6e06-49a502821114/669158553150_cover.jpg/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1300818661",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  },
+  "6769314549": {
+   "id": "6769314549",
+   "type": "songs",
+   "attributes": {
+    "name": "Toridasuki (鳥襷, interlaced circles of two birds)",
+    "artistName": "Sam Gendel",
+    "url": "https://music.apple.com/jp/song/6769314549",
+    "genreNames": [
+     "ジャズ"
+    ],
+    "durationInMillis": 182380,
+    "artwork": {
+     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/6a/cb/ac6acb82-e367-f520-9e8e-b1bf7f6bddc1/4988044082571.png/{w}x{h}bb.jpg",
+     "width": 1000,
+     "height": 1000
+    }
+   },
+   "relationships": {
+    "artists": {
+     "data": [
+      {
+       "id": "1300818661",
+       "type": "artists"
+      }
+     ]
+    }
+   }
+  }
+ },
+ "albums": {}
+}

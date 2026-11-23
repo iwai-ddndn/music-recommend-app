@@ -2,7 +2,8 @@
 import { appConfig } from "../config";
 import type { Db } from "../db/types";
 import { isFixtureMode } from "../env";
-import { artistListeners, trackListeners } from "../external/lastfm";
+import { artistListeners, artistTopTags, trackListeners } from "../external/lastfm";
+import { normalizeTags } from "../taste/vocabulary";
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -21,10 +22,19 @@ export async function refreshListeners(
   for (const a of artists) {
     try {
       const r = await artistListeners(a.name);
+      // シーンタグ: Last.fm のタグを語彙に正規化。取れなければ既存（Apple のジャンル由来）を残す
+      const tags = normalizeTags(await artistTopTags(a.name), appConfig.taste.trackTagsMax);
+      await pause();
       await db.update(
         "artists",
         { id: a.id },
-        { lastfm_listeners: r.listeners, mbid: a.mbid ?? r.mbid, listeners_updated_at: now.toISOString() },
+        {
+          lastfm_listeners: r.listeners,
+          mbid: a.mbid ?? r.mbid,
+          listeners_updated_at: now.toISOString(),
+          tags: Object.keys(tags).length ? tags : a.tags,
+          tags_updated_at: now.toISOString(),
+        },
       );
     } catch (e) {
       opts.log?.(`artist ${a.name}: ${(e as Error).message}`);

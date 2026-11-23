@@ -1,0 +1,217 @@
+{
+ "users": [
+  {
+   "id": "00000000-0000-4000-8000-000000000001",
+   "role": "listener",
+   "display_name": "デモ リスナー",
+   "email": "listener@example.com",
+   "depth": 0.5,
+   "preferred_service": null
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000002",
+   "role": "curator",
+   "display_name": "凪",
+   "email": "curator@example.com",
+   "depth": 0.5,
+   "preferred_service": null
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000003",
+   "role": "artist",
+   "display_name": "デモ アーティスト",
+   "email": "artist@example.com",
+   "depth": 0.5,
+   "preferred_service": null
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000004",
+   "role": "admin",
+   "display_name": "管理者",
+   "email": "admin@example.com",
+   "depth": 0.5,
+   "preferred_service": null
+  }
+ ],
+ "curators": [
+  {
+   "x_user_id": "1500000000000000001",
+   "x_handle": "lighthouse_rec",
+   "display_name": "Lighthouse Records",
+   "status": "active",
+   "base_weight": 1.2,
+   "claimed_by_user_id": null,
+   "bio": "下北沢の小さなレコード店"
+  },
+  {
+   "x_user_id": "1500000000000000002",
+   "x_handle": "tidepool_label",
+   "display_name": "Tidepool Label",
+   "status": "active",
+   "base_weight": 1,
+   "claimed_by_user_id": null,
+   "bio": "宅録とアンビエントのレーベル"
+  },
+  {
+   "x_user_id": "1500000000000000003",
+   "x_handle": "nagi_writes",
+   "display_name": "凪",
+   "status": "active",
+   "base_weight": 1,
+   "claimed_by_user_id": "00000000-0000-4000-8000-000000000002",
+   "bio": "音楽ライター"
+  },
+  {
+   "x_user_id": "1500000000000000004",
+   "x_handle": "kamome_digs",
+   "display_name": "かもめディグ",
+   "status": "active",
+   "base_weight": 1,
+   "claimed_by_user_id": null,
+   "bio": "クラブとビートを掘る人"
+  },
+  {
+   "x_user_id": "1500000000000000005",
+   "x_handle": "midnight_crate",
+   "display_name": "Midnight Crate",
+   "status": "active",
+   "base_weight": 1,
+   "claimed_by_user_id": null,
+   "bio": "深夜のジャズとソウル"
+  },
+  {
+   "x_user_id": "1500000000000000006",
+   "x_handle": "bunkyo_tapes",
+   "display_name": "文京テープス",
+   "status": "active",
+   "base_weight": 1,
+   "claimed_by_user_id": null,
+   "bio": "カセットとZINEの店"
+  },
+  {
+   "x_user_id": "1500000000000000007",
+   "x_handle": "hoshino_listens",
+   "display_name": "星野",
+   "status": "active",
+   "base_weight": 0.8,
+   "claimed_by_user_id": null,
+   "bio": "通勤で聴いたものの記録"
+  },
+  {
+   "x_user_id": "1500000000000000008",
+   "x_handle": "shibuya_hifi",
+   "display_name": "Shibuya Hi-Fi Store",
+   "status": "active",
+   "base_weight": 1,
+   "claimed_by_user_id": null,
+   "bio": "中古オーディオと新譜"
+  },
+  {
+   "x_user_id": null,
+   "x_handle": "underpass_fm",
+   "display_name": "Underpass FM",
+   "status": "pending",
+   "base_weight": 1,
+   "claimed_by_user_id": null,
+   "bio": null
+  },
+  {
+   "x_user_id": null,
+   "x_handle": "sora_no_oto",
+   "display_name": "空の音",
+   "status": "pending",
+   "base_weight": 1,
+   "claimed_by_user_id": null,
+   "bio": null
+  }
+ ],
+ "curator_suggestions": [
+  {
+   "handle": "underpass_fm",
+   "user_id": "00000000-0000-4000-8000-000000000001",
+   "comment": "深夜ラジオ系の選曲がいい"
+  },
+  {
+   "handle": "underpass_fm",
+   "user_id": "00000000-0000-4000-8000-000000000003",
+   "comment": "毎週の新譜まとめが信頼できる"
+  },
+  {
+   "handle": "sora_no_oto",
+   "user_id": "00000000-0000-4000-8000-000000000001",
+   "comment": "アンビエントに強い"
+  }
+ ],
+ "follows": [],
+ "favorite_artists": [],
+ "campaigns": [
+  {
+   "key": "winter",
+   "title": "冬の夜に、まだ知られていない1曲を",
+   "description": "",
+   "starts_at": "2026-11-16T06:08:33.314Z",
+   "ends_at": "2027-01-22T06:08:33.314Z",
+   "max_pitches_per_user": 3,
+   "status": "open"
+  },
+  {
+   "key": "autumn",
+   "title": "秋の散歩BGM",
+   "description": "",
+   "starts_at": "2026-08-25T06:08:33.314Z",
+   "ends_at": "2026-09-24T06:08:33.314Z",
+   "max_pitches_per_user": 3,
+   "status": "closed"
+  }
+ ],
+ "pitches": [
+  {
+   "campaign": "winter",
+   "user_id": "00000000-0000-4000-8000-000000000002",
+   "submitter_type": "curator",
+   "url": "https://music.apple.com/jp/song/1224830976",
+   "comment": "静かな夜の帰り道に。",
+   "status": "approved",
+   "refs": [
+    "くるり",
+    "カネコアヤノ"
+   ]
+  },
+  {
+   "campaign": "winter",
+   "user_id": "00000000-0000-4000-8000-000000000002",
+   "submitter_type": "curator",
+   "url": "https://music.apple.com/jp/song/1597222596",
+   "comment": "雪の朝みたいな音。",
+   "status": "approved",
+   "refs": [
+    "青葉市子",
+    "Slowdive"
+   ]
+  },
+  {
+   "campaign": "winter",
+   "user_id": "00000000-0000-4000-8000-000000000003",
+   "submitter_type": "artist",
+   "url": "https://music.apple.com/jp/song/6795828834",
+   "comment": "デモ用の投稿です。",
+   "status": "approved",
+   "refs": [
+    "くるり",
+    "cero"
+   ]
+  },
+  {
+   "campaign": "winter",
+   "user_id": "00000000-0000-4000-8000-000000000003",
+   "submitter_type": "artist",
+   "url": "https://music.apple.com/jp/song/1296238705",
+   "comment": "デモ用の投稿です。",
+   "status": "pending",
+   "refs": [
+    "羊文学",
+    "きのこ帝国"
+   ]
+  }
+ ]
+}

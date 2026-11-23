@@ -17,6 +17,8 @@ export type CuratorListItem = {
   recent_tracks: QueueItem[];
   following: boolean;
   follower_count: number;
+  /** シーンタグのプロフィール（好みに合う目利きの提案に使う） */
+  profile_tags: Record<string, number>;
 };
 
 const HANDLE = /^[A-Za-z0-9_]{1,15}$/;
@@ -77,6 +79,7 @@ export async function listCurators(
       }),
       following: following.has(c.id),
       follower_count: follows.filter((f) => f.curator_id === c.id).length,
+      profile_tags: c.profile_tags ?? {},
     }))
     .sort((a, b) => Number(b.following) - Number(a.following) || b.recent_count - a.recent_count);
 }
@@ -111,6 +114,7 @@ export async function suggestCurator(
         base_weight: appConfig.scoring.defaultCuratorWeight,
         claimed_by_user_id: null,
         bio: null,
+          profile_tags: {},
       },
     ]);
     status = "created";

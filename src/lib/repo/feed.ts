@@ -3,16 +3,26 @@ import { appConfig } from "../config";
 import type { Db } from "../db/types";
 import { buildQueue, type FeedCandidate, type PitchMatch } from "../feed/build-queue";
 import { clampDepth } from "../scoring/score";
+import { decayTaste, type Taste } from "../scoring/taste";
 import type { QueueItem, SessionUser } from "../types";
 import { loadCatalog } from "./catalog";
 
 /** 承認済み推薦のうち、ユーザーの好きなアーティストに一致するもの（track_id ごと） */
-export async function pitchMatchesFor(db: Db, userId: string | null): Promise<Map<string, PitchMatch[]>> {
+export async function pitchMatchesFor(
+  db: Db,
+  userId: string | null,
+  /** 未ログインのとき端末に持っている好きなアーティスト名 */
+  favoriteNames: string[] = [],
+): Promise<Map<string, PitchMatch[]>> {
   const out = new Map<string, PitchMatch[]>();
-  if (!userId) return out;
-  const favorites = await db.list("user_favorite_artists", { eq: { user_id: userId } });
-  if (favorites.length === 0) return out;
+  const favorites = userId ? await db.list("user_favorite_artists", { eq: { user_id: userId } }) : [];
   const favIds = new Set(favorites.map((f) => f.artist_id));
+  if (favoriteNames.length) {
+    const norm = (s: string) => s.normalize("NFKC").trim().toLowerCase();
+    const wanted = new Set(favoriteNames.map(norm));
+    for (const a of await db.list("artists")) if (wanted.has(norm(a.name))) favIds.add(a.id);
+  }
+  if (favIds.size === 0) return out;
   const openCampaigns = await db.list("campaigns", { eq: { status: "open" } });
   if (openCampaigns.length === 0) return out;
   const pitches = await db.list("pitches", {
@@ -43,7 +53,15 @@ export async function pitchMatchesFor(db: Db, userId: string | null): Promise<Ma
 export async function getFeed(
   db: Db,
   user: SessionUser | null,
-  opts: { depth?: number; rng?: () => number; now?: Date } = {},
+  opts: {
+    depth?: number;
+    rng?: () => number;
+    now?: Date;
+    taste?: Taste | null;
+    /** 端末側で覚えている「もう聴いた曲」（未ログイン用） */
+    exclude?: string[];
+    favoriteNames?: string[];
+  } = {},
 ): Promise<{ items: QueueItem[]; depth: number }> {
   const now = opts.now ?? new Date();
   const depth = clampDepth(opts.depth ?? user?.depth, appConfig.scoring);
@@ -52,7 +70,7 @@ export async function getFeed(
     db.list("curators", { eq: { status: "active" } }),
     loadCatalog(db),
     user ? db.list("curator_follows", { eq: { user_id: user.id } }) : Promise.resolve([]),
-    pitchMatchesFor(db, user?.id ?? null),
+    pitchMatchesFor(db, user?.id ?? null, opts.favoriteNames),
     user
       ? db.list("listen_events", {
           eq: { user_id: user.id },
@@ -65,6 +83,7 @@ export async function getFeed(
 
   const active = new Set(activeCurators.map((c) => c.id));
   const handles = new Map(activeCurators.map((c) => [c.id, c.x_handle]));
+  const names = new Map(activeCurators.map((c) => [c.id, c.display_name]));
   const scoreByTrack = new Map(scores.map((s) => [s.track_id, s]));
 
   const candidates: FeedCandidate[] = [];
@@ -85,12 +104,14 @@ export async function getFeed(
       obscurity: s?.obscurity ?? 1,
       mention_count: contributions.reduce((n, c) => n + c.mention_count, 0),
       pitch_matches: matches,
+      tags: s?.tags ?? {},
     });
   }
 
-  const excluded = new Set(
-    events.filter((e) => e.event === "complete" || e.event === "skip").map((e) => e.track_id),
-  );
+  const excluded = new Set([
+    ...events.filter((e) => e.event === "complete" || e.event === "skip").map((e) => e.track_id),
+    ...(opts.exclude ?? []),
+  ]);
 
   const items = buildQueue(
     {
@@ -99,6 +120,8 @@ export async function getFeed(
       depth,
       excludedTrackIds: excluded,
       curatorHandles: handles,
+      curatorNames: names,
+      taste: opts.taste ? decayTaste(opts.taste, now, appConfig.taste) : null,
       rng: opts.rng,
     },
     appConfig,

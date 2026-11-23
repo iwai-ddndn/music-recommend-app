@@ -34,6 +34,7 @@ export const POST = handler(async (req: Request) => {
       base_weight: input.base_weight,
       claimed_by_user_id: null,
       bio: null,
+          profile_tags: {},
     },
   ]);
   return json({ curator }, { status: 201 });

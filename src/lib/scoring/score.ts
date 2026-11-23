@@ -1,6 +1,7 @@
 // 仕様書 6章のスコア計算。すべて純粋関数。係数は config/app-config.json から渡す。
 //
-//   score(t,u)     = heat(t,u) × obscurity(t)^(2·d_u) × (1 + pitchBoost(t,u))
+//   score(t,u)     = heat(t,u) × obscurity(t)^(2·d_u) × (1 + pitchBoost(t,u)) × tasteMult(t,u)
+//   （tasteMult は taste.ts。好みが未取得なら 1 で、仕様書 6章の式そのまま）
 //   heat(t,u)      = Σ_{c∈top5(t)} w_c · f_{u,c} · min(1 + 0.25(n_{c,t}−1), 2) · 0.5^(Δ_{c,t}/30)
 //   obscurity(t)   = 1 / (1 + log10(1 + L_t / 10000))
 //
@@ -67,19 +68,28 @@ export function curatorContributions(
 }
 
 /**
- * heat(t,u)。フォロー倍率を掛けたうえで寄与の大きい上位 topCurators 人だけを合計する
- * （6人目以降は加点しない）。followed を空にするとバッチ保存用の共通部分になる。
+ * heat(t,u)。目利きごとの倍率 f_{u,c} を掛けたうえで寄与の大きい上位 topCurators 人だけを合計する
+ * （6人目以降は加点しない）。
  */
+export function heatWith(
+  contributions: CuratorContribution[],
+  multiplierFor: (curatorId: string) => number,
+  cfg: ScoringConfig,
+): number {
+  return contributions
+    .map((c) => c.contribution * multiplierFor(c.curator_id))
+    .sort((a, b) => b - a)
+    .slice(0, cfg.topCurators)
+    .reduce((sum, v) => sum + v, 0);
+}
+
+/** フォロー中=followMultiplier、それ以外=1 の heat。followed を空にするとバッチ保存用の共通部分になる。 */
 export function heat(
   contributions: CuratorContribution[],
   followed: ReadonlySet<string>,
   cfg: ScoringConfig,
 ): number {
-  return contributions
-    .map((c) => c.contribution * (followed.has(c.curator_id) ? cfg.followMultiplier : 1))
-    .sort((a, b) => b - a)
-    .slice(0, cfg.topCurators)
-    .reduce((sum, v) => sum + v, 0);
+  return heatWith(contributions, (id) => (followed.has(id) ? cfg.followMultiplier : 1), cfg);
 }
 
 /** 好きなアーティストに一致する承認済み推薦の件数から加点を決める。上限あり。 */
@@ -93,9 +103,14 @@ export function clampDepth(depth: number | null | undefined, cfg: ScoringConfig)
 }
 
 export function score(
-  args: { heat: number; obscurity: number; depth: number; pitchMatches: number },
+  args: { heat: number; obscurity: number; depth: number; pitchMatches: number; tasteMultiplier?: number },
   cfg: ScoringConfig,
 ): number {
   const d = clampDepth(args.depth, cfg);
-  return args.heat * Math.pow(args.obscurity, 2 * d) * (1 + pitchBoost(args.pitchMatches, cfg));
+  return (
+    args.heat *
+    Math.pow(args.obscurity, 2 * d) *
+    (1 + pitchBoost(args.pitchMatches, cfg)) *
+    (args.tasteMultiplier ?? 1)
+  );
 }
