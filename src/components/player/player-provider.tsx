@@ -3,28 +3,51 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import { toast } from "sonner";
 import { useMe } from "@/lib/client/api";
+import { logEvent, logEventById } from "@/lib/client/events";
+import { useProfile } from "@/lib/client/profile";
 import { appConfig } from "@/lib/config";
 import { createAdapter } from "@/lib/player/adapters";
 import { isAppleAuthorized } from "@/lib/player/adapters/apple";
+import { prefetchPreviews } from "@/lib/player/adapters/preview";
 import { isComplete } from "@/lib/player/queue-logic";
-import { currentItem, initPlayerStore, usePlayer, type EventLogger } from "@/lib/player/store";
-import { isUserGesture, setActiveAdapter, waitEmbedContainer } from "./controls";
-
-const log: EventLogger = (e) => {
-  void fetch("/api/events", {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify(e),
-    keepalive: true,
-  }).catch(() => {});
-};
+import { currentItem, initPlayerStore, usePlayer } from "@/lib/player/store";
+import { pickSource } from "@/lib/feed/build-queue";
+import * as controls from "./controls";
 
 // サーバーでもストアは作る（SSR 中は参照のみで更新されない）
-const store = initPlayerStore({ log, notify: (m) => toast(m) });
+const store = initPlayerStore({ log: logEventById, notify: (m) => toast(m) });
+
+/** ロック画面・通知の操作（Media Session）。<audio> で再生するプレビューで効く */
+function useMediaSession() {
+  const item = usePlayer(currentItem);
+  const status = usePlayer((s) => s.status);
+  useEffect(() => {
+    if (typeof navigator === "undefined" || !("mediaSession" in navigator)) return;
+    const ms = navigator.mediaSession;
+    if (!item) {
+      ms.metadata = null;
+      return;
+    }
+    ms.metadata = new MediaMetadata({
+      title: item.title,
+      artist: item.artist_name,
+      artwork: item.artwork_url ? [{ src: item.artwork_url, sizes: "400x400" }] : [],
+    });
+    ms.setActionHandler("play", () => void controls.play());
+    ms.setActionHandler("pause", () => void controls.pause());
+    ms.setActionHandler("nexttrack", () => store.getState().next("user"));
+    ms.setActionHandler("previoustrack", () => store.getState().prev());
+  }, [item]);
+  useEffect(() => {
+    if (typeof navigator === "undefined" || !("mediaSession" in navigator)) return;
+    navigator.mediaSession.playbackState = status === "playing" ? "playing" : status === "paused" ? "paused" : "none";
+  }, [status]);
+}
 
 /** アダプターの生成・破棄とイベント記録を担う（表示は持たない） */
 function PlayerEngine({ simulate }: { simulate: boolean }) {
   const token = usePlayer((s) => s.loadToken);
+  useMediaSession();
 
   useEffect(() => {
     if (token === 0) return;
@@ -40,17 +63,32 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
     const threshold = appConfig.queue.completeThreshold;
     const userStarted = st.startedByUser;
 
+    // 次の数曲のプレビュー音源を先に引いておく（曲終わりで待たずに鳴らす）
+    if (!simulate && !st.appleAuthorized) {
+      const upcoming = st.queue
+        .slice(st.index, st.index + 4)
+        .map((q) =>
+          pickSource(q.sources, {
+            preferred: st.preferredService,
+            appleAuthorized: false,
+            priority: appConfig.player.servicePriority,
+          }),
+        )
+        .filter((s) => s?.service === "apple");
+      void prefetchPreviews(upcoming.map((s) => s!));
+    }
+
     (async () => {
-      const container = await waitEmbedContainer();
+      const container = await controls.waitEmbedContainer();
       if (cancelled) return;
       adapter = createAdapter(source.service, {
         container,
         simulate,
         appleAuthorized: st.appleAuthorized,
-        isUserInitiated: () => userStarted || isUserGesture(),
+        isUserInitiated: () => userStarted || controls.isUserGesture(),
       });
       const a = adapter;
-      setActiveAdapter(a);
+      controls.setActiveAdapter(a);
       a.onStateChange((s) => {
         if (cancelled) return;
         const cur = store.getState();
@@ -63,7 +101,7 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
             if (blockedTimer) clearTimeout(blockedTimer);
             cur.setStatus("playing");
             if (!cur.loggedPlay) {
-              log({ track_id: item.track_id, event: "play", context: item.context, pitch_id: item.pitch_id });
+              logEvent(item, "play");
               cur.markPlayLogged();
             }
             break;
@@ -73,7 +111,7 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
             break;
           case "ended":
             if (!cur.loggedComplete && a.canAutoAdvance) {
-              log({ track_id: item.track_id, event: "complete", context: item.context, pitch_id: item.pitch_id });
+              logEvent(item, "complete");
               cur.markCompleteLogged();
             }
             if (a.canAutoAdvance) cur.next("auto");
@@ -88,7 +126,7 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
         const cur = store.getState();
         cur.setProgress(p, d);
         if (!cur.loggedComplete && isComplete(a.service, p, d, threshold)) {
-          log({ track_id: item.track_id, event: "complete", context: item.context, pitch_id: item.pitch_id });
+          logEvent(item, "complete", p);
           cur.markCompleteLogged();
         }
       });
@@ -100,11 +138,12 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
           store.getState().setStatus("awaiting_user");
           return;
         }
-        await a.play().catch(() => {});
-        // 自動送りに失敗したら「タップして続きを再生」を出して停止する
+        // 再生が拒否されたら（モバイルの自動再生制限）すぐ「タップして続きを再生」にする
+        await a.play().catch(() => {
+          if (!cancelled && !hasPlayed) store.getState().setStatus("blocked");
+        });
         blockedTimer = setTimeout(() => {
-          if (cancelled) return;
-          if (!hasPlayed) store.getState().setStatus("blocked");
+          if (!cancelled && !hasPlayed) store.getState().setStatus("blocked");
         }, 4000);
       } catch {
         if (!cancelled) store.getState().skipOnError();
@@ -115,9 +154,53 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
       cancelled = true;
       if (blockedTimer) clearTimeout(blockedTimer);
       adapter?.destroy();
-      setActiveAdapter(null);
+      controls.setActiveAdapter(null);
     };
   }, [token, simulate]);
+
+  return null;
+}
+
+/** ログイン中は端末の好みをサーバーにも保存する。ログイン直後は両方を統合する */
+function ProfileSync() {
+  const { user } = useMe();
+  const hydrated = useProfile((s) => s.hydrated);
+  const taste = useProfile((s) => s.taste);
+  const merged = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (!user || !hydrated || merged.current === user.id) return;
+    merged.current = user.id;
+    const p = useProfile.getState();
+    fetch("/api/taste", {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ taste: p.taste, merge: true }),
+    })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => d?.taste && useProfile.getState().setTaste(d.taste))
+      .catch(() => {});
+    // 端末で選んだ好きなアーティストをアカウントにも登録する
+    for (const name of p.favorites) {
+      void fetch("/api/favorites", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ name }),
+      }).catch(() => {});
+    }
+  }, [user, hydrated]);
+
+  useEffect(() => {
+    if (!user || merged.current !== user.id) return;
+    const t = setTimeout(() => {
+      void fetch("/api/taste", {
+        method: "PUT",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ taste }),
+      }).catch(() => {});
+    }, 3000);
+    return () => clearTimeout(t);
+  }, [user, taste]);
 
   return null;
 }
@@ -125,6 +208,10 @@ function PlayerEngine({ simulate }: { simulate: boolean }) {
 export function PlayerProvider({ children }: { children: ReactNode }) {
   const { user, mode } = useMe();
   const savedLoaded = useRef<string | null>(null);
+
+  useEffect(() => {
+    void useProfile.persist.rehydrate();
+  }, []);
 
   useEffect(() => {
     store.getState().setPreferredService(user?.preferred_service ?? null);
@@ -150,6 +237,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     <>
       {children}
       {mode && <PlayerEngine simulate={simulate} />}
+      <ProfileSync />
     </>
   );
 }

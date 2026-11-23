@@ -40,7 +40,7 @@ export class SimulatedAdapter implements PlayerAdapter {
     el.dataset.testid = "sim-embed";
     el.dataset.service = this.service;
     el.className =
-      "flex items-center gap-2 rounded-lg border border-dashed px-3 py-2 text-xs text-muted-foreground";
+      "sr-only";
     el.textContent = `デモ再生（${LABEL[this.service]} の埋め込みの代わり） ${source.external_id}`;
     this.container.appendChild(el);
     this.el = el;

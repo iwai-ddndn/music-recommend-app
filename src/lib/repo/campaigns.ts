@@ -37,7 +37,13 @@ export async function listCampaigns(db: Db, opts: { includeDraft?: boolean } = {
   }));
 }
 
-export async function pitchViews(db: Db, pitches: Pitch[], userId: string | null): Promise<PitchView[]> {
+export async function pitchViews(
+  db: Db,
+  pitches: Pitch[],
+  userId: string | null,
+  /** 未ログインのとき端末に持っている好きなアーティスト名 */
+  favoriteNames: string[] = [],
+): Promise<PitchView[]> {
   if (pitches.length === 0) return [];
   const [refs, favorites, catalog, curators, users] = await Promise.all([
     db.list("pitch_reference_artists", { in: { pitch_id: pitches.map((p) => p.id) } }),
@@ -49,6 +55,8 @@ export async function pitchViews(db: Db, pitches: Pitch[], userId: string | null
   const artists = await db.list("artists", { in: { id: [...new Set(refs.map((r) => r.artist_id))] } });
   const artistName = new Map(artists.map((a) => [a.id, a.name]));
   const fav = new Set(favorites.map((f) => f.artist_id));
+  const favNames = new Set(favoriteNames.map((n) => n.normalize("NFKC").trim().toLowerCase()));
+  for (const a of artists) if (favNames.has(a.name.normalize("NFKC").trim().toLowerCase())) fav.add(a.id);
   return pitches.map((p) => {
     const refArtists = refs
       .filter((r) => r.pitch_id === p.id)
@@ -80,11 +88,16 @@ export async function pitchViews(db: Db, pitches: Pitch[], userId: string | null
   });
 }
 
-export async function getCampaignDetail(db: Db, campaignId: string, user: SessionUser | null) {
+export async function getCampaignDetail(
+  db: Db,
+  campaignId: string,
+  user: SessionUser | null,
+  favoriteNames: string[] = [],
+) {
   const c = await db.get("campaigns", campaignId);
   if (!c || (c.status === "draft" && user?.role !== "admin")) throw new HttpError(404, "キャンペーンが見つかりません");
   const approved = await db.list("pitches", { eq: { campaign_id: c.id, status: "approved" } });
-  const views = await pitchViews(db, approved, user?.id ?? null);
+  const views = await pitchViews(db, approved, user?.id ?? null, favoriteNames);
   views.sort((a, b) => Number(b.matched) - Number(a.matched) || b.created_at.localeCompare(a.created_at));
   const mine = user
     ? await pitchViews(db, await db.list("pitches", { eq: { campaign_id: c.id, submitter_user_id: user.id } }), user.id)

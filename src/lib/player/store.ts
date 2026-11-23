@@ -35,6 +35,8 @@ export type PlayerState = {
   appleAuthorized: boolean;
   panelOpen: boolean;
   savedTrackIds: string[];
+  /** 連続して再生に失敗した曲数（通信断などで全曲を飛ばし続けないための歯止め） */
+  errorStreak: number;
 };
 
 export type PlayerActions = {
@@ -51,6 +53,8 @@ export type PlayerActions = {
   setPanelOpen(v: boolean): void;
   setSaved(ids: string[]): void;
   toggleSaved(trackId: string, saved: boolean): void;
+  /** 好みの学習結果を反映: これから流れる曲（直近の数曲より後ろ）だけを並べ直す */
+  replaceTail(items: QueueItem[]): void;
   /** エラーになった現在の曲を自動でスキップ */
   skipOnError(): void;
   reset(): void;
@@ -74,6 +78,7 @@ const initial: PlayerState = {
   appleAuthorized: false,
   panelOpen: false,
   savedTrackIds: [],
+  errorStreak: 0,
 };
 
 export function createPlayerStore(deps: { log: EventLogger; notify: Notifier }) {
@@ -154,7 +159,7 @@ export function createPlayerStore(deps: { log: EventLogger; notify: Notifier }) 
         }
       },
       setStatus(status) {
-        set({ status });
+        set(status === "playing" ? { status, errorStreak: 0 } : { status });
       },
       setProgress(positionSec, durationSec) {
         set({ positionSec, durationSec });
@@ -184,8 +189,23 @@ export function createPlayerStore(deps: { log: EventLogger; notify: Notifier }) 
             : s.savedTrackIds.filter((id) => id !== trackId),
         }));
       },
+      replaceTail(items) {
+        const { queue, index } = get();
+        if (index < 0) return;
+        const head = queue.slice(0, index + 1 + appConfig.queue.rerankKeepNext);
+        const seen = new Set(head.map((q) => q.track_id));
+        set({ queue: [...head, ...items.filter((i) => !seen.has(i.track_id))] });
+      },
       skipOnError() {
         const cur = get().queue[get().index];
+        const streak = get().errorStreak + 1;
+        if (streak >= 3) {
+          // 3曲続けて失敗したら止める（通信状況などの問題）
+          set({ status: "error", errorStreak: 0 });
+          deps.notify("再生できませんでした。通信状況を確認してください");
+          return;
+        }
+        set({ errorStreak: streak });
         if (cur) deps.notify(`「${cur.title}」を再生できなかったためスキップしました`);
         moveTo(get().index, false, false);
       },

@@ -1,44 +1,40 @@
 "use client";
 
 import { Pause, Play } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { getPlayerStore, usePlayer } from "@/lib/player/store";
 import type { QueueItem } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Artwork, EqualizerIcon } from "./artwork";
 import * as controls from "./controls";
+import { WhyChips } from "./now-playing";
 import { SaveButton } from "./save-button";
 import { ServiceBadge } from "./service-badge";
 
-/** 同じリストを再生中か（queue が同じ track_id 列か） */
-function useIsThisQueue(items: QueueItem[]) {
-  return usePlayer(
-    (s) =>
-      s.queue.length === items.length && s.queue.every((q, i) => q.track_id === items[i]?.track_id),
-  );
+/** 同じリストを再生中か（先頭が同じ並びか。好みの学習で後ろが並べ替わっても同じキューとみなす） */
+function useIsThisQueue(items: QueueItem[], label: string) {
+  return usePlayer((s) => s.index >= 0 && s.label === label && items.some((i) => i.track_id === s.queue[s.index]?.track_id));
 }
 
 export function usePlayList(items: QueueItem[], label: string) {
-  const isThis = useIsThisQueue(items);
-  const index = usePlayer((s) => s.index);
+  const isThis = useIsThisQueue(items, label);
+  const currentId = usePlayer((s) => s.queue[s.index]?.track_id);
   const status = usePlayer((s) => s.status);
   const playing = isThis && (status === "playing" || status === "loading");
   return {
     isThis,
     playing,
-    currentIndex: isThis ? index : -1,
-    status,
-    playFrom(i: number) {
+    currentId: isThis ? currentId : undefined,
+    playFrom(i: number, opts: { open?: boolean } = {}) {
       controls.markUserGesture();
       const st = getPlayerStore().getState();
-      if (isThis && i === st.index) {
+      if (isThis && items[i].track_id === currentId) {
         if (st.status === "playing") void controls.pause();
         else if (st.status === "paused" || st.status === "blocked") void controls.play();
+        else st.setPanelOpen(true);
         return;
       }
-      if (isThis) st.playAt(i);
-      else st.playQueue(items, i, label);
+      st.playQueue(items, i, label);
+      if (opts.open) st.setPanelOpen(true);
     },
     toggleAll() {
       controls.markUserGesture();
@@ -50,22 +46,42 @@ export function usePlayList(items: QueueItem[], label: string) {
   };
 }
 
+/** 丸い大きな再生ボタン（その画面の主操作） */
+export function PlayFab({ items, label, className }: { items: QueueItem[]; label: string; className?: string }) {
+  const list = usePlayList(items, label);
+  return (
+    <button
+      type="button"
+      data-testid="play-all"
+      aria-label={list.playing ? "一時停止" : "再生"}
+      disabled={items.length === 0}
+      onClick={list.toggleAll}
+      className={cn(
+        "bg-brand text-brand-foreground flex size-14 shrink-0 items-center justify-center rounded-full shadow-lg transition-transform active:scale-95 disabled:opacity-40",
+        className,
+      )}
+    >
+      {list.playing ? <Pause className="size-6 fill-current" /> : <Play className="ml-0.5 size-6 fill-current" />}
+    </button>
+  );
+}
+
 export function TrackList({
   items,
   label,
-  showReason = true,
+  showWhy = true,
   extra,
 }: {
   items: QueueItem[];
   label: string;
-  showReason?: boolean;
+  showWhy?: boolean;
   extra?: (item: QueueItem, index: number) => React.ReactNode;
 }) {
   const list = usePlayList(items, label);
   return (
-    <ol className="divide-y" data-testid="track-list">
+    <ol data-testid="track-list" className="-mx-2">
       {items.map((item, i) => {
-        const isCurrent = list.currentIndex === i;
+        const isCurrent = list.currentId === item.track_id;
         const services = [...new Set(item.sources.filter((s) => s.playable).map((s) => s.service))];
         return (
           <li
@@ -73,61 +89,41 @@ export function TrackList({
             data-testid="track-row"
             data-current={isCurrent || undefined}
             className={cn(
-              "group hover:bg-accent/50 flex cursor-pointer items-center gap-3 px-2 py-2.5 transition-colors sm:px-3",
-              isCurrent && "bg-accent/60",
+              "active:bg-accent flex min-h-[72px] cursor-pointer items-center gap-3 rounded-2xl px-2 py-2 transition-colors",
+              isCurrent && "bg-accent",
             )}
             onClick={() => list.playFrom(i)}
           >
-            <div className="relative">
-              <Artwork src={item.artwork_url} seed={item.track_id} alt="" className="size-12" />
-              <div
-                className={cn(
-                  "absolute inset-0 flex items-center justify-center rounded-md bg-black/40 text-white opacity-0 transition-opacity group-hover:opacity-100",
-                  isCurrent && "opacity-100",
-                )}
-              >
-                {isCurrent && list.playing ? (
-                  <>
-                    <EqualizerIcon playing className="group-hover:hidden" />
-                    <Pause className="hidden size-5 group-hover:block" />
-                  </>
-                ) : (
-                  <Play className="size-5" />
-                )}
-              </div>
-            </div>
-            <div className="min-w-0 flex-1">
-              <div className={cn("truncate font-medium", isCurrent && "text-brand")} data-testid="track-title">
-                {item.title}
-              </div>
-              <div className="text-muted-foreground truncate text-sm">{item.artist_name}</div>
-              {showReason && (
-                <div className="mt-1 flex flex-wrap items-center gap-1.5">
-                  <Badge variant="brand" className="max-w-full truncate font-normal" data-testid="reason">
-                    {item.reason}
-                  </Badge>
-                </div>
-              )}
-              {extra?.(item, i)}
-            </div>
-            <div className="hidden shrink-0 gap-1 sm:flex">
-              {services.map((s) => (
-                <ServiceBadge key={s} service={s} />
-              ))}
-            </div>
-            <SaveButton item={item} />
-            <Button
-              variant="ghost"
-              size="icon-sm"
-              className="sr-only focus-visible:not-sr-only"
+            <button
+              type="button"
               aria-label={`${item.title}を再生`}
+              className="relative shrink-0"
               onClick={(e) => {
                 e.stopPropagation();
                 list.playFrom(i);
               }}
             >
-              <Play />
-            </Button>
+              <Artwork src={item.artwork_url} seed={item.track_id} alt="" className="size-14 rounded-xl" />
+              {isCurrent && (
+                <span className="absolute inset-0 flex items-center justify-center rounded-xl bg-black/45">
+                  <EqualizerIcon playing={list.playing} />
+                </span>
+              )}
+            </button>
+            <div className="min-w-0 flex-1">
+              <div className={cn("truncate text-base font-medium", isCurrent && "text-brand")} data-testid="track-title">
+                {item.title}
+              </div>
+              <div className="text-muted-foreground flex items-center gap-1.5 text-sm">
+                {services.map((s) => (
+                  <ServiceBadge key={s} service={s} className="h-4 px-1 text-[9px]" />
+                ))}
+                <span className="truncate">{item.artist_name}</span>
+              </div>
+              {extra?.(item, i)}
+            </div>
+            {showWhy && <WhyChips item={item} compact />}
+            <SaveButton item={item} />
           </li>
         );
       })}

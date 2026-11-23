@@ -7,7 +7,7 @@ import { Loader2, Mail } from "lucide-react";
 import { toast } from "sonner";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
@@ -25,13 +25,13 @@ function DemoAccounts({ next }: { next: string }) {
   );
   return (
     <div className="space-y-2">
-      <p className="text-muted-foreground text-xs">デモ用アカウントで試す</p>
+      <p className="text-muted-foreground text-xs">デモ用アカウント</p>
       <div className="grid grid-cols-2 gap-2">
         {data?.users.map((u) => (
           <Button
             key={u.id}
             variant="outline"
-            className="h-auto flex-col items-start py-2"
+            className="h-auto min-h-14 flex-col items-start rounded-2xl py-2"
             data-testid={`demo-${u.role}`}
             onClick={async () => {
               await apiSend("/api/auth/demo", "POST", { user_id: u.id });
@@ -65,13 +65,10 @@ export function LoginView() {
   }, [user, next, router]);
 
   return (
-    <div className="mx-auto max-w-md space-y-6 py-6">
+    <div className="mx-auto max-w-md space-y-6 py-10">
       <Card>
         <CardHeader>
           <CardTitle className="text-xl">ログイン</CardTitle>
-          <CardDescription>
-            聴くだけならログインは不要です。フォロー・保存・推薦をするときにログインしてください。
-          </CardDescription>
         </CardHeader>
         <CardContent className="space-y-5">
           {errorParam && (
@@ -117,14 +114,15 @@ export function LoginView() {
                 id="email"
                 type="email"
                 autoComplete="email"
+                className="h-12"
                 placeholder="you@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              <Button type="submit" className="w-full" disabled={busy}>
+              <Button type="submit" className="h-12 w-full rounded-full text-base" disabled={busy}>
                 {busy ? <Loader2 className="animate-spin" /> : <Mail />}
-                {fixtures ? "ログイン（デモ: メール送信なし）" : "ログインリンクを送る"}
+                {fixtures ? "ログイン" : "ログインリンクを送る"}
               </Button>
             </form>
           )}
@@ -134,10 +132,10 @@ export function LoginView() {
             <DemoAccounts next={next} />
           ) : (
             <div className="space-y-2">
-              <p className="text-muted-foreground text-xs">目利きの方（本人確認とキャンペーン投稿用）</p>
+              <p className="text-muted-foreground text-xs">目利きの方</p>
               <Button
                 variant="outline"
-                className="w-full"
+                className="h-12 w-full rounded-full"
                 onClick={async () => {
                   const { error } = await supabaseBrowser().auth.signInWithOAuth({
                     provider: "x",

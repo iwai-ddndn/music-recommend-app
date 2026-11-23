@@ -1,190 +1,151 @@
 "use client";
 
+// モバイル前提の骨格。
+// - 下部ナビ（4項目、アイコン＋ラベル、選択中はピル型インジケーター）
+// - その上にミニプレイヤー、タップで全画面プレイヤー
+// - 広い画面では下部ナビを左のナビゲーションレールに置き換える
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
-import { Compass, Library, LogIn, Megaphone, Settings, Shield, Users } from "lucide-react";
-import { MiniPlayer, NowPlayingPanel } from "@/components/player/now-playing";
+import { Bookmark, Compass, Megaphone, Shield, UserRound, Users } from "lucide-react";
+import { MiniPlayer, NowPlayingSheet } from "@/components/player/now-playing";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { APP_SHORT_NAME } from "@/lib/brand";
 import { useMe } from "@/lib/client/api";
+import { usePlayer } from "@/lib/player/store";
 import { cn } from "@/lib/utils";
 
 const NAV = [
-  { href: "/", label: "発見", icon: Compass },
+  { href: "/", label: "ホーム", icon: Compass },
   { href: "/curators", label: "目利き", icon: Users },
-  { href: "/campaigns", label: "キャンペーン", icon: Megaphone },
-  { href: "/library", label: "ライブラリ", icon: Library },
+  { href: "/campaigns", label: "推薦", icon: Megaphone },
+  { href: "/library", label: "保存", icon: Bookmark },
 ];
 
-function isActive(pathname: string, href: string) {
+function isActive(pathname: string | null, href: string) {
+  if (!pathname) return false;
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
 }
 
-function Logo() {
+function NavItems({ pathname, rail }: { pathname: string | null; rail?: boolean }) {
+  const { user } = useMe();
+  const items = rail && user?.role === "admin" ? [...NAV, { href: "/admin", label: "管理", icon: Shield }] : NAV;
   return (
-    <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
-      <span className="bg-brand text-brand-foreground flex size-7 items-center justify-center rounded-md text-sm">掘</span>
-      <span>{APP_SHORT_NAME}</span>
+    <>
+      {items.map(({ href, label, icon: Icon }) => {
+        const active = isActive(pathname, href);
+        return (
+          <Link
+            key={href}
+            href={href}
+            aria-current={active ? "page" : undefined}
+            className="group flex min-h-14 flex-1 flex-col items-center justify-center gap-1 lg:flex-none lg:py-2"
+          >
+            <span
+              className={cn(
+                "flex h-8 w-16 items-center justify-center rounded-full transition-colors",
+                active ? "bg-brand/20 text-foreground" : "text-muted-foreground group-hover:bg-accent",
+              )}
+            >
+              <Icon className="size-5" strokeWidth={active ? 2.4 : 2} />
+            </span>
+            <span className={cn("text-[11px] leading-none", active ? "font-semibold" : "text-muted-foreground")}>
+              {label}
+            </span>
+          </Link>
+        );
+      })}
+    </>
+  );
+}
+
+function ActiveNav({ rail }: { rail?: boolean }) {
+  return <NavItems pathname={usePathname()} rail={rail} />;
+}
+
+function Nav({ rail }: { rail?: boolean }) {
+  return (
+    <Suspense fallback={<NavItems pathname={null} rail={rail} />}>
+      <ActiveNav rail={rail} />
+    </Suspense>
+  );
+}
+
+export function AccountButton({ className }: { className?: string }) {
+  const { user } = useMe();
+  return (
+    <Link
+      href={user ? "/settings" : "/login"}
+      aria-label={user ? "設定" : "ログイン"}
+      className={cn("flex size-11 items-center justify-center rounded-full", className)}
+    >
+      <Avatar className="size-9">
+        <AvatarFallback className={user ? "bg-brand/25 font-semibold" : ""}>
+          {user ? (user.display_name ?? "?").slice(0, 1) : <UserRound className="size-4" />}
+        </AvatarFallback>
+      </Avatar>
     </Link>
   );
 }
 
-function SidebarNav({ pathname }: { pathname: string | null }) {
-  const { user } = useMe();
-  const items = user?.role === "admin" ? [...NAV, { href: "/admin", label: "管理", icon: Shield }] : NAV;
-  return (
-    <nav className="mt-6 space-y-1" aria-label="メイン">
-      {items.map(({ href, label, icon: Icon }) => (
-        <Link
-          key={href}
-          href={href}
-          aria-current={pathname && isActive(pathname, href) ? "page" : undefined}
-          className={cn(
-            "hover:bg-sidebar-accent flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors",
-            pathname && isActive(pathname, href) ? "bg-sidebar-accent text-foreground" : "text-muted-foreground",
-          )}
-        >
-          <Icon className="size-4" />
-          {label}
-        </Link>
-      ))}
-    </nav>
-  );
-}
-
-function SidebarNavActive() {
-  return <SidebarNav pathname={usePathname()} />;
-}
-
-function Sidebar() {
-  const { user, mode } = useMe();
-  return (
-    <aside className="bg-sidebar fixed inset-y-0 left-0 z-30 hidden w-60 flex-col border-r px-3 py-4 lg:flex">
-      <div className="px-2">
-        <Logo />
-        <p className="text-muted-foreground mt-1 text-xs">再生数に左右されない音楽の発掘</p>
-      </div>
-      <Suspense fallback={<SidebarNav pathname={null} />}>
-        <SidebarNavActive />
-      </Suspense>
-      <div className="mt-auto space-y-2">
-        {mode === "fixtures" && (
-          <Badge variant="outline" className="mx-2 font-normal">
-            デモモード（fixtures）
-          </Badge>
-        )}
-        {user ? (
-          <Link
-            href="/settings"
-            className="hover:bg-sidebar-accent flex items-center gap-3 rounded-md px-2 py-2 text-sm"
-          >
-            <Avatar>
-              <AvatarFallback>{(user.display_name ?? "?").slice(0, 1)}</AvatarFallback>
-            </Avatar>
-            <span className="min-w-0 flex-1">
-              <span className="block truncate font-medium">{user.display_name}</span>
-              <span className="text-muted-foreground block text-xs">設定</span>
-            </span>
-            <Settings className="text-muted-foreground size-4" />
-          </Link>
-        ) : (
-          <Link
-            href="/login"
-            className="hover:bg-sidebar-accent flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium"
-          >
-            <LogIn className="size-4" />
-            ログイン
-          </Link>
-        )}
-      </div>
-    </aside>
-  );
-}
-
-function MobileHeader() {
-  const { user } = useMe();
-  return (
-    <header className="bg-background/90 sticky top-0 z-20 flex h-14 items-center justify-between border-b px-4 backdrop-blur lg:hidden">
-      <Logo />
-      <div className="flex items-center gap-1">
-        {user?.role === "admin" && (
-          <Link href="/admin" aria-label="管理" className="hover:bg-accent rounded-md p-2">
-            <Shield className="size-5" />
-          </Link>
-        )}
-        <Link href={user ? "/settings" : "/login"} aria-label={user ? "設定" : "ログイン"} className="hover:bg-accent rounded-md p-2">
-          {user ? <Settings className="size-5" /> : <LogIn className="size-5" />}
-        </Link>
-      </div>
-    </header>
-  );
-}
-
-function MobileTabBarActive() {
-  return <MobileTabBar pathname={usePathname()} />;
-}
-
-function MobileTabBar({ pathname }: { pathname: string | null }) {
-  return (
-    <nav
-      aria-label="メイン"
-      className="bg-background/95 fixed inset-x-0 bottom-0 z-30 grid h-[calc(4rem+env(safe-area-inset-bottom))] grid-cols-4 border-t pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
-    >
-      {NAV.map(({ href, label, icon: Icon }) => (
-        <Link
-          key={href}
-          href={href}
-          aria-current={pathname && isActive(pathname, href) ? "page" : undefined}
-          className={cn(
-            "flex flex-col items-center justify-center gap-1 text-[11px] font-medium",
-            pathname && isActive(pathname, href) ? "text-foreground" : "text-muted-foreground",
-          )}
-        >
-          <Icon className="size-5" />
-          {label}
-        </Link>
-      ))}
-    </nav>
-  );
-}
-
-export function Footer() {
-  const contact = process.env.NEXT_PUBLIC_CONTACT_EMAIL;
-  return (
-    <footer className="text-muted-foreground mt-16 border-t px-4 py-6 text-xs sm:px-8">
-      <p>
-        曲は配信せず、Apple Music・SoundCloud・Bandcamp の公式プレイヤーで再生しています。いいね数や再生数はおすすめに使いません。
-      </p>
-      <p className="mt-2">
-        目利きとしての掲載停止・削除のお申し出:{" "}
-        {contact ? (
-          <a className="underline underline-offset-4" href={`mailto:${contact}`}>
-            {contact}
-          </a>
-        ) : (
-          <span>運営までご連絡ください（NEXT_PUBLIC_CONTACT_EMAIL 未設定）</span>
-        )}
-      </p>
-    </footer>
-  );
-}
-
 export function AppShell({ children }: { children: React.ReactNode }) {
+  const hasTrack = usePlayer((s) => s.index >= 0);
   return (
-    <div className="min-h-dvh">
-      <Sidebar />
-      <MobileHeader />
-      <main className="pb-40 lg:pr-[360px] lg:pb-0 lg:pl-60">
-        <div className="mx-auto w-full max-w-4xl px-4 py-6 sm:px-8 lg:py-10">{children}</div>
-        <Footer />
+    <div className="min-h-dvh lg:pl-20">
+      {/* 広い画面: ナビゲーションレール */}
+      <nav
+        aria-label="メイン"
+        className="bg-sidebar fixed inset-y-0 left-0 z-30 hidden w-20 flex-col items-center gap-2 border-r py-4 lg:flex"
+      >
+        <Nav rail />
+        <AccountButton className="mt-auto" />
+      </nav>
+
+      <main
+        className={cn(
+          "mx-auto w-full max-w-xl overflow-x-clip px-4 pt-[env(safe-area-inset-top)]",
+          hasTrack ? "pb-[calc(9.5rem+env(safe-area-inset-bottom))]" : "pb-[calc(5rem+env(safe-area-inset-bottom))]",
+          hasTrack ? "lg:pb-24" : "lg:pb-8",
+        )}
+      >
+        {children}
       </main>
-      <NowPlayingPanel />
+
+      <NowPlayingSheet />
       <MiniPlayer />
-      <Suspense fallback={<MobileTabBar pathname={null} />}>
-        <MobileTabBarActive />
-      </Suspense>
+
+      {/* スマホ: 下部ナビ */}
+      <nav
+        aria-label="メイン"
+        className="bg-background/95 fixed inset-x-0 bottom-0 z-30 flex border-t px-2 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden"
+      >
+        <Nav />
+      </nav>
     </div>
+  );
+}
+
+/** 各画面の先頭。大きなタイトルと右上の操作（HIG のラージタイトル相当） */
+export function ScreenHeader({
+  title,
+  back,
+  action,
+}: {
+  title: React.ReactNode;
+  back?: { href: string; label: string };
+  action?: React.ReactNode;
+}) {
+  return (
+    <header className="flex min-h-16 items-center gap-2 pt-3 pb-2">
+      <div className="min-w-0 flex-1">
+        {back && (
+          <Link href={back.href} className="text-muted-foreground -ml-1 inline-flex h-8 items-center text-sm">
+            ‹ {back.label}
+          </Link>
+        )}
+        <h1 className="truncate text-[28px] leading-tight font-bold tracking-tight">{title}</h1>
+      </div>
+      {action}
+      <AccountButton className="lg:hidden" />
+    </header>
   );
 }

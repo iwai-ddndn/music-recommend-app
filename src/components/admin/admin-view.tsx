@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import useSWR from "swr";
 import { AlertTriangle, Check, Loader2, Pause, Play, Plus, RefreshCw, X } from "lucide-react";
 import { toast } from "sonner";
-import { EmptyState, ListSkeleton, PageHeader } from "@/components/common";
+import { EmptyState, ListSkeleton } from "@/components/common";
+import { ScreenHeader } from "@/components/layout/app-shell";
 import { CampaignStatusBadge, formatDate, type CampaignListItem } from "@/components/campaigns/campaigns-view";
 import { Artwork } from "@/components/player/artwork";
 import * as controls from "@/components/player/controls";
@@ -594,9 +595,9 @@ export function AdminView() {
   if (loading || user?.role !== "admin") return <ListSkeleton />;
   return (
     <div className="space-y-6">
-      <PageHeader title="管理" description="目利きの承認、推薦の審査、キャンペーン、X API の予算" />
+      <ScreenHeader title="管理" />
       <Tabs defaultValue="overview" className="gap-4">
-        <TabsList className="w-full sm:w-fit">
+        <TabsList className="h-11 w-full">
           <TabsTrigger value="overview">
             概要
             {data?.budget.exceeded && <AlertTriangle className="text-destructive" />}

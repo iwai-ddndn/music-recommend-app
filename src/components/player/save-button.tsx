@@ -1,14 +1,15 @@
 "use client";
 
-import { Bookmark, BookmarkCheck } from "lucide-react";
+import { Bookmark } from "lucide-react";
 import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
 import { apiSend } from "@/lib/client/api";
+import { logEvent } from "@/lib/client/events";
 import { useRequireLogin } from "@/lib/client/use-require-login";
 import { getPlayerStore, usePlayer } from "@/lib/player/store";
 import type { QueueItem } from "@/lib/types";
+import { cn } from "@/lib/utils";
 
-export function SaveButton({ item, size = "icon-sm" }: { item: QueueItem; size?: "icon-sm" | "icon" }) {
+export function SaveButton({ item, large }: { item: QueueItem; large?: boolean }) {
   const saved = usePlayer((s) => s.savedTrackIds.includes(item.track_id));
   const requireLogin = useRequireLogin();
   const onClick = async (e: React.MouseEvent) => {
@@ -17,32 +18,26 @@ export function SaveButton({ item, size = "icon-sm" }: { item: QueueItem; size?:
     const store = getPlayerStore().getState();
     store.toggleSaved(item.track_id, !saved);
     try {
-      if (saved) {
-        await apiSend("/api/events", "DELETE", { track_id: item.track_id });
-      } else {
-        await apiSend("/api/events", "POST", {
-          track_id: item.track_id,
-          event: "save",
-          context: item.context,
-          pitch_id: item.pitch_id,
-        });
-        toast("ライブラリに保存しました");
-      }
+      if (saved) await apiSend("/api/events", "DELETE", { track_id: item.track_id });
+      else logEvent(item, "save");
     } catch (err) {
       store.toggleSaved(item.track_id, saved);
       toast.error((err as Error).message);
     }
   };
   return (
-    <Button
-      variant="ghost"
-      size={size}
+    <button
+      type="button"
       onClick={onClick}
       aria-label={saved ? "保存を取り消す" : "保存"}
       aria-pressed={saved}
-      className={saved ? "text-brand" : "text-muted-foreground"}
+      className={cn(
+        "flex shrink-0 items-center justify-center rounded-full transition-transform active:scale-90",
+        large ? "size-12" : "size-11",
+        saved ? "text-brand" : "text-muted-foreground",
+      )}
     >
-      {saved ? <BookmarkCheck /> : <Bookmark />}
-    </Button>
+      <Bookmark className={cn(large ? "size-7" : "size-5", saved && "fill-current")} />
+    </button>
   );
 }

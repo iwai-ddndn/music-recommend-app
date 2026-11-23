@@ -1,24 +1,22 @@
 "use client";
 
-import Link from "next/link";
 import useSWR from "swr";
-import { ChevronLeft, ExternalLink, Pause, Play } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { EmptyState, ErrorState, ListSkeleton } from "@/components/common";
-import { TrackList, usePlayList } from "@/components/player/track-list";
+import { ScreenHeader } from "@/components/layout/app-shell";
+import { PlayFab, TrackList } from "@/components/player/track-list";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { fetcher } from "@/lib/client/api";
 import type { CuratorListItem } from "@/lib/repo/curators";
-import { FollowButton } from "./curators-view";
+import { sceneLabel } from "@/lib/taste/vocabulary";
+import { FollowButton, topScenes } from "./curators-view";
 
-function PlayButton({ c }: { c: CuratorListItem }) {
-  const list = usePlayList(c.recent_tracks, `@${c.x_handle} の推薦`);
+function Stat({ value, label }: { value: React.ReactNode; label: string }) {
   return (
-    <Button variant="brand" onClick={list.toggleAll} disabled={c.recent_tracks.length === 0}>
-      {list.playing ? <Pause className="fill-current" /> : <Play className="fill-current" />}
-      {list.playing ? "一時停止" : "推薦曲を再生"}
-    </Button>
+    <div className="flex-1 text-center">
+      <div className="text-xl font-bold tabular-nums">{value}</div>
+      <div className="text-muted-foreground text-xs">{label}</div>
+    </div>
   );
 }
 
@@ -27,47 +25,47 @@ export function CuratorDetailView({ id }: { id: string }) {
   if (error) return <ErrorState message={error.message} onRetry={() => mutate()} />;
   if (isLoading || !data) return <ListSkeleton />;
   const c = data.curator;
+  const label = `@${c.x_handle}`;
   return (
-    <div className="space-y-6">
-      <Link href="/curators" className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 text-sm">
-        <ChevronLeft className="size-4" />
-        目利き一覧
-      </Link>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-        <Avatar className="size-16 text-xl">
-          <AvatarFallback>{c.display_name.slice(0, 1)}</AvatarFallback>
+    <div className="space-y-5">
+      <ScreenHeader title="" back={{ href: "/curators", label: "目利き" }} />
+      <div className="flex flex-col items-center gap-2 text-center">
+        <Avatar className="size-24">
+          <AvatarFallback className="text-3xl">{c.display_name.slice(0, 1)}</AvatarFallback>
         </Avatar>
-        <div className="min-w-0 flex-1 space-y-1">
-          <h1 className="text-2xl font-bold">{c.display_name}</h1>
-          <div className="text-muted-foreground flex flex-wrap items-center gap-2 text-sm">
-            <a
-              href={`https://x.com/${c.x_handle}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 hover:underline"
-            >
-              @{c.x_handle}
-              <ExternalLink className="size-3" />
-            </a>
-            <span>直近30日 {c.recent_count}曲</span>
-            <span>フォロワー {c.follower_count}</span>
-            {c.claimed && <Badge variant="outline">本人確認済み</Badge>}
-          </div>
-          {c.bio && <p className="text-sm">{c.bio}</p>}
+        <h1 className="text-2xl font-bold">{c.display_name}</h1>
+        <a
+          href={`https://x.com/${c.x_handle}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground inline-flex h-8 items-center gap-1 text-sm"
+        >
+          @{c.x_handle}
+          <ExternalLink className="size-3" />
+        </a>
+        <div className="flex flex-wrap justify-center gap-2">
+          {topScenes(c, 3).map((s) => (
+            <span key={s} className="bg-muted rounded-full px-3 py-1 text-xs font-medium">
+              {sceneLabel(s)}
+            </span>
+          ))}
         </div>
-        <div className="flex gap-2">
-          <PlayButton c={c} />
-          <FollowButton curator={c} onChange={() => mutate()} size="default" />
-        </div>
+        {c.bio && <p className="text-sm">{c.bio}</p>}
       </div>
-      <section>
-        <h2 className="mb-2 text-lg font-semibold">推した曲</h2>
-        {c.recent_tracks.length === 0 ? (
-          <EmptyState title="まだ曲がありません" />
-        ) : (
-          <TrackList items={c.recent_tracks} label={`@${c.x_handle} の推薦`} showReason={false} />
-        )}
-      </section>
+      <div className="bg-card flex rounded-3xl border py-3">
+        <Stat value={c.recent_count} label="30日の推薦" />
+        <Stat value={c.follower_count} label="フォロワー" />
+        <Stat value={c.claimed ? "✓" : "—"} label="本人確認" />
+      </div>
+      <div className="flex items-center gap-3">
+        <FollowButton curator={c} onChange={() => mutate()} wide />
+        <PlayFab items={c.recent_tracks} label={label} />
+      </div>
+      {c.recent_tracks.length === 0 ? (
+        <EmptyState title="まだ曲がありません" />
+      ) : (
+        <TrackList items={c.recent_tracks} label={label} showWhy={false} />
+      )}
     </div>
   );
 }

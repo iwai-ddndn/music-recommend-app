@@ -5,56 +5,60 @@ import { useState } from "react";
 import useSWR from "swr";
 import { Check, Play, Plus, Search, UserPlus } from "lucide-react";
 import { toast } from "sonner";
-import { EmptyState, ErrorState, ListSkeleton, PageHeader } from "@/components/common";
+import { EmptyState, ErrorState, ListSkeleton } from "@/components/common";
+import { ScreenHeader } from "@/components/layout/app-shell";
 import { Artwork } from "@/components/player/artwork";
 import * as controls from "@/components/player/controls";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Drawer, DrawerContent, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { apiSend, fetcher, useMe } from "@/lib/client/api";
+import { useProfile } from "@/lib/client/profile";
 import { useRequireLogin } from "@/lib/client/use-require-login";
 import { getPlayerStore } from "@/lib/player/store";
 import type { CuratorListItem } from "@/lib/repo/curators";
+import { sceneLabel, scenes } from "@/lib/taste/vocabulary";
+import { cn } from "@/lib/utils";
+
+export function topScenes(c: Pick<CuratorListItem, "profile_tags">, n = 2) {
+  return Object.entries(c.profile_tags)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, n)
+    .map(([id]) => id);
+}
 
 export function FollowButton({
   curator,
   onChange,
-  size = "sm",
+  wide,
 }: {
   curator: Pick<CuratorListItem, "id" | "following" | "x_handle">;
   onChange: () => void;
-  size?: "sm" | "default";
+  wide?: boolean;
 }) {
   const requireLogin = useRequireLogin();
   const { mutate: mutateMe } = useMe();
   const [busy, setBusy] = useState(false);
   return (
-    <Button
-      size={size}
-      variant={curator.following ? "outline" : "default"}
+    <button
+      type="button"
       disabled={busy}
       data-testid="follow-button"
       aria-pressed={curator.following}
+      className={cn(
+        "inline-flex h-11 shrink-0 items-center justify-center gap-1 rounded-full px-4 text-sm font-semibold transition-transform active:scale-95",
+        wide && "flex-1",
+        curator.following ? "bg-muted" : "bg-foreground text-background",
+      )}
       onClick={async (e) => {
         e.preventDefault();
         if (!requireLogin("フォロー")) return;
         setBusy(true);
         try {
           await apiSend(`/api/curators/${curator.id}/follow`, curator.following ? "DELETE" : "POST");
-          toast(curator.following ? `@${curator.x_handle} のフォローを解除しました` : `@${curator.x_handle} をフォローしました`);
+          if (curator.following) useProfile.getState().dropSoftFollow(curator.id);
           onChange();
           void mutateMe();
         } catch (err) {
@@ -64,35 +68,34 @@ export function FollowButton({
         }
       }}
     >
-      {curator.following ? <Check /> : <Plus />}
+      {curator.following ? <Check className="size-4" /> : <Plus className="size-4" />}
       {curator.following ? "フォロー中" : "フォロー"}
-    </Button>
+    </button>
   );
 }
 
-function SuggestDialog() {
+/** 目利きの推薦（管理者の承認制）。下からのシートに入力1つ */
+function SuggestSheet() {
   const requireLogin = useRequireLogin();
   const [open, setOpen] = useState(false);
   const [handle, setHandle] = useState("");
   const [comment, setComment] = useState("");
   const [busy, setBusy] = useState(false);
   return (
-    <Dialog
+    <Drawer
       open={open}
       onOpenChange={(v) => {
         if (v && !requireLogin("目利きの推薦")) return;
         setOpen(v);
       }}
     >
-      <DialogTrigger asChild>
-        <Button variant="outline">
-          <UserPlus />
-          目利きを推薦
+      <DrawerTrigger asChild>
+        <Button variant="ghost" className="size-11 rounded-full" aria-label="目利きを推薦">
+          <UserPlus className="size-5" />
         </Button>
-      </DialogTrigger>
-      <DialogContent>
+      </DrawerTrigger>
+      <DrawerContent>
         <form
-          className="space-y-4"
           onSubmit={async (e) => {
             e.preventDefault();
             setBusy(true);
@@ -103,10 +106,10 @@ function SuggestDialog() {
               });
               toast(
                 r.status === "already_active"
-                  ? `@${r.handle} は既に目利きです。フォローしてみてください`
+                  ? `@${r.handle} は既に目利きです`
                   : r.status === "voted"
-                    ? `@${r.handle} への推薦に1票加えました`
-                    : `@${r.handle} を推薦しました。管理者の承認後に追加されます`,
+                    ? `@${r.handle} に1票入れました`
+                    : `@${r.handle} を推薦しました（承認待ち）`,
               );
               setOpen(false);
               setHandle("");
@@ -118,151 +121,141 @@ function SuggestDialog() {
             }
           }}
         >
-          <DialogHeader>
-            <DialogTitle>目利きを推薦する</DialogTitle>
-            <DialogDescription>
-              信頼できるディガー（レコード店・レーベル・音楽ライター・個人）を教えてください。収集にはXの費用がかかるため、管理者の承認後に追加されます。
-            </DialogDescription>
-          </DialogHeader>
-          <div className="space-y-2">
-            <Label htmlFor="handle">Xのハンドル</Label>
-            <Input
-              id="handle"
-              placeholder="@example"
-              value={handle}
-              onChange={(e) => setHandle(e.target.value)}
-              autoComplete="off"
-              required
-            />
+          <DrawerHeader>
+            <DrawerTitle>目利きを推薦</DrawerTitle>
+          </DrawerHeader>
+          <div className="space-y-4 px-5">
+            <div className="space-y-2">
+              <Label htmlFor="handle">Xのハンドル</Label>
+              <Input id="handle" className="h-12" placeholder="@example" value={handle} onChange={(e) => setHandle(e.target.value)} autoComplete="off" required />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="comment">ひとこと</Label>
+              <Input id="comment" className="h-12" value={comment} maxLength={200} onChange={(e) => setComment(e.target.value)} />
+            </div>
           </div>
-          <div className="space-y-2">
-            <Label htmlFor="comment">ひとこと（任意）</Label>
-            <Textarea
-              id="comment"
-              placeholder="どんな曲を紹介している人か"
-              value={comment}
-              maxLength={200}
-              onChange={(e) => setComment(e.target.value)}
-            />
-          </div>
-          <DialogFooter>
-            <Button type="submit" disabled={busy || !handle.trim()}>
+          <DrawerFooter>
+            <Button type="submit" className="h-12 rounded-full text-base" disabled={busy || !handle.trim()}>
               推薦する
             </Button>
-          </DialogFooter>
+          </DrawerFooter>
         </form>
-      </DialogContent>
-    </Dialog>
+      </DrawerContent>
+    </Drawer>
   );
 }
 
 function CuratorCard({ c, onChange }: { c: CuratorListItem; onChange: () => void }) {
   return (
-    <Card className="gap-4 py-4" data-testid="curator-card">
-      <CardContent className="space-y-3 px-4">
-        <div className="flex items-start gap-3">
-          <Avatar className="size-10">
-            <AvatarFallback>{c.display_name.slice(0, 1)}</AvatarFallback>
+    <div className="bg-card space-y-3 rounded-3xl border p-4" data-testid="curator-card">
+      <div className="flex items-center gap-3">
+        <Link href={`/curators/${c.id}`} className="flex min-w-0 flex-1 items-center gap-3">
+          <Avatar className="size-12">
+            <AvatarFallback className="text-lg">{c.display_name.slice(0, 1)}</AvatarFallback>
           </Avatar>
-          <div className="min-w-0 flex-1">
-            <Link href={`/curators/${c.id}`} className="block truncate font-semibold hover:underline">
-              {c.display_name}
-            </Link>
-            <div className="text-muted-foreground flex flex-wrap items-center gap-x-2 text-xs">
-              <span>@{c.x_handle}</span>
-              <span>直近30日 {c.recent_count}曲</span>
-              {c.claimed && <Badge variant="outline" className="h-4 px-1 text-[10px]">本人確認済み</Badge>}
-            </div>
-          </div>
-          <FollowButton curator={c} onChange={onChange} />
+          <span className="min-w-0">
+            <span className="block truncate font-semibold">{c.display_name}</span>
+            <span className="text-muted-foreground block truncate text-sm">@{c.x_handle}</span>
+          </span>
+        </Link>
+        <FollowButton curator={c} onChange={onChange} />
+      </div>
+      <div className="flex items-center gap-2">
+        {topScenes(c).map((id) => (
+          <span key={id} className="bg-muted rounded-full px-2.5 py-1 text-xs font-medium">
+            {sceneLabel(id)}
+          </span>
+        ))}
+        <span className="text-muted-foreground ml-auto text-xs tabular-nums" title="直近30日の推薦曲数">
+          30日 {c.recent_count}曲
+        </span>
+      </div>
+      {c.recent_tracks.length > 0 && (
+        <div className="grid grid-cols-3 gap-2">
+          {c.recent_tracks.map((t, i) => (
+            <button
+              key={t.track_id}
+              type="button"
+              aria-label={`${t.title}を再生`}
+              className="group relative text-left"
+              onClick={() => {
+                controls.markUserGesture();
+                getPlayerStore().getState().playQueue(c.recent_tracks, i, `@${c.x_handle}`);
+              }}
+            >
+              <Artwork src={t.artwork_url} seed={t.track_id} alt="" className="aspect-square w-full rounded-2xl" />
+              <span className="absolute right-1.5 bottom-7 flex size-8 items-center justify-center rounded-full bg-black/60 text-white">
+                <Play className="ml-0.5 size-3.5 fill-current" />
+              </span>
+              <span className="mt-1 block truncate text-xs font-medium">{t.title}</span>
+            </button>
+          ))}
         </div>
-        {c.bio && <p className="text-muted-foreground line-clamp-2 text-sm">{c.bio}</p>}
-        {c.recent_tracks.length > 0 && (
-          <div className="space-y-1">
-            <div className="text-muted-foreground text-xs font-medium">最近推した曲</div>
-            <ul className="grid gap-1">
-              {c.recent_tracks.map((t, i) => (
-                <li key={t.track_id}>
-                  <button
-                    className="hover:bg-accent group flex w-full items-center gap-2 rounded-md p-1 text-left"
-                    onClick={() => {
-                      controls.markUserGesture();
-                      getPlayerStore().getState().playQueue(c.recent_tracks, i, `@${c.x_handle} の推薦`);
-                    }}
-                  >
-                    <span className="relative">
-                      <Artwork src={t.artwork_url} seed={t.track_id} alt="" className="size-8" />
-                      <Play className="absolute inset-0 m-auto size-4 fill-white text-white opacity-0 group-hover:opacity-100" />
-                    </span>
-                    <span className="min-w-0 flex-1 truncate text-sm">
-                      {t.title} <span className="text-muted-foreground">— {t.artist_name}</span>
-                    </span>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </CardContent>
-    </Card>
+      )}
+    </div>
   );
 }
 
 export function CuratorsView() {
   const [q, setQ] = useState("");
+  const [scene, setScene] = useState<string | null>(null);
   const { data, error, isLoading, mutate } = useSWR<{ curators: CuratorListItem[] }>("/api/curators", fetcher);
-  const list = (data?.curators ?? []).filter(
-    (c) =>
-      !q ||
-      c.x_handle.toLowerCase().includes(q.toLowerCase().replace(/^@/, "")) ||
-      c.display_name.toLowerCase().includes(q.toLowerCase()),
-  );
-  const following = list.filter((c) => c.following);
-  const others = list.filter((c) => !c.following);
+  const softFollows = useProfile((s) => s.taste.softFollows);
+  const list = (data?.curators ?? [])
+    .filter(
+      (c) =>
+        (!q ||
+          c.x_handle.toLowerCase().includes(q.toLowerCase().replace(/^@/, "")) ||
+          c.display_name.toLowerCase().includes(q.toLowerCase())) &&
+        (!scene || topScenes(c).includes(scene)),
+    )
+    // フォロー中 → 好みに合う目利き → その他
+    .sort(
+      (a, b) =>
+        Number(b.following) - Number(a.following) ||
+        Number(softFollows.includes(b.id)) - Number(softFollows.includes(a.id)),
+    );
   return (
-    <div className="space-y-6">
-      <PageHeader
-        title="目利き"
-        description="信頼できるディガーをフォローすると、その人が推す曲が上位に来ます。"
-        actions={<SuggestDialog />}
-      />
+    <div className="space-y-4">
+      <ScreenHeader title="目利き" action={<SuggestSheet />} />
       <div className="relative">
-        <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
+        <Search className="text-muted-foreground absolute top-1/2 left-4 size-5 -translate-y-1/2" />
         <Input
-          className="pl-9"
-          placeholder="名前や @ハンドルで探す"
+          className="bg-muted h-12 rounded-full border-0 pl-12 text-base"
+          placeholder="検索"
           value={q}
           onChange={(e) => setQ(e.target.value)}
           aria-label="目利きを検索"
         />
+      </div>
+      <div className="-mx-4 flex gap-2 overflow-x-auto px-4 [scrollbar-width:none]">
+        {[{ id: null as string | null, label: "すべて" }, ...scenes].map((s) => (
+          <button
+            key={s.id ?? "all"}
+            type="button"
+            aria-pressed={scene === s.id}
+            onClick={() => setScene(s.id)}
+            className={cn(
+              "h-9 shrink-0 rounded-full px-3.5 text-sm font-medium",
+              scene === s.id ? "bg-foreground text-background" : "bg-muted",
+            )}
+          >
+            {s.label}
+          </button>
+        ))}
       </div>
       {error ? (
         <ErrorState message={error.message} onRetry={() => mutate()} />
       ) : isLoading ? (
         <ListSkeleton />
       ) : list.length === 0 ? (
-        <EmptyState title="見つかりませんでした">別の名前で探すか、目利きを推薦してください。</EmptyState>
+        <EmptyState title="見つかりませんでした" />
       ) : (
-        <>
-          {following.length > 0 && (
-            <section className="space-y-3">
-              <h2 className="text-sm font-semibold">フォロー中（{following.length}）</h2>
-              <div className="grid gap-3 md:grid-cols-2">
-                {following.map((c) => (
-                  <CuratorCard key={c.id} c={c} onChange={() => mutate()} />
-                ))}
-              </div>
-            </section>
-          )}
-          <section className="space-y-3">
-            <h2 className="text-sm font-semibold">{following.length ? "その他の目利き" : "すべての目利き"}</h2>
-            <div className="grid gap-3 md:grid-cols-2">
-              {others.map((c) => (
-                <CuratorCard key={c.id} c={c} onChange={() => mutate()} />
-              ))}
-            </div>
-          </section>
-        </>
+        <div className="grid gap-3">
+          {list.map((c) => (
+            <CuratorCard key={c.id} c={c} onChange={() => mutate()} />
+          ))}
+        </div>
       )}
     </div>
   );
