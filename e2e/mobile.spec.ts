@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/test";
+import { skipOnboarding } from "./helpers";
 
 test("スマホ: ミニプレイヤーから再生パネルを開閉でき、下部タブで移動しても再生が続く", async ({ page }) => {
+  await skipOnboarding(page);
   await page.goto("/");
   await page.getByTestId("track-row").first().click();
   const mini = page.getByTestId("mini-player");

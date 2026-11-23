@@ -8,6 +8,31 @@ export const USERS = {
   admin: "00000000-0000-4000-8000-000000000004",
 } as const;
 
+/** 初回の好み選びを済ませた状態にする（オンボーディング自体は onboarding.spec.ts で確認） */
+export async function skipOnboarding(page: Page) {
+  await page.addInitScript(() => {
+    if (localStorage.getItem("profile-v1")) return;
+    localStorage.setItem(
+      "profile-v1",
+      JSON.stringify({
+        state: {
+          onboarded: true,
+          scenes: [],
+          taste: { seeds: {}, learned: {}, curators: {}, softFollows: [], signals: 0, updatedAt: null },
+          favorites: [],
+          heard: [],
+          depth: 0.5,
+        },
+        version: 0,
+      }),
+    );
+  });
+}
+
+export async function openPlayer(page: Page) {
+  await page.getByTestId("mini-player").getByRole("button", { name: "再生パネルを開く" }).click();
+}
+
 export async function login(page: Page, who: keyof typeof USERS) {
   const res = await page.request.post("/api/auth/demo", { data: { user_id: USERS[who] } });
   expect(res.ok()).toBeTruthy();

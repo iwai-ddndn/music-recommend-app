@@ -17,8 +17,20 @@ export default defineConfig({
     launchOptions: process.env.PW_CHROMIUM_PATH ? { executablePath: process.env.PW_CHROMIUM_PATH } : {},
   },
   projects: [
-    { name: "desktop", use: { ...devices["Desktop Chrome"], viewport: { width: 1440, height: 900 } }, testIgnore: /mobile/ },
-    { name: "mobile", use: { ...devices["Pixel 7"] }, testMatch: /mobile/ },
+    { name: "warmup", testMatch: /warmup\.setup\.ts/ },
+    {
+      name: "desktop",
+      use: { ...devices["Desktop Chrome"], viewport: { width: 1440, height: 900 } },
+      testIgnore: /mobile|warmup/,
+      dependencies: ["warmup"],
+    },
+    // スマホ前提のUIなので、主要な導線はスマホの画面サイズでも通す
+    {
+      name: "mobile",
+      use: { ...devices["Pixel 7"] },
+      testMatch: /mobile|onboarding|playback/,
+      dependencies: ["warmup"],
+    },
   ],
   webServer: {
     // 毎回まっさらなローカルDBから始める（初回アクセスでシードとバッチが流れる）

@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
-import { login, logout } from "./helpers";
+import { login, logout, skipOnboarding } from "./helpers";
 
+test.beforeEach(async ({ page }) => skipOnboarding(page));
 test.afterEach(async ({ page }) => logout(page));
 
 test("未ログインでフォローするとログインを案内し、ログイン後に元の画面へ戻る", async ({ page }) => {
@@ -36,7 +37,7 @@ test("深さスライダーでキューが組み直される", async ({ page }) 
   const slider = page.getByRole("slider", { name: "深さ" }).first();
   await slider.focus();
   await page.keyboard.press("Home");
-  await expect(page.getByTestId("depth-label")).toHaveText("人気曲も混ぜる");
+  await expect(page.getByTestId("depth-label")).toHaveText("人気曲も");
   // 深さ0では人気曲（Big Sky Anthem）が上位に来る
   await expect(rows.first()).toContainText("Big Sky", { timeout: 5_000 });
   await page.keyboard.press("End");
@@ -49,12 +50,12 @@ test("アーティストが推薦を投稿し、管理者が承認すると公�
   await page.goto("/campaigns");
   await page.getByTestId("campaign-card").filter({ hasText: "募集中" }).click();
   await page.getByTestId("open-pitch-form").click();
-  await page.getByLabel("1. 曲のURL").fill("https://soundcloud.com/field-recording-club/cassette-heart");
+  await page.getByLabel("曲のURL").fill("https://soundcloud.com/field-recording-club/cassette-heart");
   await expect(page.getByTestId("pitch-preview")).toContainText("Cassette Heart");
   const refs = page.getByLabel(/このアーティストが好きな人へ/);
   await refs.fill("Asagao");
   await refs.press("Enter");
-  await page.getByLabel("3. ひとこと").fill("雨の日に");
+  await page.getByLabel(/ひとこと/).fill("雨の日に");
   await page.getByRole("button", { name: "推薦を送信" }).click();
   await expect(page.getByText("推薦を送信しました")).toBeVisible();
   await expect(page.getByTestId("my-pitch").filter({ hasText: "Cassette Heart" })).toContainText("審査中");
@@ -71,7 +72,7 @@ test("アーティストが推薦を投稿し、管理者が承認すると公�
   await login(page, "listener");
   await page.goto("/campaigns");
   await page.getByTestId("campaign-card").filter({ hasText: "募集中" }).click();
-  await expect(page.getByTestId("track-row").filter({ hasText: "Cassette Heart" })).toContainText("Asagaoが好きな人へ（本人推薦）");
+  await expect(page.getByTestId("track-row").filter({ hasText: "Cassette Heart" })).toContainText("本人 → Asagao");
 });
 
 test("推薦できない立場のユーザーには参加方法を案内する", async ({ page }) => {

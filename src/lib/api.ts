@@ -1,4 +1,5 @@
 import "server-only";
+import { unstable_rethrow } from "next/navigation";
 import { NextResponse } from "next/server";
 import { ZodError, type ZodType } from "zod";
 import { HttpError } from "./auth/session";
@@ -13,6 +14,8 @@ export function handler<A extends unknown[]>(fn: (...args: A) => Promise<Respons
     try {
       return await fn(...args);
     } catch (e) {
+      // Next.js 内部のシグナル（プリレンダーの中断など）は握りつぶさずに投げ直す
+      unstable_rethrow(e);
       if (e instanceof HttpError) return json({ error: e.message }, { status: e.status });
       if (e instanceof ZodError) {
         return json({ error: e.issues.map((i) => i.message).join(" / ") }, { status: 400 });

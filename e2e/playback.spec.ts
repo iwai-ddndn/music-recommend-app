@@ -1,9 +1,10 @@
 import { expect, test } from "@playwright/test";
-import { login, logout, nowTitle, readDb, readRows } from "./helpers";
+import { login, logout, nowTitle, openPlayer, readDb, readRows, skipOnboarding } from "./helpers";
 
 // 統一キューの再生フロー（仕様書 7章）。fixtures モードでは各サービスの再生を模擬し、1曲2秒で終わる。
 
 test.describe("再生フロー", () => {
+  test.beforeEach(async ({ page }) => skipOnboarding(page));
   test.afterEach(async ({ page }) => logout(page));
 
   test("ログイン不要で再生でき、曲が終わると次の曲へ自動で進む", async ({ page }) => {
@@ -33,6 +34,7 @@ test.describe("再生フロー", () => {
     await page.getByTestId("track-row").nth(bc - 1).click();
     await expect(nowTitle(page)).toHaveText(rows[bc - 1].title);
 
+    await openPlayer(page);
     // 前の曲が終わると Bandcamp の曲で止まる
     await expect(nowTitle(page)).toHaveText(rows[bc].title, { timeout: 8_000 });
     await expect(page.getByTestId("bandcamp-card")).toBeVisible();
@@ -67,6 +69,7 @@ test.describe("再生フロー", () => {
     );
     await page.getByTestId("track-row").nth(i).click();
     await expect(page.getByTestId("now-playing")).toHaveAttribute("data-status", "playing");
+    await openPlayer(page);
     await expect(nowTitle(page)).toHaveText(rows[i + 1].title, { timeout: 8_000 });
     const tap = page.getByTestId("tap-to-continue");
     await expect(tap).toBeVisible({ timeout: 8_000 });

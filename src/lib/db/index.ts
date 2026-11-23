@@ -9,7 +9,7 @@ const g = globalThis as unknown as { __db?: Db; __seeding?: Promise<void> };
 export function getDb(): Db {
   if (g.__db) return g.__db;
   if (isFixtureMode()) {
-    g.__db = new LocalDb(path.resolve(process.cwd(), env.localDbFile), emptyData);
+    g.__db = new LocalDb(path.resolve(/* turbopackIgnore: true */ process.cwd(), env.localDbFile), emptyData);
   } else {
     if (!env.supabaseUrl || !env.supabaseServiceRoleKey) {
       throw new Error("Supabase is not configured (NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY)");

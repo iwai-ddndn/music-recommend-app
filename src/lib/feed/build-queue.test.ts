@@ -115,6 +115,46 @@ describe("buildQueue", () => {
   });
 });
 
+describe("buildQueue: 好み（コールドスタート対策）", () => {
+  const taste = { seeds: { ambient: 1 }, learned: {}, curators: {}, softFollows: [], signals: 5, updatedAt: null };
+  const a = cand(0, { tags: { folk: 1 }, contributions: [{ curator_id: "c1", contribution: 2, mention_count: 1 }] });
+  const b = cand(1, { tags: { ambient: 1 }, contributions: [{ curator_id: "c2", contribution: 1, mention_count: 1 }] });
+
+  it("好みが無ければ仕様書の式のまま", () => {
+    expect(buildQueue({ ...base, candidates: [a, b] }, appConfig)[0].track_id).toBe("t000");
+    expect(buildQueue({ ...base, candidates: [a, b], taste: { ...taste, seeds: {}, signals: 0 } }, appConfig)[0].track_id).toBe("t000");
+  });
+
+  it("好みに合う曲が上がる（上限つきの倍率）", () => {
+    const q = buildQueue({ ...base, candidates: [a, b], taste }, appConfig);
+    expect(q[0].track_id).toBe("t001");
+    expect(q[0].score).toBeCloseTo(1 * (1 + appConfig.taste.boostMax));
+  });
+
+  it("目利きの言及が無い曲は、好みに合っていても出てこない", () => {
+    const orphan = cand(2, { tags: { ambient: 1 }, contributions: [], mention_count: 0 });
+    expect(buildQueue({ ...base, candidates: [orphan], taste }, appConfig)).toHaveLength(0);
+  });
+
+  it("仮フォローの目利きは 1.8 倍、本フォローは 3 倍", () => {
+    const soft = buildQueue({ ...base, candidates: [a, b], taste: { ...taste, seeds: {}, softFollows: ["c2"] } }, appConfig);
+    expect(soft.find((x) => x.track_id === "t001")!.score).toBeCloseTo(1.8);
+    const hard = buildQueue({ ...base, candidates: [a, b], followed: new Set(["c2"]), taste: { ...taste, seeds: {}, softFollows: ["c2"] } }, appConfig);
+    expect(hard.find((x) => x.track_id === "t001")!.score).toBeCloseTo(3);
+  });
+
+  it("同じ目利きが先頭に立つ曲は1キュー4曲まで", () => {
+    const many = Array.from({ length: 10 }, (_, i) => cand(i, { tags: { ambient: 1 } }));
+    expect(buildQueue({ ...base, candidates: many, taste }, appConfig)).toHaveLength(appConfig.queue.maxPerLeadCurator);
+  });
+
+  it("学習用に曲のタグと目利きの寄与割合を返す", () => {
+    const q = buildQueue({ ...base, candidates: [b], taste }, appConfig);
+    expect(q[0].tags).toEqual({ ambient: 1 });
+    expect(q[0].curators).toEqual([{ id: "c2", handle: "label", name: "label", share: 1, count: 1 }]);
+  });
+});
+
 describe("explain", () => {
   it("複数回の推薦", () => {
     expect(explain(cand(0, { contributions: [{ curator_id: "c1", contribution: 1, mention_count: 3 }] }), new Set(), base.curatorHandles).reason).toBe("@digger が3回推薦");
